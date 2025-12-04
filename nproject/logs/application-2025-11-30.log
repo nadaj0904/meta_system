@@ -1,0 +1,221 @@
+2025-11-30 19:09:25.653 INFO  [restartedMain] c.e.nproject.NprojectApplication - Starting NprojectApplication using Java 17.0.12 with PID 17924 (C:\Dev_antigravity_java\nproject\target\classes started by jkljkl in C:\Dev_antigravity_java\nproject)
+2025-11-30 19:09:25.655 DEBUG [restartedMain] c.e.nproject.NprojectApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-30 19:09:25.656 INFO  [restartedMain] c.e.nproject.NprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-30 19:09:25.699 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-30 19:09:25.706 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-30 19:09:26.302 DEBUG [restartedMain] o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-11-30 19:09:26.706 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-30 19:09:26.713 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-30 19:09:26.717 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-30 19:09:26.718 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-30 19:09:26.758 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-30 19:09:26.759 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1051 ms
+2025-11-30 19:09:27.086 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+2025-11-30 19:09:27.141 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-30 19:09:27.164 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-30 19:09:27.189 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-30 19:09:27.267 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-30 19:09:27.276 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-30 19:09:27.300 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2025-11-30 19:09:27.309 INFO  [restartedMain] c.e.nproject.NprojectApplication - Started NprojectApplication in 2.106 seconds (process running for 2.447)
+2025-11-30 19:10:07.915 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-30 19:10:07.915 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-30 19:10:07.916 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-11-30 19:10:07.916 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-11-30 19:10:07.918 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-11-30 19:10:07.918 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@23a4c074
+2025-11-30 19:10:07.920 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@29c21498
+2025-11-30 19:10:07.920 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-30 19:10:07.920 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-11-30 19:10:07.936 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/sample/jdbc", parameters={}
+2025-11-30 19:10:07.955 DEBUG [http-nio-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.SampleJdbcController#testConnection()
+2025-11-30 19:10:07.973 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - === Starting Supabase DB Connection Test ===
+2025-11-30 19:10:07.973 DEBUG [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - Calling sampleMapper.selectVersion()
+2025-11-30 19:10:08.005 DEBUG [http-nio-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-11-30 19:10:08.007 INFO  [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-30 19:10:08.841 INFO  [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3bd4cb76
+2025-11-30 19:10:08.845 INFO  [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-30 19:10:08.864 DEBUG [http-nio-8081-exec-1] c.e.n.m.SampleMapper.selectVersion - ==>  Preparing: SELECT id,name from public.users2
+2025-11-30 19:10:08.901 DEBUG [http-nio-8081-exec-1] c.e.n.m.SampleMapper.selectVersion - ==> Parameters: 
+2025-11-30 19:10:08.949 DEBUG [http-nio-8081-exec-1] c.e.n.m.SampleMapper.selectVersion - <==      Total: 0
+2025-11-30 19:10:08.962 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - ? Successfully connected to Supabase DB
+2025-11-30 19:10:08.965 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - Query result: null
+2025-11-30 19:10:08.965 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - === Supabase DB Connection Test Completed ===
+2025-11-30 19:10:09.038 DEBUG [http-nio-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2025-11-30 19:10:09.042 DEBUG [http-nio-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2025-11-30 19:10:09.046 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-30 19:10:11.138 DEBUG [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+2025-11-30 19:10:11.145 DEBUG [http-nio-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-11-30 19:10:11.155 DEBUG [http-nio-8081-exec-2] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-11-30 19:10:11.159 DEBUG [http-nio-8081-exec-2] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-11-30 19:10:11.160 DEBUG [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-11-30 19:10:11.191 DEBUG [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-11-30 19:10:11.197 DEBUG [http-nio-8081-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-11-30 19:10:11.216 DEBUG [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-11-30 19:10:11.220 DEBUG [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Nov 30 19:10:11 KST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2025-11-30 19:10:11.278 DEBUG [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-11-30 19:11:02.979 DEBUG [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/sample/jdbc", parameters={}
+2025-11-30 19:11:02.980 DEBUG [http-nio-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.SampleJdbcController#testConnection()
+2025-11-30 19:11:02.980 INFO  [http-nio-8081-exec-3] c.e.n.c.SampleJdbcController - === Starting Supabase DB Connection Test ===
+2025-11-30 19:11:02.980 DEBUG [http-nio-8081-exec-3] c.e.n.c.SampleJdbcController - Calling sampleMapper.selectVersion()
+2025-11-30 19:11:02.980 DEBUG [http-nio-8081-exec-3] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-11-30 19:11:02.988 DEBUG [http-nio-8081-exec-3] c.e.n.m.SampleMapper.selectVersion - ==>  Preparing: SELECT id,name from public.users2
+2025-11-30 19:11:02.989 DEBUG [http-nio-8081-exec-3] c.e.n.m.SampleMapper.selectVersion - ==> Parameters: 
+2025-11-30 19:11:02.998 DEBUG [http-nio-8081-exec-3] c.e.n.m.SampleMapper.selectVersion - <==      Total: 0
+2025-11-30 19:11:02.999 INFO  [http-nio-8081-exec-3] c.e.n.c.SampleJdbcController - ? Successfully connected to Supabase DB
+2025-11-30 19:11:02.999 INFO  [http-nio-8081-exec-3] c.e.n.c.SampleJdbcController - Query result: null
+2025-11-30 19:11:02.999 INFO  [http-nio-8081-exec-3] c.e.n.c.SampleJdbcController - === Supabase DB Connection Test Completed ===
+2025-11-30 19:11:03.000 DEBUG [http-nio-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-30 19:11:03.000 DEBUG [http-nio-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2025-11-30 19:11:03.000 DEBUG [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-30 19:11:28.883 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-11-30 19:11:28.887 INFO  [Thread-5] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2025-11-30 19:11:28.901 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-30 19:11:28.916 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-30 19:11:28.987 INFO  [restartedMain] c.e.nproject.NprojectApplication - Starting NprojectApplication using Java 17.0.12 with PID 17924 (C:\Dev_antigravity_java\nproject\target\classes started by jkljkl in C:\Dev_antigravity_java\nproject)
+2025-11-30 19:11:28.987 DEBUG [restartedMain] c.e.nproject.NprojectApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-30 19:11:28.988 INFO  [restartedMain] c.e.nproject.NprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-30 19:11:29.229 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-30 19:11:29.230 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-30 19:11:29.231 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-30 19:11:29.231 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-30 19:11:29.242 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-30 19:11:29.244 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 253 ms
+2025-11-30 19:11:29.314 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+2025-11-30 19:11:29.342 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-30 19:11:29.350 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-30 19:11:29.354 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-30 19:11:29.392 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-30 19:11:29.399 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-30 19:11:29.403 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2025-11-30 19:11:29.408 INFO  [restartedMain] c.e.nproject.NprojectApplication - Started NprojectApplication in 0.451 seconds (process running for 124.546)
+2025-11-30 19:11:29.411 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-11-30 19:15:27.782 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-30 19:15:27.783 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-30 19:15:27.783 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-11-30 19:15:27.783 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-11-30 19:15:27.783 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-11-30 19:15:27.784 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4ec4f181
+2025-11-30 19:15:27.784 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@40030629
+2025-11-30 19:15:27.784 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-30 19:15:27.784 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-11-30 19:15:27.784 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/sample/jdbc", parameters={}
+2025-11-30 19:15:27.786 DEBUG [http-nio-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.SampleJdbcController#testConnection()
+2025-11-30 19:15:27.786 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - === Starting Supabase DB Connection Test ===
+2025-11-30 19:15:27.787 DEBUG [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - Calling sampleMapper.selectVersion()
+2025-11-30 19:15:27.787 DEBUG [http-nio-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-11-30 19:15:27.787 INFO  [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-11-30 19:15:28.004 INFO  [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@6a7b51d4
+2025-11-30 19:15:28.005 INFO  [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-11-30 19:15:28.005 DEBUG [http-nio-8081-exec-1] c.e.n.m.SampleMapper.selectVersion - ==>  Preparing: SELECT id,name from public.users2
+2025-11-30 19:15:28.006 DEBUG [http-nio-8081-exec-1] c.e.n.m.SampleMapper.selectVersion - ==> Parameters: 
+2025-11-30 19:15:28.022 DEBUG [http-nio-8081-exec-1] c.e.n.m.SampleMapper.selectVersion - <==      Total: 0
+2025-11-30 19:15:28.023 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - ? Successfully connected to Supabase DB
+2025-11-30 19:15:28.023 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - Query result: null
+2025-11-30 19:15:28.024 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - === Supabase DB Connection Test Completed ===
+2025-11-30 19:15:28.026 DEBUG [http-nio-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-30 19:15:28.026 DEBUG [http-nio-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2025-11-30 19:15:28.028 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-30 19:17:55.032 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-11-30 19:17:55.040 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-11-30 19:18:35.740 INFO  [restartedMain] c.e.nproject.NprojectApplication - Starting NprojectApplication using Java 17.0.12 with PID 14272 (C:\Dev_antigravity_java\nproject\target\classes started by jkljkl in C:\Dev_antigravity_java\nproject)
+2025-11-30 19:18:35.742 DEBUG [restartedMain] c.e.nproject.NprojectApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-30 19:18:35.743 INFO  [restartedMain] c.e.nproject.NprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-30 19:18:35.787 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-30 19:18:35.787 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-30 19:18:36.362 DEBUG [restartedMain] o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-11-30 19:18:36.713 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-30 19:18:36.721 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-30 19:18:36.722 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-30 19:18:36.723 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-30 19:18:36.777 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-30 19:18:36.778 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 991 ms
+2025-11-30 19:18:37.128 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+2025-11-30 19:18:37.193 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-30 19:18:37.215 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-30 19:18:37.242 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-30 19:18:37.334 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-30 19:18:37.352 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-30 19:18:37.379 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2025-11-30 19:18:37.389 INFO  [restartedMain] c.e.nproject.NprojectApplication - Started NprojectApplication in 2.034 seconds (process running for 2.62)
+2025-11-30 19:18:45.179 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-30 19:18:45.179 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-30 19:18:45.180 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-11-30 19:18:45.180 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-11-30 19:18:45.180 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-11-30 19:18:45.181 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5e20c6f
+2025-11-30 19:18:45.182 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6671830a
+2025-11-30 19:18:45.182 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-30 19:18:45.182 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-30 19:18:45.191 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/sample/jdbc", parameters={}
+2025-11-30 19:18:45.205 DEBUG [http-nio-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.SampleJdbcController#testConnection()
+2025-11-30 19:18:45.217 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - === Starting Supabase DB Connection Test ===
+2025-11-30 19:18:45.217 DEBUG [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - Calling sampleMapper.selectVersion()
+2025-11-30 19:18:45.247 DEBUG [http-nio-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-11-30 19:18:45.248 INFO  [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-30 19:18:45.564 INFO  [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23b33a01
+2025-11-30 19:18:45.565 INFO  [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-30 19:18:45.572 DEBUG [http-nio-8081-exec-1] c.e.n.m.SampleMapper.selectVersion - ==>  Preparing: SELECT id,name from public.users2
+2025-11-30 19:18:45.583 DEBUG [http-nio-8081-exec-1] c.e.n.m.SampleMapper.selectVersion - ==> Parameters: 
+2025-11-30 19:18:45.601 DEBUG [http-nio-8081-exec-1] c.e.n.m.SampleMapper.selectVersion - <==      Total: 0
+2025-11-30 19:18:45.607 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - ✓ Successfully connected to Supabase DB
+2025-11-30 19:18:45.607 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - Query result: null
+2025-11-30 19:18:45.607 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - === Supabase DB Connection Test Completed ===
+2025-11-30 19:18:45.635 DEBUG [http-nio-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2025-11-30 19:18:45.636 DEBUG [http-nio-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Nothing to write: null body
+2025-11-30 19:18:45.637 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-30 19:56:59.804 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m43s721ms766µs100ns).
+2025-11-30 20:00:41.826 INFO  [RMI TCP Connection(44)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-11-30 20:00:41.832 INFO  [RMI TCP Connection(44)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2025-11-30 20:00:41.859 INFO  [RMI TCP Connection(44)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-30 20:00:41.867 INFO  [RMI TCP Connection(44)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-30 20:02:10.191 INFO  [restartedMain] c.e.nproject.NprojectApplication - Starting NprojectApplication using Java 17.0.12 with PID 15936 (C:\Dev_antigravity_java\nproject\target\classes started by jkljkl in C:\Dev_antigravity_java\nproject)
+2025-11-30 20:02:10.193 DEBUG [restartedMain] c.e.nproject.NprojectApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-30 20:02:10.195 INFO  [restartedMain] c.e.nproject.NprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-30 20:02:10.257 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-30 20:02:10.257 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-30 20:02:10.955 DEBUG [restartedMain] o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-11-30 20:02:11.393 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-30 20:02:11.400 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-30 20:02:11.403 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-30 20:02:11.403 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-30 20:02:11.462 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-30 20:02:11.463 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1205 ms
+2025-11-30 20:02:11.779 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 9 mappings in 'requestMappingHandlerMapping'
+2025-11-30 20:02:11.832 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-30 20:02:11.854 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-30 20:02:11.881 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-30 20:02:11.961 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-11-30 20:02:11.978 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-30 20:02:11.994 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2025-11-30 20:02:12.004 INFO  [restartedMain] c.e.nproject.NprojectApplication - Started NprojectApplication in 2.315 seconds (process running for 2.9)
+2025-11-30 20:02:24.043 INFO  [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-30 20:02:24.043 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-30 20:02:24.044 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-11-30 20:02:24.044 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-11-30 20:02:24.044 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-11-30 20:02:24.045 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@634dc783
+2025-11-30 20:02:24.046 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5b2d283f
+2025-11-30 20:02:24.046 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-30 20:02:24.046 INFO  [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-11-30 20:02:24.056 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/sample/jdbc", parameters={}
+2025-11-30 20:02:24.069 DEBUG [http-nio-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.SampleJdbcController#testConnection()
+2025-11-30 20:02:24.087 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - === Starting Supabase DB Connection Test ===
+2025-11-30 20:02:24.087 DEBUG [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - Calling sampleMapper.selectVersion()
+2025-11-30 20:02:24.105 DEBUG [http-nio-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-11-30 20:02:24.106 INFO  [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-30 20:02:24.518 INFO  [http-nio-8081-exec-1] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@250a50fd
+2025-11-30 20:02:24.519 INFO  [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-30 20:02:24.527 DEBUG [http-nio-8081-exec-1] c.e.n.m.SampleMapper.selectVersion - ==>  Preparing: SELECT id,name from public.users2
+2025-11-30 20:02:24.539 DEBUG [http-nio-8081-exec-1] c.e.n.m.SampleMapper.selectVersion - ==> Parameters: 
+2025-11-30 20:02:24.572 DEBUG [http-nio-8081-exec-1] c.e.n.m.SampleMapper.selectVersion - <==      Total: 0
+2025-11-30 20:02:24.579 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - ✓ Successfully connected to Supabase DB
+2025-11-30 20:02:24.579 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - Query result: null
+2025-11-30 20:02:24.579 INFO  [http-nio-8081-exec-1] c.e.n.c.SampleJdbcController - === Supabase DB Connection Test Completed ===
+2025-11-30 20:02:24.592 DEBUG [http-nio-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2025-11-30 20:02:24.595 DEBUG [http-nio-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{data=null, message=Supabase DB Connection Success!!, status=success, timestamp=2025-11-30T20:02:24. (truncated)...]
+2025-11-30 20:02:24.612 DEBUG [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-30 20:04:03.098 INFO  [RMI TCP Connection(11)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-11-30 20:04:03.103 INFO  [RMI TCP Connection(11)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2025-11-30 20:04:03.119 INFO  [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-30 20:04:03.128 INFO  [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
