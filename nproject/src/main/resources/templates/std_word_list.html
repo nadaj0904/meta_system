@@ -5,12 +5,7 @@
     <meta charset="UTF-8">
     <title>표준단어 관리 시스템</title>
     <style>
-        /* Reset & Base Styles */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        /* Duplicate CSS block removed */
 
         body {
             font-family: 'Inter', sans-serif;
@@ -205,6 +200,221 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             overflow: auto;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Header */
+        header {
+            height: 64px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            flex-shrink: 0;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background-color: #e3f2fd;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1976d2;
+        }
+
+        .user-area {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: #666;
+        }
+
+        .avatar {
+            width: 36px;
+            height: 36px;
+            background-color: #ddd;
+            border-radius: 50%;
+        }
+
+        /* Layout Container */
+        .container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        /* Sidebar */
+        aside {
+            width: 250px;
+            background-color: #ffffff;
+            border-right: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            flex-shrink: 0;
+        }
+
+        .menu-item {
+            padding: 12px 24px;
+            text-decoration: none;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .menu-item:hover {
+            background-color: #f5f5f5;
+        }
+
+        .menu-item.active {
+            background-color: #e3f2fd;
+            color: #1976d2;
+            border-right: 3px solid #1976d2;
+        }
+
+        /* Main Content */
+        main {
+            flex: 1;
+            padding: 24px;
+            overflow: hidden;
+            background-color: #f4f6f8;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Page Header */
+        .page-header {
+            margin-bottom: 24px;
+        }
+
+        .page-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .page-title::before {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 24px;
+            background-color: #ff5252;
+            /* Red accent as per image */
+            border-radius: 2px;
+        }
+
+        /* Search Area */
+        .search-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            /* Increased gap */
+            flex-wrap: wrap;
+            /* Allow wrapping on small screens */
+        }
+
+        .search-input-wrapper {
+            position: relative;
+            display: flex;
+            /* Added flex */
+            gap: 8px;
+            /* Gap between input and button */
+            flex: 1 1 auto;
+            /* Grow and shrink */
+            min-width: 200px;
+            /* Ensure it doesn't get invisible or overlapping-ly small */
+            max-width: 100%;
+            /* Allow full width if needed */
+        }
+
+        .search-input {
+            flex: 1;
+            /* Take remaining space */
+            padding: 10px 12px;
+            /* Reduced right padding */
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .search-btn {
+            position: static;
+            /* Removed absolute */
+            transform: none;
+            background: #333;
+            color: #fff;
+            border: none;
+            width: 40px;
+            height: auto;
+            /* Match container height */
+            flex-shrink: 0;
+            border-radius: 4px;
+
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .reset-btn {
+            padding: 10px 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            white-space: nowrap;
+            /* Prevent text wrapping */
+            flex-shrink: 0;
+            /* Prevent button shrinking */
+        }
+
+        /* Table */
+        .table-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            overflow: auto;
             flex: 1;
             min-height: 0;
         }
@@ -357,13 +567,11 @@
 
         <!-- Main Content -->
         <main>
-            <div class="page-header">
-                <h2 class="page-title">표준단어 검색</h2>
-            </div>
-
             <!-- Search Form -->
-            <form th:action="@{/std-word/list}" method="get" th:object="${searchDto}" class="search-box">
+            <form th:action="@{/std-word/list}" method="get" th:object="${searchDto}" class="search-box" id="searchForm"
+                onsubmit="handleSearchSubmit(event)">
                 <input type="hidden" name="size" th:value="*{size}">
+
                 <div class="search-input-wrapper">
                     <input type="text" th:field="*{stdWordName}" class="search-input" placeholder="단어 검색">
                     <button type="submit" class="search-btn">🔍</button>
@@ -375,10 +583,11 @@
             <div class="footer-actions" style="margin-top: 0; margin-bottom: 20px;">
                 <div class="selected-word-title">선택 표준단어</div>
                 <div class="input-group">
-                    <input type="text" class="footer-input" readonly>
-                    <input type="text" class="footer-input" readonly>
-                    <input type="text" class="footer-input" readonly>
-                    <input type="text" class="footer-input" readonly>
+                    <!-- 선택된 단어들이 표시될 입력창들입니다. -->
+                    <input type="text" name="text1" class="footer-input" readonly>
+                    <input type="text" name="text2" class="footer-input" readonly>
+                    <input type="text" name="text3" class="footer-input" readonly>
+                    <input type="text" name="text4" class="footer-input" readonly>
                     <button class="action-btn">약어명 조합 결과</button>
                     <button class="action-btn">단어명 조합 결과</button>
                 </div>
@@ -412,25 +621,20 @@
                             <td th:text="${word.domainType}">공통</td>
                             <td th:text="${word.useYn}">Y</td>
                             <td>
-                                <button class="select-btn">✓</button>
+                                <input type="checkbox" class="select-checkbox" th:value="${word.stdWordName}"
+                                    onclick="handleSelection(this)">
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <!-- Pagination -->
-            <!--   <div class="pagination" th:if="${totalPages > 0}">
-                <a th:each="i : ${#numbers.sequence(1, totalPages)}"
-                    th:href="@{/std-word/list(page=${i}, size=${searchDto.size}, stdWordName=${searchDto.stdWordName})}"
-                    th:text="${i}" th:class="${currentPage == i} ? 'page-link active' : 'page-link'">1</a>
-            </div>-->
-            <br><br>
             <!-- Page Size Selector -->
-            <div style="display: flex; justify-content: center; margin-bottom: 20px; gap: 10px; align-items: center;">
+            <div
+                style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px; gap: 10px; align-items: center;">
                 <span>페이지 당 개수:</span>
-                <select id="pageSizeSelect" onchange="changePageSize(this.value)"
-                    style="padding: 5px; border-radius: 4px; border: 1px solid #ddd;">
+                <select id="pageSizeSelect" style="padding: 5px; border-radius: 4px; border: 1px solid #ddd;"
+                    onchange="changePageSize(this.value)">
                     <option value="10" th:selected="${searchDto.size == 10}">10개</option>
                     <option value="50" th:selected="${searchDto.size == 50}">50개</option>
                     <option value="100" th:selected="${searchDto.size == 100}">100개</option>
@@ -438,19 +642,10 @@
                     <option value="500" th:selected="${searchDto.size == 500}">500개</option>
                 </select>
             </div>
+    </div>
 
-            <script>
-                function changePageSize(size) {
-                    var url = new URL(window.location.href);
-                    url.searchParams.set('size', size);
-                    url.searchParams.set('page', 1); // Reset to page 1
-                    window.location.href = url.href;
-                }
-            </script>
-
-            <!-- Footer Actions (Mockup) -->
-
-        </main>
+    <script th:src="@{/js/std_word_list.js}"></script>
+    </main>
     </div>
 
 </body>

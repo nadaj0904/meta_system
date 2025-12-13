@@ -288,7 +288,8 @@
 
             <!-- Registration Form -->
             <div class="form-container">
-                <form th:action="@{/std-word/insert}" th:object="${stdWordDto}" method="post">
+                <form th:action="@{/std-word/insert}" th:object="${stdWordDto}" method="post" id="insertForm"
+                    onsubmit="handleInsertFormSubmit(event)">
 
                     <div class="form-group">
                         <label class="form-label required">표준 단어명</label>
@@ -375,7 +376,8 @@
                     </div>
 
                     <div class="btn-area">
-                        <a th:href="@{/std-word/list}" class="btn btn-secondary">취소 / 목록</a>
+                        <a th:href="@{/std-word/list}" class="btn btn-secondary" onclick="return handleCancel(event)">취소
+                            / 목록</a>
                         <button type="submit" class="btn btn-primary">저장</button>
                     </div>
 
@@ -384,6 +386,8 @@
 
         </main>
     </div>
+
+    <script th:src="@{/js/std_word_insert.js}"></script>
 
 </body>
 
