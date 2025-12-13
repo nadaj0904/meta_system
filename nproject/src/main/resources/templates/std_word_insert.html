@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>표준단어 등록 - 표준단어 관리 시스템</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Header */
+        header {
+            height: 64px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            flex-shrink: 0;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background-color: #e3f2fd;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1976d2;
+        }
+
+        .user-area {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: #666;
+        }
+
+        .avatar {
+            width: 36px;
+            height: 36px;
+            background-color: #ddd;
+            border-radius: 50%;
+        }
+
+        /* Layout Container */
+        .container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        /* Sidebar */
+        aside {
+            width: 250px;
+            background-color: #ffffff;
+            border-right: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            flex-shrink: 0;
+        }
+
+        .menu-item {
+            padding: 12px 24px;
+            text-decoration: none;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .menu-item:hover {
+            background-color: #f5f5f5;
+        }
+
+        .menu-item.active {
+            background-color: #e3f2fd;
+            color: #1976d2;
+            border-right: 3px solid #1976d2;
+        }
+
+        /* Main Content */
+        main {
+            flex: 1;
+            padding: 24px;
+            overflow-y: auto;
+            /* Enable vertical scrolling */
+            background-color: #f4f6f8;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Page Header */
+        .page-header {
+            margin-bottom: 24px;
+        }
+
+        .page-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .page-title::before {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 24px;
+            background-color: #ff5252;
+            border-radius: 2px;
+        }
+
+        /* Form Area */
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            max-width: 800px;
+            margin: 0 auto;
+            /* Center the form */
+            width: 100%;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .form-label {
+            width: 150px;
+            font-weight: 600;
+            color: #1976d2;
+            /* Primary Blue */
+            margin-top: 8px;
+            /* Align with input text */
+        }
+
+        .form-control-wrapper {
+            flex: 1;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+
+        .form-control:focus {
+            border-color: #1976d2;
+            outline: none;
+        }
+
+        textarea.form-control {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 8px;
+        }
+
+        .radio-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* Buttons */
+        .btn-area {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: 500;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #1976d2;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #1565c0;
+        }
+
+        .btn-secondary {
+            background-color: #fff;
+            color: #555;
+            border: 1px solid #ddd;
+        }
+
+        .btn-secondary:hover {
+            background-color: #f5f5f5;
+        }
+
+        .required::after {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-area">
+            <div class="logo-icon">DB</div>
+            <span>표준단어 관리 시스템</span>
+        </div>
+        <div class="user-area">
+            <button class="icon-btn">🔔</button>
+            <button class="icon-btn">🌙</button>
+            <div class="avatar"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside>
+            <a href="#" class="menu-item">대시보드</a>
+            <a th:href="@{/std-word/list}" class="menu-item">표준단어 검색</a>
+            <a th:href="@{/std-word/insert}" class="menu-item active">표준 단어 등록</a>
+            <a href="#" class="menu-item">관리자 설정</a>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <div class="page-header">
+                <h2 class="page-title">표준단어 등록</h2>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form-container">
+                <form th:action="@{/std-word/insert}" th:object="${stdWordDto}" method="post">
+
+                    <div class="form-group">
+                        <label class="form-label required">표준 단어명</label>
+                        <div class="form-control-wrapper">
+                            <input type="text" th:field="*{stdWordName}" class="form-control"
+                                placeholder="표준 단어명을 입력하세요" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label required">영문 약어명</label>
+                        <div class="form-control-wrapper">
+                            <input type="text" th:field="*{engAbbrName}" class="form-control"
+                                placeholder="영문 약어명을 입력하세요 (예: ST_WORD)" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">영문명</label>
+                        <div class="form-control-wrapper">
+                            <input type="text" th:field="*{engFullName}" class="form-control"
+                                placeholder="영문 전체 이름을 입력하세요">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">도메인 분류명</label>
+                        <div class="form-control-wrapper">
+                            <input type="text" th:field="*{domainType}" class="form-control"
+                                placeholder="도메인 분류를 입력하세요">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">설명</label>
+                        <div class="form-control-wrapper">
+                            <textarea th:field="*{definition}" class="form-control"
+                                placeholder="단어에 대한 설명을 입력하세요"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">동의어</label>
+                        <div class="form-control-wrapper">
+                            <input type="text" th:field="*{synonyms}" class="form-control"
+                                placeholder="동의어를 쉼표(,)로 구분하여 입력하세요">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">금칙어</label>
+                        <div class="form-control-wrapper">
+                            <input type="text" th:field="*{forbiddenWords}" class="form-control"
+                                placeholder="사용 금지된 단어를 입력하세요">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">표준여부</label>
+                        <div class="form-control-wrapper">
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" th:field="*{coherenceYn}" value="Y" checked> 표준
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" th:field="*{coherenceYn}" value="N"> 비표준
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">사용여부</label>
+                        <div class="form-control-wrapper">
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" th:field="*{useYn}" value="Y" checked> 사용
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" th:field="*{useYn}" value="N"> 미사용
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-area">
+                        <a th:href="@{/std-word/list}" class="btn btn-secondary">취소 / 목록</a>
+                        <button type="submit" class="btn btn-primary">저장</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

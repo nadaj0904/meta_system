@@ -8,6 +8,9 @@ public class MetaStdWordDto {
     private String definition;
     private String domainType;
     private String useYn;
+    private String synonyms;
+    private String forbiddenWords;
+    private String coherenceYn;
     
     // Pagination and Search fields
     private int page = 1;
@@ -68,6 +71,30 @@ public class MetaStdWordDto {
 
     public void setUseYn(String useYn) {
         this.useYn = useYn;
+    }
+
+    public String getSynonyms() {
+        return synonyms;
+    }
+
+    public void setSynonyms(String synonyms) {
+        this.synonyms = synonyms;
+    }
+
+    public String getForbiddenWords() {
+        return forbiddenWords;
+    }
+
+    public void setForbiddenWords(String forbiddenWords) {
+        this.forbiddenWords = forbiddenWords;
+    }
+
+    public String getCoherenceYn() {
+        return coherenceYn;
+    }
+
+    public void setCoherenceYn(String coherenceYn) {
+        this.coherenceYn = coherenceYn;
     }
 
     public int getPage() {

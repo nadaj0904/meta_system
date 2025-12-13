@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.nproject.mapper.MetaStdInsertMapper">
+
+    <insert id="insertStdWord" parameterType="com.example.nproject.dto.MetaStdWordDto">
+        <selectKey keyProperty="wordId" resultType="int" order="BEFORE">
+            SELECT COALESCE(MAX(word_id), 0) + 1 FROM meta_std_word
+        </selectKey>
+        INSERT INTO meta_std_word (
+            word_id,
+            std_word_name,
+            eng_abbr_name,
+            eng_full_name,
+            definition,
+            domain_type,
+            synonyms,
+            forbidden_words,
+            coherence_yn,
+            use_yn,
+            registered_at,
+            created_at,
+            updated_at
+        ) VALUES (
+            #{wordId},
+            #{stdWordName},
+            #{engAbbrName},
+            #{engFullName},
+            #{definition},
+            #{domainType},
+            #{synonyms},
+            #{forbiddenWords},
+            #{coherenceYn},
+            #{useYn},
+            CURRENT_DATE,
+            NOW(),
+            NOW()
+        )
+    </insert>
+
+    <select id="countByStdWordName" parameterType="string" resultType="int">
+        SELECT COUNT(*)
+        FROM meta_std_word
+        WHERE std_word_name = #{stdWordName}
+    </select>
+
+</mapper>
