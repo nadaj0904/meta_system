@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>표준단어 수정</title>
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <link rel="stylesheet" th:href="@{/css/std_word_insert.css}">
+    <style>
+        body {
+            background-color: #fff;
+            padding: 20px 30px;
+            height: 100%;
+            overflow: hidden;
+            /* Hide scrollbar */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* For Webkit browsers (Chrome, Safari) */
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* For IE, Edge and Firefox */
+        body {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .form-container {
+            box-shadow: none;
+            padding: 0;
+            max-width: 100%;
+            flex: 1;
+        }
+
+        .page-header {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+            flex-shrink: 0;
+        }
+
+        .btn-area {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-header">
+        <h2 class="page-title">표준단어 수정</h2>
+    </div>
+
+    <div class="form-container">
+        <form id="updateForm">
+            <input type="hidden" id="wordId" th:value="${stdWordDto.wordId}">
+
+            <div class="form-group">
+                <label class="form-label required">표준 단어명</label>
+                <div class="form-control-wrapper">
+                    <input type="text" id="stdWordName" class="form-control" th:value="${stdWordDto.stdWordName}"
+                        required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label required">영문 약어명</label>
+                <div class="form-control-wrapper">
+                    <input type="text" id="engAbbrName" class="form-control" th:value="${stdWordDto.engAbbrName}"
+                        required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">영문명</label>
+                <div class="form-control-wrapper">
+                    <input type="text" id="engFullName" class="form-control" th:value="${stdWordDto.engFullName}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">도메인 분류명</label>
+                <div class="form-control-wrapper">
+                    <input type="text" id="domainType" class="form-control" th:value="${stdWordDto.domainType}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">설명</label>
+                <div class="form-control-wrapper">
+                    <textarea id="definition" class="form-control" th:text="${stdWordDto.definition}"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">사용여부</label>
+                <div class="form-control-wrapper">
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="useYn" value="Y" th:checked="${stdWordDto.useYn == 'Y'}"> 사용
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="useYn" value="N" th:checked="${stdWordDto.useYn == 'N'}"> 미사용
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-area">
+                <button type="button" class="btn btn-secondary" onclick="handleCancel()">취소</button>
+                <button type="button" class="btn btn-primary" onclick="handleUpdate()">저장</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script th:src="@{/js/std_update.js}"></script>
+</body>
+
+</html>

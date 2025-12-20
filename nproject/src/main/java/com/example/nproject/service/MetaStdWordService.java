@@ -36,4 +36,12 @@ public class MetaStdWordService {
         metaStdInsertMapper.insertStdWord(dto);
         return "SUCCESS";
     }
+
+    public void updateStdWord(MetaStdWordDto dto) {
+        metaStdWordMapper.updateStdWord(dto);
+    }
+
+    public MetaStdWordDto getStdWord(Long wordId) {
+        return metaStdWordMapper.selectStdWord(wordId);
+    }
 }

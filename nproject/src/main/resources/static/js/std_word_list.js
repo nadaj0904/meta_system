@@ -20,7 +20,7 @@ function handleSearchSubmit(event) {
     const keyword = keywordInput.value.trim();
 
     // 간단한 유효성 체크
-	/*
+    /*
     if (keyword.length === 0) {
         alert('검색어를 입력하세요.');
         keywordInput.focus();
@@ -87,4 +87,52 @@ function shiftInputs(inputs) {
     for (var i = 0; i < values.length; i++) {
         inputs[i].value = values[i];
     }
+}
+
+// 4. 모달 관련 로직
+document.addEventListener('DOMContentLoaded', function () {
+    // 테이블 행 클릭 이벤트 등록
+    var rows = document.querySelectorAll('tbody tr');
+    rows.forEach(function (row) {
+        row.addEventListener('click', function (e) {
+            // 체크박스 클릭 시에는 모달을 띄우지 않음
+            if (e.target.type === 'checkbox' || e.target.classList.contains('select-checkbox')) {
+                return;
+            }
+
+            // 데이터가 없는 행(message row)인지 확인
+            if (row.cells.length < 2) return;
+
+            var wordId = row.cells[0].innerText;
+
+            // Iframe 모달 열기
+            openUpdateModal(wordId);
+        });
+    });
+
+    // 메시지 수신 이벤트 리스너 등록
+    window.addEventListener('message', function (event) {
+        if (event.data.action === 'closeModal') {
+            closeUpdateModal();
+        } else if (event.data.action === 'reloadAndClose') {
+            closeUpdateModal();
+            location.reload();
+        }
+    });
+});
+
+function openUpdateModal(wordId) {
+    var modal = document.getElementById('updateModal');
+    var frame = document.getElementById('updateFrame');
+
+    frame.src = '/std-word/update?wordId=' + wordId;
+    modal.style.display = 'flex';
+}
+
+function closeUpdateModal() {
+    var modal = document.getElementById('updateModal');
+    var frame = document.getElementById('updateFrame');
+
+    modal.style.display = 'none';
+    frame.src = '';
 }

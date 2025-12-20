@@ -9,4 +9,8 @@ public interface MetaStdWordMapper {
     List<MetaStdWordDto> selectStdWordList(MetaStdWordDto searchDto);
 
     int countStdWordList(MetaStdWordDto searchDto);
+
+    int updateStdWord(MetaStdWordDto dto);
+
+    MetaStdWordDto selectStdWord(Long wordId);
 }

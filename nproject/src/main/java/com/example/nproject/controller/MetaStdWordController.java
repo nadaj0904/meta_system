@@ -60,4 +60,23 @@ public class MetaStdWordController {
             return "common/message";
         }
     }
+
+    @org.springframework.web.bind.annotation.PostMapping("/update")
+    @org.springframework.web.bind.annotation.ResponseBody
+    public String update(@org.springframework.web.bind.annotation.RequestBody MetaStdWordDto stdWordDto) {
+        try {
+            metaStdWordService.updateStdWord(stdWordDto);
+            return "SUCCESS";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "FAIL";
+        }
+    }
+
+    @GetMapping("/update")
+    public String updateForm(@org.springframework.web.bind.annotation.RequestParam("wordId") Long wordId, Model model) {
+        MetaStdWordDto stdWordDto = metaStdWordService.getStdWord(wordId);
+        model.addAttribute("stdWordDto", stdWordDto);
+        return "std_update"; // We will create this view
+    }
 }

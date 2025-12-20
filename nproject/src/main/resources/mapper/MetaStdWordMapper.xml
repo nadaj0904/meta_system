@@ -31,4 +31,29 @@
         </where>
     </select>
 
+    <update id="updateStdWord" parameterType="com.example.nproject.dto.MetaStdWordDto">
+        UPDATE meta_std_word
+        SET
+            std_word_name = #{stdWordName},
+            eng_abbr_name = #{engAbbrName},
+            eng_full_name = #{engFullName},
+            definition = #{definition},
+            domain_type = #{domainType},
+            use_yn = #{useYn}
+        WHERE word_id = #{wordId}
+    </update>
+
+    <select id="selectStdWord" parameterType="long" resultType="com.example.nproject.dto.MetaStdWordDto">
+        SELECT
+            word_id as wordId,
+            std_word_name as stdWordName,
+            eng_abbr_name as engAbbrName,
+            eng_full_name as engFullName,
+            definition,
+            domain_type as domainType,
+            use_yn as useYn
+        FROM meta_std_word
+        WHERE word_id = #{wordId}
+    </select>
+
 </mapper>
