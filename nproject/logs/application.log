@@ -5358,3 +5358,876 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 2025-12-20 14:35:41.092 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
 2025-12-20 14:35:41.092 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
 2025-12-20 14:35:41.092 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 14:36:27.452 INFO  [RMI TCP Connection(21)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-12-20 14:36:27.453 INFO  [RMI TCP Connection(21)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-12-20 14:36:27.466 INFO  [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-12-20 14:36:27.475 INFO  [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-12-20 21:47:15.641 INFO  [restartedMain] c.e.nproject.NprojectApplication - Starting NprojectApplication using Java 17.0.12 with PID 2952 (C:\Dev_antigravity_git\meta_system\nproject\target\classes started by jkljkl in C:\Dev_antigravity_git\meta_system\nproject)
+2025-12-20 21:47:15.643 DEBUG [restartedMain] c.e.nproject.NprojectApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-12-20 21:47:15.644 INFO  [restartedMain] c.e.nproject.NprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-20 21:47:15.681 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-20 21:47:15.682 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-20 21:47:16.204 DEBUG [restartedMain] o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-12-20 21:47:16.501 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-12-20 21:47:16.507 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-12-20 21:47:16.509 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-20 21:47:16.510 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-12-20 21:47:16.548 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-20 21:47:16.548 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 866 ms
+2025-12-20 21:47:16.859 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+2025-12-20 21:47:16.907 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-12-20 21:47:16.928 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-20 21:47:16.953 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-20 21:47:17.042 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-20 21:47:17.057 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-12-20 21:47:17.075 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2025-12-20 21:47:17.084 INFO  [restartedMain] c.e.nproject.NprojectApplication - Started NprojectApplication in 1.787 seconds (process running for 2.337)
+2025-12-20 21:47:30.662 INFO  [http-nio-0.0.0.0-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-20 21:47:30.663 INFO  [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-20 21:47:30.663 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-12-20 21:47:30.663 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-12-20 21:47:30.663 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-12-20 21:47:30.664 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@37e93473
+2025-12-20 21:47:30.665 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1f047b31
+2025-12-20 21:47:30.665 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-20 21:47:30.665 INFO  [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-20 21:47:30.675 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2025-12-20 21:47:30.687 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 21:47:30.739 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:47:30.740 INFO  [http-nio-0.0.0.0-8081-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-20 21:47:31.072 INFO  [http-nio-0.0.0.0-8081-exec-1] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6fe15d31
+2025-12-20 21:47:31.079 INFO  [http-nio-0.0.0.0-8081-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-20 21:47:31.087 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 21:47:31.103 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2025-12-20 21:47:31.164 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2025-12-20 21:47:31.170 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:47:31.171 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2025-12-20 21:47:31.171 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2025-12-20 21:47:31.206 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 21:47:31.216 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:47:31.458 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:31.477 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:47:31.477 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:31.486 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 21:47:31.486 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 21:47:31.487 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:31.487 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:31.495 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:31.495 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:31.495 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:31.565 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+2025-12-20 21:47:31.566 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:31.568 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-12-20 21:47:31.576 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-12-20 21:47:31.578 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-12-20 21:47:31.582 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-12-20 21:47:31.584 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-12-20 21:47:31.603 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-12-20 21:47:31.605 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Dec 20 21:47:31 KST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2025-12-20 21:47:31.642 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-12-20 21:47:35.577 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=2", parameters={masked}
+2025-12-20 21:47:35.577 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 21:47:35.578 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:47:35.625 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 21:47:35.625 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.selectStdWord - ==> Parameters: 2(Long)
+2025-12-20 21:47:35.636 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 21:47:35.637 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:47:35.643 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:35.649 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:47:35.649 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 21:47:35.649 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 21:47:35.650 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:35.650 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:35.650 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:35.652 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:35.652 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:35.652 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:46.055 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/std-word/list?size=10&stdWordName=%EC%82%AC%EB%9E%91", parameters={masked}
+2025-12-20 21:47:46.055 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 21:47:46.057 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:47:46.066 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE std_word_name LIKE '%' || ? || '%' ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 21:47:46.066 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.selectStdWordList - ==> Parameters: 사랑(String), 10(Integer), 0(Integer)
+2025-12-20 21:47:46.089 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.selectStdWordList - <==      Total: 0
+2025-12-20 21:47:46.090 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:47:46.091 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word WHERE std_word_name LIKE '%' || ? || '%'
+2025-12-20 21:47:46.091 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.countStdWordList - ==> Parameters: 사랑(String)
+2025-12-20 21:47:46.106 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 21:47:46.107 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:47:46.115 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:46.138 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:47:46.139 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:46.141 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 21:47:46.141 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:46.142 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 21:47:46.142 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:46.142 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:46.144 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:46.144 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:51.103 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/std-word/list?size=10&stdWordName=%EC%9D%B4%EB%B3%84", parameters={masked}
+2025-12-20 21:47:51.104 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 21:47:51.104 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:47:51.118 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE std_word_name LIKE '%' || ? || '%' ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 21:47:51.118 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.selectStdWordList - ==> Parameters: 이별(String), 10(Integer), 0(Integer)
+2025-12-20 21:47:51.130 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.selectStdWordList - <==      Total: 1
+2025-12-20 21:47:51.130 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:47:51.130 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word WHERE std_word_name LIKE '%' || ? || '%'
+2025-12-20 21:47:51.131 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.countStdWordList - ==> Parameters: 이별(String)
+2025-12-20 21:47:51.143 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 21:47:51.144 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:47:51.148 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:51.174 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:47:51.175 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 21:47:51.175 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 21:47:51.175 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:51.175 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:51.175 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:51.177 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:51.178 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:51.178 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:52.482 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=767", parameters={masked}
+2025-12-20 21:47:52.482 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 21:47:52.483 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:47:52.493 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 21:47:52.494 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - ==> Parameters: 767(Long)
+2025-12-20 21:47:52.514 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 21:47:52.515 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:47:52.520 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:52.525 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:47:52.525 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 21:47:52.525 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 21:47:52.526 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:52.526 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:52.526 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:47:52.528 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:52.528 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:47:52.528 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:49:01.973 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=767", parameters={masked}
+2025-12-20 21:49:01.973 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 21:49:01.974 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:49:01.985 DEBUG [http-nio-0.0.0.0-8081-exec-9] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 21:49:01.985 DEBUG [http-nio-0.0.0.0-8081-exec-9] c.e.n.m.M.selectStdWord - ==> Parameters: 767(Long)
+2025-12-20 21:49:01.996 DEBUG [http-nio-0.0.0.0-8081-exec-9] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 21:49:01.997 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:49:02.000 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:49:02.007 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:49:02.008 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:49:02.010 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 21:49:02.012 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:49:02.013 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:49:02.014 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 21:49:02.015 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:49:02.015 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:49:02.017 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:55:23.458 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2025-12-20 21:55:23.459 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 21:55:23.464 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:55:23.486 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 21:55:23.486 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2025-12-20 21:55:23.503 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2025-12-20 21:55:23.503 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:55:23.503 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2025-12-20 21:55:23.503 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2025-12-20 21:55:23.514 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 21:55:23.516 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:55:23.534 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:55:23.568 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:55:23.569 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:55:23.571 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 21:55:23.572 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:55:23.572 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 21:55:23.574 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:55:23.576 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:55:23.577 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:55:23.580 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:55:25.638 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+2025-12-20 21:55:25.639 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:55:25.643 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-12-20 21:55:25.643 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-12-20 21:55:25.643 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-12-20 21:55:25.644 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-12-20 21:55:25.645 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-12-20 21:55:25.646 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-12-20 21:55:25.646 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Dec 20 21:55:25 KST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2025-12-20 21:55:25.648 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-12-20 21:55:34.218 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=1", parameters={masked}
+2025-12-20 21:55:34.218 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 21:55:34.219 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:55:34.227 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 21:55:34.228 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.selectStdWord - ==> Parameters: 1(Long)
+2025-12-20 21:55:34.237 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 21:55:34.238 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:55:34.249 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:55:34.270 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:55:34.270 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 21:55:34.271 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:55:34.271 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:55:34.277 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 21:55:34.278 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:55:34.279 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:55:34.280 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:55:34.318 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:56:09.273 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - POST "/std-word/update", parameters={}
+2025-12-20 21:56:09.274 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#update(MetaStdWordDto)
+2025-12-20 21:56:09.354 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.nproject.dto.MetaStdWordDto@7724344b]
+2025-12-20 21:56:09.355 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:56:09.366 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.updateStdWord - ==>  Preparing: UPDATE meta_std_word SET std_word_name = ?, eng_abbr_name = ?, eng_full_name = ?, definition = ?, domain_type = ?, use_yn = ? WHERE word_id = ?
+2025-12-20 21:56:09.366 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.updateStdWord - ==> Parameters: ATC(String), atc(String), Aplus Group Top Confere (Test)nce(String), 우수한 성과를 달성하여 그룹사에 기여한 TFA 와 영업관리자!!(String), (String), Y(String), 1(Integer)
+2025-12-20 21:56:09.395 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.updateStdWord - <==    Updates: 1
+2025-12-20 21:56:09.397 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-12-20 21:56:09.397 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["SUCCESS"]
+2025-12-20 21:56:09.398 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:56:09.440 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2025-12-20 21:56:09.442 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 21:56:09.444 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:56:09.444 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 21:56:09.444 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2025-12-20 21:56:09.457 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2025-12-20 21:56:09.458 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:56:09.459 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2025-12-20 21:56:09.459 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2025-12-20 21:56:09.469 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 21:56:09.470 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:56:09.483 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:56:09.536 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:56:09.537 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:56:09.539 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:56:09.544 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 21:56:09.544 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 21:56:09.545 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:56:09.546 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:56:09.548 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:56:09.548 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:56:26.059 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=2", parameters={masked}
+2025-12-20 21:56:26.059 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 21:56:26.061 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:56:26.070 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 21:56:26.071 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - ==> Parameters: 2(Long)
+2025-12-20 21:56:26.089 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 21:56:26.091 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:56:26.095 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:56:26.125 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 21:56:26.125 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 21:56:26.125 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:56:26.126 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:56:26.126 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:56:26.126 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:56:26.130 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:56:26.130 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:56:26.130 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:25.284 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - POST "/std-word/update", parameters={}
+2025-12-20 21:57:25.285 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#update(MetaStdWordDto)
+2025-12-20 21:57:25.286 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.nproject.dto.MetaStdWordDto@7efe6a85]
+2025-12-20 21:57:25.286 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:57:25.296 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.updateStdWord - ==>  Preparing: UPDATE meta_std_word SET std_word_name = ?, eng_abbr_name = ?, eng_full_name = ?, definition = ?, domain_type = ?, use_yn = ? WHERE word_id = ?
+2025-12-20 21:57:25.297 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.updateStdWord - ==> Parameters: DB(String), cdb(String), Customer Database(String), 가망고객에 대한 고객의 이름·전화번호·생년월일 등 개인정보가 담긴 고객 데이터베이스.
+예) 온라인쇼핑 사이트 등에서 할인쿠폰을 제공하면서 ‘제3자의 고객정보 이용에 동의’를 묻는 경우가 있는데, 이 때 동의하면 고객의 정보가 DB로 생성된다.(String), (String), Y(String), 2(Integer)
+2025-12-20 21:57:25.309 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.updateStdWord - <==    Updates: 1
+2025-12-20 21:57:25.310 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-12-20 21:57:25.310 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["SUCCESS"]
+2025-12-20 21:57:25.311 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:25.405 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2025-12-20 21:57:25.408 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 21:57:25.410 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:57:25.410 DEBUG [http-nio-0.0.0.0-8081-exec-9] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 21:57:25.410 DEBUG [http-nio-0.0.0.0-8081-exec-9] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2025-12-20 21:57:25.427 DEBUG [http-nio-0.0.0.0-8081-exec-9] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2025-12-20 21:57:25.430 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:57:25.430 DEBUG [http-nio-0.0.0.0-8081-exec-9] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2025-12-20 21:57:25.430 DEBUG [http-nio-0.0.0.0-8081-exec-9] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2025-12-20 21:57:25.440 DEBUG [http-nio-0.0.0.0-8081-exec-9] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 21:57:25.442 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:57:25.460 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:25.540 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:57:25.540 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:57:25.544 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:25.547 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 21:57:25.547 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 21:57:25.547 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:57:25.548 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:57:25.552 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:25.552 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:39.382 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=3", parameters={masked}
+2025-12-20 21:57:39.382 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 21:57:39.382 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:57:39.391 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 21:57:39.391 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.selectStdWord - ==> Parameters: 3(Long)
+2025-12-20 21:57:39.411 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 21:57:39.413 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:57:39.416 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:39.433 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 21:57:39.433 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:57:39.434 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:57:39.434 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:57:39.435 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 21:57:39.435 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:57:39.436 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:39.436 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:39.438 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:57.724 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - POST "/std-word/update", parameters={}
+2025-12-20 21:57:57.724 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#update(MetaStdWordDto)
+2025-12-20 21:57:57.726 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.nproject.dto.MetaStdWordDto@73068280]
+2025-12-20 21:57:57.727 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:57:57.738 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.updateStdWord - ==>  Preparing: UPDATE meta_std_word SET std_word_name = ?, eng_abbr_name = ?, eng_full_name = ?, definition = ?, domain_type = ?, use_yn = ? WHERE word_id = ?
+2025-12-20 21:57:57.739 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.updateStdWord - ==> Parameters: EM(String), em(String), Education Manager(String), 교육 메니저. 그룹사 신입육성, 강의지원, 교육 프로그램, 판매보조자료 개발등의 업무를 수행하는 자(String), (String), Y(String), 3(Integer)
+2025-12-20 21:57:57.749 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.updateStdWord - <==    Updates: 1
+2025-12-20 21:57:57.750 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-12-20 21:57:57.750 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["SUCCESS"]
+2025-12-20 21:57:57.751 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:57.896 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2025-12-20 21:57:57.896 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 21:57:57.898 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:57:57.898 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 21:57:57.899 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2025-12-20 21:57:57.912 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2025-12-20 21:57:57.913 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:57:57.913 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2025-12-20 21:57:57.913 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2025-12-20 21:57:57.923 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 21:57:57.924 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:57:57.937 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:58.024 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:57:58.025 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:57:58.030 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:58.030 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 21:57:58.031 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:57:58.031 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 21:57:58.031 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:57:58.036 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:57:58.038 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:58:18.550 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=4", parameters={masked}
+2025-12-20 21:58:18.550 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 21:58:18.552 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 21:58:18.562 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 21:58:18.563 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - ==> Parameters: 4(Long)
+2025-12-20 21:58:18.573 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 21:58:18.574 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 21:58:18.580 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:58:18.732 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 21:58:18.733 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:58:18.733 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 21:58:18.734 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:58:18.737 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:58:18.737 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 21:58:18.752 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 21:58:18.752 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 21:58:18.758 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:01:28.656 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - POST "/std-word/update", parameters={}
+2025-12-20 22:01:28.657 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#update(MetaStdWordDto)
+2025-12-20 22:01:28.657 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.nproject.dto.MetaStdWordDto@7c42732e]
+2025-12-20 22:01:28.658 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:01:28.669 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.updateStdWord - ==>  Preparing: UPDATE meta_std_word SET std_word_name = ?, eng_abbr_name = ?, eng_full_name = ?, definition = ?, domain_type = ?, use_yn = ? WHERE word_id = ?
+2025-12-20 22:01:28.669 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.updateStdWord - ==> Parameters: FC(String), fc(String), Financial Consultant (TEST)(String), 보험설계사 또는 고객 재무 설계 상담사. 보험회사의 경우 보험설계사를 뜻한다.(String), (String), Y(String), 4(Integer)
+2025-12-20 22:01:28.687 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.updateStdWord - <==    Updates: 1
+2025-12-20 22:01:28.688 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-12-20 22:01:28.688 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["SUCCESS"]
+2025-12-20 22:01:28.689 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:01:28.751 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2025-12-20 22:01:28.751 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 22:01:28.753 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:01:28.753 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 22:01:28.755 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2025-12-20 22:01:28.764 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2025-12-20 22:01:28.764 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:01:28.766 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2025-12-20 22:01:28.766 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2025-12-20 22:01:28.775 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 22:01:28.776 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:01:28.783 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:01:28.840 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:01:28.840 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:01:28.843 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:01:28.843 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 22:01:28.843 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:01:28.845 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 22:01:28.846 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:01:28.846 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:01:28.848 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:02:48.626 INFO  [RMI TCP Connection(25)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-12-20 22:02:48.631 INFO  [RMI TCP Connection(25)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-12-20 22:02:48.644 INFO  [RMI TCP Connection(25)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-20 22:02:48.652 INFO  [RMI TCP Connection(25)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-20 22:04:16.867 INFO  [main] c.e.n.NprojectApplicationTests - Starting NprojectApplicationTests using Java 17.0.12 with PID 3312 (started by jkljkl in C:\Dev_antigravity_git\meta_system\nproject)
+2025-12-20 22:04:16.870 DEBUG [main] c.e.n.NprojectApplicationTests - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-12-20 22:04:16.871 INFO  [main] c.e.n.NprojectApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-12-20 22:04:16.914 DEBUG [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4ee33af7
+2025-12-20 22:04:17.835 DEBUG [main] o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-12-20 22:04:18.643 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+2025-12-20 22:04:18.735 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-12-20 22:04:18.773 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-20 22:04:18.813 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-20 22:04:18.978 INFO  [main] c.e.n.NprojectApplicationTests - Started NprojectApplicationTests in 2.625 seconds (process running for 3.706)
+2025-12-20 22:04:20.110 DEBUG [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4ee33af7, started on Sat Dec 20 22:04:16 KST 2025
+2025-12-20 22:04:29.840 INFO  [restartedMain] c.e.nproject.NprojectApplication - Starting NprojectApplication using Java 17.0.12 with PID 19684 (C:\Dev_antigravity_git\meta_system\nproject\target\classes started by jkljkl in C:\Dev_antigravity_git\meta_system\nproject)
+2025-12-20 22:04:29.842 DEBUG [restartedMain] c.e.nproject.NprojectApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-12-20 22:04:29.842 INFO  [restartedMain] c.e.nproject.NprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-20 22:04:29.893 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-20 22:04:29.893 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-20 22:04:30.511 DEBUG [restartedMain] o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-12-20 22:04:30.865 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-12-20 22:04:30.872 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-12-20 22:04:30.873 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-20 22:04:30.874 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-12-20 22:04:30.916 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-20 22:04:30.916 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1022 ms
+2025-12-20 22:04:31.276 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 14 mappings in 'requestMappingHandlerMapping'
+2025-12-20 22:04:31.330 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-12-20 22:04:31.352 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-20 22:04:31.380 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-20 22:04:31.488 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-20 22:04:31.506 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-12-20 22:04:31.524 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2025-12-20 22:04:31.533 INFO  [restartedMain] c.e.nproject.NprojectApplication - Started NprojectApplication in 2.097 seconds (process running for 2.701)
+2025-12-20 22:04:48.146 INFO  [http-nio-0.0.0.0-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-20 22:04:48.149 INFO  [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-20 22:04:48.149 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-12-20 22:04:48.149 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-12-20 22:04:48.149 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-12-20 22:04:48.151 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@37e93473
+2025-12-20 22:04:48.151 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1f047b31
+2025-12-20 22:04:48.152 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-20 22:04:48.152 INFO  [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-12-20 22:04:48.162 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2025-12-20 22:04:48.175 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 22:04:48.230 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:04:48.230 INFO  [http-nio-0.0.0.0-8081-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-20 22:04:48.572 INFO  [http-nio-0.0.0.0-8081-exec-1] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6fe15d31
+2025-12-20 22:04:48.574 INFO  [http-nio-0.0.0.0-8081-exec-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-20 22:04:48.580 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 22:04:48.592 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2025-12-20 22:04:48.613 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2025-12-20 22:04:48.620 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:04:48.621 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2025-12-20 22:04:48.621 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2025-12-20 22:04:48.633 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 22:04:48.641 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:04:48.884 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:04:48.912 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:04:48.917 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 22:04:48.918 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:04:48.918 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:04:48.922 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 22:04:48.923 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:04:48.932 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:04:48.932 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:04:48.932 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:04:49.021 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+2025-12-20 22:04:49.022 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:04:49.024 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-12-20 22:04:49.028 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-12-20 22:04:49.028 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-12-20 22:04:49.033 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-12-20 22:04:49.035 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2025-12-20 22:04:49.051 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2025-12-20 22:04:49.053 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sat Dec 20 22:04:49 KST 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2025-12-20 22:04:49.090 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-12-20 22:04:55.647 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/std-word/list?size=10&stdWordName=%EC%9D%B4%EB%B3%84", parameters={masked}
+2025-12-20 22:04:55.648 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 22:04:55.649 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:04:55.657 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE std_word_name LIKE '%' || ? || '%' ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 22:04:55.658 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.selectStdWordList - ==> Parameters: 이별(String), 10(Integer), 0(Integer)
+2025-12-20 22:04:55.669 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.selectStdWordList - <==      Total: 1
+2025-12-20 22:04:55.670 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:04:55.670 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word WHERE std_word_name LIKE '%' || ? || '%'
+2025-12-20 22:04:55.670 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.countStdWordList - ==> Parameters: 이별(String)
+2025-12-20 22:04:55.679 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 22:04:55.680 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:04:55.690 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:04:55.709 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:04:55.710 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:04:55.713 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 22:04:55.713 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:04:55.713 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 22:04:55.714 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:04:55.714 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:04:55.716 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:04:55.717 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:04:56.964 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=767", parameters={masked}
+2025-12-20 22:04:56.965 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 22:04:56.966 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:04:56.975 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 22:04:56.975 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.selectStdWord - ==> Parameters: 767(Long)
+2025-12-20 22:04:56.985 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 22:04:56.986 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:04:56.992 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:04:56.998 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 22:04:56.998 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:04:56.998 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 22:04:56.999 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:04:56.999 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:04:56.999 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:04:57.000 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:04:57.000 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:04:57.000 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:30.011 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - POST "/std-word/update", parameters={}
+2025-12-20 22:05:30.012 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#update(MetaStdWordDto)
+2025-12-20 22:05:30.040 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.nproject.dto.MetaStdWordDto@7cf3ea03]
+2025-12-20 22:05:30.041 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:05:30.049 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.updateStdWord - ==>  Preparing: UPDATE meta_std_word SET std_word_name = ?, eng_abbr_name = ?, eng_full_name = ?, definition = ?, domain_type = ?, use_yn = ? WHERE word_id = ?
+2025-12-20 22:05:30.049 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.updateStdWord - ==> Parameters: 이별  이야기(String), GOOD BYE(String), 이별(String), TEST(String), 테스트(String), Y(String), 767(Integer)
+2025-12-20 22:05:30.069 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.updateStdWord - <==    Updates: 1
+2025-12-20 22:05:30.070 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-12-20 22:05:30.070 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["SUCCESS"]
+2025-12-20 22:05:30.071 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:31.267 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/std-word/list?size=10&stdWordName=%EC%9D%B4%EB%B3%84", parameters={masked}
+2025-12-20 22:05:31.267 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 22:05:31.268 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:05:31.278 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE std_word_name LIKE '%' || ? || '%' ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 22:05:31.278 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.selectStdWordList - ==> Parameters: 이별(String), 10(Integer), 0(Integer)
+2025-12-20 22:05:31.289 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.selectStdWordList - <==      Total: 1
+2025-12-20 22:05:31.290 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:05:31.290 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word WHERE std_word_name LIKE '%' || ? || '%'
+2025-12-20 22:05:31.290 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.countStdWordList - ==> Parameters: 이별(String)
+2025-12-20 22:05:31.302 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 22:05:31.302 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:05:31.309 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:31.334 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:05:31.334 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:31.337 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:31.337 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 22:05:31.338 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 22:05:31.338 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:31.339 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:31.342 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:31.342 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:33.314 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=767", parameters={masked}
+2025-12-20 22:05:33.314 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 22:05:33.314 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:05:33.324 DEBUG [http-nio-0.0.0.0-8081-exec-9] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 22:05:33.324 DEBUG [http-nio-0.0.0.0-8081-exec-9] c.e.n.m.M.selectStdWord - ==> Parameters: 767(Long)
+2025-12-20 22:05:33.333 DEBUG [http-nio-0.0.0.0-8081-exec-9] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 22:05:33.334 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:05:33.338 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:33.344 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:05:33.344 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 22:05:33.344 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 22:05:33.344 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:33.344 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:33.344 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:33.346 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:33.346 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:33.346 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:36.934 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - POST "/std-word/update", parameters={}
+2025-12-20 22:05:36.935 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#update(MetaStdWordDto)
+2025-12-20 22:05:36.936 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.nproject.dto.MetaStdWordDto@53f94adc]
+2025-12-20 22:05:36.936 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:05:36.947 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.updateStdWord - ==>  Preparing: UPDATE meta_std_word SET std_word_name = ?, eng_abbr_name = ?, eng_full_name = ?, definition = ?, domain_type = ?, use_yn = ? WHERE word_id = ?
+2025-12-20 22:05:36.948 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.updateStdWord - ==> Parameters: 이별  이야기(String), GOOD BYE(String), 이별(String), TEST(String), 테스트(String), N(String), 767(Integer)
+2025-12-20 22:05:36.957 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.updateStdWord - <==    Updates: 1
+2025-12-20 22:05:36.957 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-12-20 22:05:36.957 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["SUCCESS"]
+2025-12-20 22:05:36.958 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:37.908 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/std-word/list?size=10&stdWordName=%EC%9D%B4%EB%B3%84", parameters={masked}
+2025-12-20 22:05:37.908 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 22:05:37.909 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:05:37.925 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE std_word_name LIKE '%' || ? || '%' ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 22:05:37.925 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.selectStdWordList - ==> Parameters: 이별(String), 10(Integer), 0(Integer)
+2025-12-20 22:05:37.935 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.selectStdWordList - <==      Total: 1
+2025-12-20 22:05:37.936 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:05:37.936 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word WHERE std_word_name LIKE '%' || ? || '%'
+2025-12-20 22:05:37.936 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.countStdWordList - ==> Parameters: 이별(String)
+2025-12-20 22:05:37.946 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 22:05:37.947 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:05:37.952 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:37.977 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:05:37.977 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:37.978 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 22:05:37.978 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 22:05:37.978 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:37.978 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:37.980 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:37.980 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:37.981 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:42.698 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=767", parameters={masked}
+2025-12-20 22:05:42.698 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 22:05:42.699 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:05:42.709 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 22:05:42.710 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - ==> Parameters: 767(Long)
+2025-12-20 22:05:42.720 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 22:05:42.720 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:05:42.724 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:42.730 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 22:05:42.730 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 22:05:42.730 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:05:42.730 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:42.730 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:42.730 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:42.732 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:42.732 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:42.732 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:49.805 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/std-word/list?size=10&stdWordName=", parameters={masked}
+2025-12-20 22:05:49.806 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 22:05:49.806 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:05:49.815 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 22:05:49.816 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2025-12-20 22:05:49.825 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2025-12-20 22:05:49.826 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:05:49.826 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2025-12-20 22:05:49.826 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2025-12-20 22:05:49.837 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 22:05:49.838 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:05:49.846 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:49.864 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:05:49.865 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:49.867 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:49.868 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 22:05:49.868 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 22:05:49.869 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:49.869 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:49.870 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:49.870 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:53.334 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/std-word/list?size=50&stdWordName=&page=1", parameters={masked}
+2025-12-20 22:05:53.334 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 22:05:53.334 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:05:53.358 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 22:05:53.359 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.selectStdWordList - ==> Parameters: 50(Integer), 0(Integer)
+2025-12-20 22:05:53.372 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.selectStdWordList - <==      Total: 50
+2025-12-20 22:05:53.373 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:05:53.373 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2025-12-20 22:05:53.373 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2025-12-20 22:05:53.384 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 22:05:53.385 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:05:53.402 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:53.413 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:05:53.413 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:53.415 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:53.416 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 22:05:53.416 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:53.418 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:53.423 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 22:05:53.424 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:53.426 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:56.048 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=4", parameters={masked}
+2025-12-20 22:05:56.048 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 22:05:56.049 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:05:56.058 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 22:05:56.058 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.selectStdWord - ==> Parameters: 4(Long)
+2025-12-20 22:05:56.068 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 22:05:56.069 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:05:56.072 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:56.077 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:05:56.077 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 22:05:56.077 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 22:05:56.077 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:56.077 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:56.077 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:05:56.079 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:56.079 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:05:56.079 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:03.031 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - POST "/std-word/update", parameters={}
+2025-12-20 22:06:03.031 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#update(MetaStdWordDto)
+2025-12-20 22:06:03.032 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.nproject.dto.MetaStdWordDto@6a9aaf7f]
+2025-12-20 22:06:03.032 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:06:03.046 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.updateStdWord - ==>  Preparing: UPDATE meta_std_word SET std_word_name = ?, eng_abbr_name = ?, eng_full_name = ?, definition = ?, domain_type = ?, use_yn = ? WHERE word_id = ?
+2025-12-20 22:06:03.046 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.updateStdWord - ==> Parameters: FC(String), fc(String), Financial Consultant(String), 보험설계사 또는 고객 재무 설계 상담사. 보험회사의 경우 보험설계사를 뜻한다.(String), (String), Y(String), 4(Integer)
+2025-12-20 22:06:03.056 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.updateStdWord - <==    Updates: 1
+2025-12-20 22:06:03.056 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-12-20 22:06:03.056 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["SUCCESS"]
+2025-12-20 22:06:03.056 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:04.486 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/std-word/list?size=50&stdWordName=&page=1", parameters={masked}
+2025-12-20 22:06:04.486 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 22:06:04.486 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:06:04.495 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 22:06:04.496 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.selectStdWordList - ==> Parameters: 50(Integer), 0(Integer)
+2025-12-20 22:06:04.508 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.selectStdWordList - <==      Total: 50
+2025-12-20 22:06:04.508 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:06:04.508 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2025-12-20 22:06:04.508 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2025-12-20 22:06:04.516 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 22:06:04.517 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:06:04.525 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:04.548 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:06:04.549 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:04.551 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:04.552 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 22:06:04.552 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 22:06:04.552 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:04.552 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:04.554 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:04.554 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:15.872 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=29", parameters={masked}
+2025-12-20 22:06:15.872 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 22:06:15.873 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:06:15.882 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 22:06:15.882 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - ==> Parameters: 29(Long)
+2025-12-20 22:06:15.890 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 22:06:15.891 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:06:15.893 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:15.899 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:06:15.899 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 22:06:15.899 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 22:06:15.899 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:15.899 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:15.899 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:15.901 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:15.901 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:15.901 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:21.151 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=43", parameters={masked}
+2025-12-20 22:06:21.151 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 22:06:21.151 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:06:21.160 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 22:06:21.160 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWord - ==> Parameters: 43(Long)
+2025-12-20 22:06:21.171 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 22:06:21.172 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:06:21.174 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:21.180 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 22:06:21.180 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:06:21.180 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 22:06:21.180 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:21.180 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:21.180 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:21.183 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:21.183 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:21.183 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:34.373 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=36", parameters={masked}
+2025-12-20 22:06:34.374 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 22:06:34.374 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:06:34.382 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 22:06:34.382 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.selectStdWord - ==> Parameters: 36(Long)
+2025-12-20 22:06:34.391 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 22:06:34.392 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:06:34.395 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:34.403 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:06:34.403 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:34.405 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 22:06:34.405 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 22:06:34.405 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:34.405 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:34.405 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:34.408 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:34.408 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:47.443 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=34", parameters={masked}
+2025-12-20 22:06:47.443 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 22:06:47.444 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:06:47.453 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 22:06:47.453 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.selectStdWord - ==> Parameters: 34(Long)
+2025-12-20 22:06:47.461 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 22:06:47.463 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:06:47.465 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:47.475 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:06:47.475 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 22:06:47.475 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:47.475 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:47.476 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 22:06:47.476 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:47.478 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:47.478 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:47.479 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:50.173 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=33", parameters={masked}
+2025-12-20 22:06:50.173 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 22:06:50.174 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:06:50.184 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 22:06:50.184 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.selectStdWord - ==> Parameters: 33(Long)
+2025-12-20 22:06:50.192 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 22:06:50.193 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:06:50.195 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:50.202 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:06:50.202 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:50.205 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 22:06:50.205 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 22:06:50.205 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:50.205 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:50.205 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:50.208 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:50.208 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:54.339 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/std-word/update?wordId=34", parameters={masked}
+2025-12-20 22:06:54.340 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#updateForm(Long, Model)
+2025-12-20 22:06:54.340 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:06:54.351 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word WHERE word_id = ?
+2025-12-20 22:06:54.351 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - ==> Parameters: 34(Long)
+2025-12-20 22:06:54.361 DEBUG [http-nio-0.0.0.0-8081-exec-8] c.e.n.m.M.selectStdWord - <==      Total: 1
+2025-12-20 22:06:54.361 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:06:54.364 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:54.371 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:06:54.372 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:54.373 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/js/std_update.js", parameters={}
+2025-12-20 22:06:54.373 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 22:06:54.374 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:54.374 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:06:54.374 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:54.376 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:06:54.376 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:19.659 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/std-word/insert", parameters={}
+2025-12-20 22:07:19.660 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#insertForm(Model)
+2025-12-20 22:07:19.660 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:07:19.668 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:19.686 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:07:19.687 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:19.687 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 22:07:19.687 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_insert.js", parameters={}
+2025-12-20 22:07:19.688 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:19.688 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:19.689 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:19.689 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:19.689 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:31.145 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2025-12-20 22:07:31.145 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 22:07:31.146 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:07:31.155 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 22:07:31.156 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2025-12-20 22:07:31.166 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2025-12-20 22:07:31.167 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:07:31.167 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2025-12-20 22:07:31.167 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2025-12-20 22:07:31.177 DEBUG [http-nio-0.0.0.0-8081-exec-6] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 22:07:31.178 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:07:31.182 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:31.204 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:07:31.205 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:31.205 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 22:07:31.205 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 22:07:31.205 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:31.205 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:31.206 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:31.206 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:31.206 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:33.136 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/std-word/insert", parameters={}
+2025-12-20 22:07:33.136 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#insertForm(Model)
+2025-12-20 22:07:33.136 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:07:33.140 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:33.158 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:07:33.159 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:33.160 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:33.160 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_insert.js", parameters={}
+2025-12-20 22:07:33.160 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 22:07:33.160 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:33.160 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:33.163 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:33.163 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:55.172 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2025-12-20 22:07:55.172 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2025-12-20 22:07:55.173 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:07:55.182 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2025-12-20 22:07:55.182 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2025-12-20 22:07:55.195 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2025-12-20 22:07:55.195 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2025-12-20 22:07:55.195 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2025-12-20 22:07:55.195 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2025-12-20 22:07:55.204 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - <==      Total: 1
+2025-12-20 22:07:55.205 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:07:55.209 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:55.227 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:07:55.227 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:55.229 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:55.232 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2025-12-20 22:07:55.232 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2025-12-20 22:07:55.233 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:55.233 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:55.234 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:55.234 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:56.776 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/std-word/insert", parameters={}
+2025-12-20 22:07:56.776 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#insertForm(Model)
+2025-12-20 22:07:56.776 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-12-20 22:07:56.780 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:56.799 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2025-12-20 22:07:56.799 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:56.801 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:56.804 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2025-12-20 22:07:56.805 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_insert.js", parameters={}
+2025-12-20 22:07:56.805 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:56.805 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-12-20 22:07:56.806 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:07:56.806 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-12-20 22:08:22.483 INFO  [RMI TCP Connection(13)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-12-20 22:08:22.486 INFO  [RMI TCP Connection(13)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2025-12-20 22:08:22.499 INFO  [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-20 22:08:22.510 INFO  [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
