@@ -586,6 +586,13 @@ td {
     color: #444;
 }
 
+td:nth-child(5) {
+    cursor: pointer;
+    color: #1976d2;
+    /* Optional: Make it look like a link */
+    font-weight: 500;
+}
+
 tr:hover td {
     background-color: #e3f2fd;
     /* Light blue hover */

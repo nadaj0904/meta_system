@@ -46,6 +46,12 @@
     font-weight: 500;
 }
 
+.summary-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
 /* Red Box Placeholders */
 .red-box {
     width: 60px;
@@ -87,20 +93,48 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     color: #444;
 }
 
+.schema-folder {
+    cursor: pointer;
+    user-select: none;
+    padding: 4px 0;
+}
+
+.schema-folder:hover {
+    background-color: #f0f4f8;
+    border-radius: 4px;
+}
+
+.tree-icon {
+    font-size: 16px;
+}
+
+.folder-icon {
+    color: #f1c40f;
+    /* Yellow folder */
+}
+
+.schema-name {
+    font-weight: 700;
+    /* Bold */
+    font-size: 14px;
+}
+
 .tree-children {
-    padding-left: 24px;
-    border-left: 1px solid #eee;
-    margin-left: 9px;
+    padding-left: 28px;
+    /* Indent */
+    /* border-left: 1px solid #eee; margin-left: 9px; - Removed lines prefers cleaner look or use dot guides */
 }
 
 .tree-toggle {
     font-size: 10px;
     cursor: pointer;
     color: #888;
+    width: 12px;
+    text-align: center;
 }
 
 /* Recent Activity */

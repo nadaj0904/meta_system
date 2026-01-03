@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.nproject.mapper.MetaStdDashboardMapper">
+
+    <select id="selectDashboardSummary" resultType="com.example.nproject.dto.DashboardSummaryDto">
+        SELECT
+            (SELECT COUNT(*) FROM information_schema.schemata WHERE schema_name = 'public') as totalSchemas,
+            (SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public') as totalTables,
+            (SELECT COUNT(*) FROM information_schema.columns WHERE table_schema = 'public') as totalColumns,
+            (SELECT COUNT(*) FROM pg_stat_user_tables WHERE schemaname = 'public' AND n_live_tup = 0) as unusedObjects
+    </select>
+
+    <select id="selectSchemaTableList" resultType="java.util.Map">
+        SELECT 
+            table_schema as "schemaName", 
+            table_name as "tableName"
+        FROM information_schema.tables
+        WHERE table_schema = 'public'
+        ORDER BY table_name
+    </select>
+
+    <select id="selectTableDetails" resultType="com.example.nproject.dto.TableDetailDto">
+        SELECT
+            #{table} as tableName,
+            (SELECT COUNT(*) FROM "${schema}"."${table}") as rowCount,
+            pg_size_pretty(pg_total_relation_size(quote_ident(#{schema}) || '.' || quote_ident(#{table}))) as tableSize,
+            'Active' as status,
+            (SELECT COUNT(*) FROM pg_indexes WHERE schemaname = #{schema} AND tablename = #{table}) as indexCount
+    </select>
+
+</mapper>

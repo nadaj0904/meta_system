@@ -103,6 +103,15 @@ document.addEventListener('DOMContentLoaded', function () {
             // 데이터가 없는 행(message row)인지 확인
             if (row.cells.length < 2) return;
 
+            // 클릭된 셀 확인 (설명 컬럼 확인)
+            const clickedCell = e.target.closest('td');
+            if (!clickedCell) return;
+
+            // 설명 컬럼(인덱스 4)이 아니면 무시
+            if (clickedCell.cellIndex !== 4) {
+                return;
+            }
+
             var wordId = row.cells[0].innerText;
 
             // Iframe 모달 열기

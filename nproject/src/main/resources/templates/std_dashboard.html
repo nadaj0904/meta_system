@@ -48,28 +48,28 @@
                     <div class="card-icon">📄</div>
                     <div class="card-info">
                         <h3>Total Schemas</h3>
-                        <div class="data-placeholder red-box"></div>
+                        <div class="summary-value" th:text="${summary.totalSchemas}">0</div>
                     </div>
                 </div>
                 <div class="card summary-card">
                     <div class="card-icon">📑</div>
                     <div class="card-info">
                         <h3>Total Tables</h3>
-                        <div class="data-placeholder red-box"></div>
+                        <div class="summary-value" th:text="${summary.totalTables}">0</div>
                     </div>
                 </div>
                 <div class="card summary-card">
                     <div class="card-icon">▦</div>
                     <div class="card-info">
                         <h3>Total Columns</h3>
-                        <div class="data-placeholder red-box"></div>
+                        <div class="summary-value" th:text="${summary.totalColumns}">0</div>
                     </div>
                 </div>
                 <div class="card summary-card">
                     <div class="card-icon">🗑️</div>
                     <div class="card-info">
                         <h3>Unused Objects</h3>
-                        <div class="data-placeholder red-box"></div>
+                        <div class="summary-value" th:text="${summary.unusedObjects}">0</div>
                     </div>
                 </div>
             </div>
@@ -79,39 +79,24 @@
                 <div class="card expanded-card">
                     <h3>Schema & Table Overview</h3>
                     <div class="schema-tree">
-                        <div class="tree-item">
-                            <span class="tree-toggle">▼</span>
-                            <span class="tree-icon">📂</span>
-                            <div class="data-placeholder inline-red-box"></div>
-                        </div>
-                        <div class="tree-children">
-                            <div class="tree-item">
-                                <span class="tree-icon">📄</span>
-                                <div class="data-placeholder inline-red-box"></div>
+                        <div th:each="schema : ${schemaTree}" class="tree-group">
+                            <div class="tree-item schema-folder" onclick="toggleTree(this)">
+                                <span class="tree-toggle">▼</span>
+                                <span class="tree-icon folder-icon">📁</span>
+                                <span class="schema-name" th:text="${schema.schemaName}">public</span>
                             </div>
-                            <div class="tree-item">
-                                <span class="tree-icon">📄</span>
-                                <div class="data-placeholder inline-red-box"></div>
-                            </div>
-                            <div class="tree-item">
-                                <span class="tree-icon">📄</span>
-                                <div class="data-placeholder inline-red-box"></div>
+                            <div class="tree-children">
+                                <div th:each="table : ${schema.tables}" class="tree-item table-item"
+                                    style="cursor: pointer;" th:data-schema="${schema.schemaName}"
+                                    th:data-table="${table}"
+                                    onclick="loadTableDetails(this.getAttribute('data-schema'), this.getAttribute('data-table'))">
+                                    <span class="tree-icon">📄</span>
+                                    <span th:text="${table}">table_name</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="tree-item" style="margin-top: 10px;">
-                            <span class="tree-toggle">▼</span>
-                            <span class="tree-icon">📂</span>
-                            <div class="data-placeholder inline-red-box"></div>
-                        </div>
-                        <div class="tree-children">
-                            <div class="tree-item">
-                                <span class="tree-icon">📄</span>
-                                <div class="data-placeholder inline-red-box"></div>
-                            </div>
-                            <div class="tree-item">
-                                <span class="tree-icon">📄</span>
-                                <div class="data-placeholder inline-red-box"></div>
-                            </div>
+                        <div th:if="${#lists.isEmpty(schemaTree)}" style="padding: 10px; color: #888;">
+                            No schemas found.
                         </div>
                     </div>
                 </div>
@@ -156,28 +141,28 @@
             <!-- Table Details -->
             <div class="card table-details-section">
                 <div class="details-header">
-                    <h3>Table Details: orders</h3>
+                    <h3>Table Details: <span id="detail-table-name">Select a table</span></h3>
                     <span class="more-options">•••</span>
                 </div>
                 <div class="details-grid">
                     <div class="detail-box">
                         <h4>Row Count</h4>
-                        <div class="data-placeholder red-box"></div>
+                        <div id="detail-row-count" class="summary-value">-</div>
                     </div>
                     <div class="detail-box">
                         <h4>Table Size</h4>
                         <div class="size-wrapper">
-                            <div class="data-placeholder red-box"></div>
-                            <span>MB</span>
+                            <div id="detail-size" class="summary-value">-</div>
+                            <!-- <span>MB</span> included in size string or handled by JS if needed, but simple string from DB is fine -->
                         </div>
                     </div>
                     <div class="detail-box">
                         <h4>Status: Active</h4>
-                        <div class="data-placeholder red-box"></div>
+                        <div id="detail-status" class="summary-value">-</div>
                     </div>
                     <div class="detail-box">
                         <h4>Indexes</h4>
-                        <div class="data-placeholder red-box"></div>
+                        <div id="detail-indexes" class="summary-value">-</div>
                     </div>
                 </div>
             </div>
@@ -185,6 +170,41 @@
         </main>
     </div>
 
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        function toggleTree(element) {
+            const children = element.nextElementSibling;
+            const toggleIcon = element.querySelector('.tree-toggle');
+
+            if (children.style.display === 'none') {
+                children.style.display = 'block';
+                toggleIcon.textContent = '▼';
+                toggleIcon.style.transform = '';
+            } else {
+                children.style.display = 'none';
+                toggleIcon.textContent = '▶';
+            }
+        }
+
+        function loadTableDetails(schema, table) {
+            // Update title immediately to show responsiveness
+            document.getElementById('detail-table-name').textContent = table;
+
+            fetch('/std-dashboard/details?schema=' + schema + '&table=' + table)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('detail-row-count').textContent = data.rowCount;
+                    document.getElementById('detail-size').textContent = data.tableSize;
+                    document.getElementById('detail-status').textContent = data.status;
+                    document.getElementById('detail-indexes').textContent = data.indexCount;
+                })
+                .catch(error => {
+                    console.error('Error fetching table details:', error);
+                    document.getElementById('detail-row-count').textContent = 'Error';
+                });
+        }
+        /*]]>*/
+    </script>
 </body>
 
 </html>
