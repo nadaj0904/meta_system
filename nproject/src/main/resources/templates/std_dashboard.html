@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>표준단어 관리 시스템 - 대시보드</title>
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <link rel="stylesheet" th:href="@{/css/std_dashboard.css}">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-area">
+            <div class="logo-icon">DB</div>
+            <span>표준단어 관리 시스템</span>
+        </div>
+        <div class="user-area">
+            <button class="icon-btn">🔔</button>
+            <button class="icon-btn">🌙</button>
+            <div class="avatar"></div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside>
+            <a th:href="@{/std-dashboard}" class="menu-item active">대시보드</a>
+            <a th:href="@{/std-word/list}" class="menu-item">표준단어 검색</a>
+            <a th:href="@{/std-word/insert}" class="menu-item">표준 단어 등록</a>
+            <a href="#" class="menu-item">관리자 설정</a>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <div class="page-header">
+                <h1 class="page-title">Metadata Management Dashboard</h1>
+            </div>
+
+            <!-- Top Summary Cards -->
+            <div class="dashboard-grid">
+                <div class="card summary-card">
+                    <div class="card-icon">📄</div>
+                    <div class="card-info">
+                        <h3>Total Schemas</h3>
+                        <div class="data-placeholder red-box"></div>
+                    </div>
+                </div>
+                <div class="card summary-card">
+                    <div class="card-icon">📑</div>
+                    <div class="card-info">
+                        <h3>Total Tables</h3>
+                        <div class="data-placeholder red-box"></div>
+                    </div>
+                </div>
+                <div class="card summary-card">
+                    <div class="card-icon">▦</div>
+                    <div class="card-info">
+                        <h3>Total Columns</h3>
+                        <div class="data-placeholder red-box"></div>
+                    </div>
+                </div>
+                <div class="card summary-card">
+                    <div class="card-icon">🗑️</div>
+                    <div class="card-info">
+                        <h3>Unused Objects</h3>
+                        <div class="data-placeholder red-box"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-row">
+                <!-- Schema & Table Overview -->
+                <div class="card expanded-card">
+                    <h3>Schema & Table Overview</h3>
+                    <div class="schema-tree">
+                        <div class="tree-item">
+                            <span class="tree-toggle">▼</span>
+                            <span class="tree-icon">📂</span>
+                            <div class="data-placeholder inline-red-box"></div>
+                        </div>
+                        <div class="tree-children">
+                            <div class="tree-item">
+                                <span class="tree-icon">📄</span>
+                                <div class="data-placeholder inline-red-box"></div>
+                            </div>
+                            <div class="tree-item">
+                                <span class="tree-icon">📄</span>
+                                <div class="data-placeholder inline-red-box"></div>
+                            </div>
+                            <div class="tree-item">
+                                <span class="tree-icon">📄</span>
+                                <div class="data-placeholder inline-red-box"></div>
+                            </div>
+                        </div>
+                        <div class="tree-item" style="margin-top: 10px;">
+                            <span class="tree-toggle">▼</span>
+                            <span class="tree-icon">📂</span>
+                            <div class="data-placeholder inline-red-box"></div>
+                        </div>
+                        <div class="tree-children">
+                            <div class="tree-item">
+                                <span class="tree-icon">📄</span>
+                                <div class="data-placeholder inline-red-box"></div>
+                            </div>
+                            <div class="tree-item">
+                                <span class="tree-icon">📄</span>
+                                <div class="data-placeholder inline-red-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity & Changes -->
+                <div class="card recent-activity">
+                    <h3>Recent Activity & Changes</h3>
+                    <table class="activity-table">
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>User</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="data-placeholder full-width-red-box"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="data-placeholder full-width-red-box"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="data-placeholder full-width-red-box"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="data-placeholder full-width-red-box"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Table Details -->
+            <div class="card table-details-section">
+                <div class="details-header">
+                    <h3>Table Details: orders</h3>
+                    <span class="more-options">•••</span>
+                </div>
+                <div class="details-grid">
+                    <div class="detail-box">
+                        <h4>Row Count</h4>
+                        <div class="data-placeholder red-box"></div>
+                    </div>
+                    <div class="detail-box">
+                        <h4>Table Size</h4>
+                        <div class="size-wrapper">
+                            <div class="data-placeholder red-box"></div>
+                            <span>MB</span>
+                        </div>
+                    </div>
+                    <div class="detail-box">
+                        <h4>Status: Active</h4>
+                        <div class="data-placeholder red-box"></div>
+                    </div>
+                    <div class="detail-box">
+                        <h4>Indexes</h4>
+                        <div class="data-placeholder red-box"></div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
