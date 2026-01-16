@@ -26,16 +26,16 @@
     <div class="container">
         <!-- Sidebar -->
         <aside>
-            <a th:href="@{/std-dashboard}" class="menu-item">대시보드</a>
+            <a th:href="@{/metasystem/std-dashboard}" class="menu-item">대시보드</a>
             <a href="#" class="menu-item active">표준단어 검색</a>
-            <a th:href="@{/std-word/insert}" class="menu-item">표준 단어 등록</a>
+            <a th:href="@{/metasystem/std-word/insert}" class="menu-item">표준 단어 등록</a>
             <a href="#" class="menu-item">관리자 설정</a>
         </aside>
 
         <!-- Main Content -->
         <main>
             <!-- Search Form -->
-            <form th:action="@{/std-word/list}" method="get" th:object="${searchDto}" class="search-box" id="searchForm"
+            <form th:action="@{/metasystem/std-word/list}" method="get" th:object="${searchDto}" class="search-box" id="searchForm"
                 onsubmit="handleSearchSubmit(event)">
                 <input type="hidden" name="size" th:value="*{size}">
 
@@ -43,7 +43,7 @@
                     <input type="text" th:field="*{stdWordName}" class="search-input" placeholder="단어 검색">
                     <button type="submit" class="search-btn">🔍</button>
                 </div>
-                <a th:href="@{/std-word/list}" class="reset-btn">초기화</a>
+                <a th:href="@{/metasystem/std-word/list}" class="reset-btn">초기화</a>
             </form>
 
             <!-- Footer Actions (Moved) -->

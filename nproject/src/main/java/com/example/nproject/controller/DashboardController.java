@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/std-dashboard")
+@RequestMapping("/metasystem/std-dashboard")
 public class DashboardController {
 
     @org.springframework.beans.factory.annotation.Autowired

@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example.nproject</groupId>
-	<artifactId>nproject</artifactId>
-	<version>0.8</version>
-	<packaging>jar</packaging>
+	<artifactId>ROOT</artifactId>
+	<version>0106</version>
+	<packaging>war</packaging>
 	<name>nproject</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>

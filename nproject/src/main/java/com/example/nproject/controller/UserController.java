@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/metasystem/users")
 public class UserController {
 
     private final Map<Long, UserDto> userMap = new ConcurrentHashMap<>();
