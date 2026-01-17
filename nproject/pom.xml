@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example.nproject</groupId>
-	<artifactId>ROOT</artifactId>
-	<version>0106</version>
+	<artifactId>metasystem</artifactId>
+	<version>1.0</version>
 	<packaging>war</packaging>
 	<name>nproject</name>
 	<description>Demo project for Spring Boot</description>
@@ -76,6 +76,8 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		
+		<finalName>metasystem</finalName>
 	</build>
 
 </project>

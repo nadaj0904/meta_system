@@ -10,15 +10,15 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
-@RequestMapping("/metasystem/users")
+@RequestMapping("/users")
 public class UserController {
 
-    private final Map<Long, UserDto> userMap = new ConcurrentHashMap<>();
+    private final Map<String, UserDto> userMap = new ConcurrentHashMap<>();
     private final AtomicLong idGenerator = new AtomicLong(1);
 
     @PostMapping
     public UserDto createUser(@RequestBody UserDto userDto) {
-        Long id = idGenerator.getAndIncrement();
+        String id = String.valueOf(idGenerator.getAndIncrement());
         userDto.setId(id);
         userMap.put(id, userDto);
         return userDto;
@@ -30,12 +30,12 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public UserDto getUser(@PathVariable Long id) {
+    public UserDto getUser(@PathVariable String id) {
         return userMap.get(id);
     }
 
     @PutMapping("/{id}")
-    public UserDto updateUser(@PathVariable Long id, @RequestBody UserDto userDto) {
+    public UserDto updateUser(@PathVariable String id, @RequestBody UserDto userDto) {
         if (userMap.containsKey(id)) {
             userDto.setId(id);
             userMap.put(id, userDto);
@@ -45,7 +45,7 @@ public class UserController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteUser(@PathVariable Long id) {
+    public void deleteUser(@PathVariable String id) {
         userMap.remove(id);
     }
 }

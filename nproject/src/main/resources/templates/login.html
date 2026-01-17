@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 - 표준단어 관리 시스템</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+    <!-- Google Fonts as per specification/style -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="login-container">
+        <!-- Left Image Section -->
+        <div class="login-image-section">
+            <img th:src="@{/images/login_logo.png}" alt="Wealth Tech Essential Insurance Logo">
+            <div class="branding-text">
+                로고 이미지<br>
+                재테크의 필수 보험
+            </div>
+            <div class="copyright" style="position: absolute; bottom: 30px;">
+                COPYRIGHT 2026. moriahstory ALL RIGHTS RESERVED.
+            </div>
+        </div>
+
+        <!-- Right Form Section -->
+        <div class="login-form-section">
+            <div class="logo-header">
+                <span class="logo-badge">로고 이미지</span>
+                <span class="company-name">GA보험 판매 회사</span>
+            </div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="text" id="userId" class="form-control" placeholder="아이디" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" class="form-control" placeholder="비밀번호" required>
+                </div>
+
+                <button type="submit" class="login-btn">로그인</button>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="saveId">
+                    <label for="saveId">아이디저장</label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script th:src="@{/js/login.js}"></script>
+</body>
+
+</html>

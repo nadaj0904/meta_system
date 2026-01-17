@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Inter', 'Noto Sans KR', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.login-image-section {
+    width: 50%;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #eee;
+}
+
+.login-image-section img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.branding-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.login-form-section {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.logo-badge {
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #495057;
+    margin-right: 10px;
+    border: 1px solid #ced4da;
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* Important for padding not to affect width */
+}
+
+.form-control:focus {
+    border-color: #00a8ff;
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00a8ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #008ecc;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.checkbox-group input {
+    margin-right: 8px;
+}
+
+.checkbox-group label {
+    font-size: 14px;
+    color: #666;
+}
+
+.copyright {
+    margin-top: auto;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}

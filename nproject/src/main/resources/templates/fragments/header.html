@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<header th:fragment="header">
+    <div class="logo-area">
+        <div class="header-logo-box">
+            <span class="logo-text">로고 이미지</span>
+        </div>
+        <span class="company-name">GA보험 판매 전문 회사</span>
+    </div>
+    <div class="user-area">
+        <div class="timer-wrapper">
+            <span class="timer-icon">🕒</span>
+            <span id="sessionTimer">60:00</span>
+            <button id="extendTimerBtn" class="extend-btn">연장</button>
+        </div>
+        <div class="user-info">
+            <span th:if="${session.LOGIN_USER != null}" th:text="${session.LOGIN_USER.name} + ' TFA'">홍길동 TFA</span>
+            <span th:unless="${session.LOGIN_USER != null}">GUEST</span>
+        </div>
+        <button id="logoutBtn" class="icon-btn logout-btn">
+            ↩️
+        </button>
+    </div>
+
+    <!-- Logout Modal -->
+    <div id="logoutModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <p>로그아웃 하시겠습니까?</p>
+            <div class="modal-actions">
+                <button id="cancelLogoutBtn" class="modal-btn cancel">취소</button>
+                <button id="confirmLogoutBtn" class="modal-btn confirm">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <script th:src="@{/js/header.js}"></script>
+</header>
+
+</html>

@@ -15,24 +15,14 @@
 <body>
 
     <!-- Header -->
-    <header>
-        <div class="logo-area">
-            <div class="logo-icon">DB</div>
-            <span>표준단어 관리 시스템</span>
-        </div>
-        <div class="user-area">
-            <button class="icon-btn">🔔</button>
-            <button class="icon-btn">🌙</button>
-            <div class="avatar"></div>
-        </div>
-    </header>
+    <header th:replace="fragments/header :: header"></header>
 
     <div class="container">
         <!-- Sidebar -->
         <aside>
-            <a th:href="@{/metasystem/std-dashboard}" class="menu-item active">대시보드</a>
-            <a th:href="@{/metasystem/std-word/list}" class="menu-item">표준단어 검색</a>
-            <a th:href="@{/metasystem/std-word/insert}" class="menu-item">표준 단어 등록</a>
+            <a th:href="@{/std-dashboard}" class="menu-item active">대시보드</a>
+            <a th:href="@{/std-word/list}" class="menu-item">표준단어 검색</a>
+            <a th:href="@{/std-word/insert}" class="menu-item">표준 단어 등록</a>
             <a href="#" class="menu-item">관리자 설정</a>
         </aside>
 
@@ -190,7 +180,7 @@
             // Update title immediately to show responsiveness
             document.getElementById('detail-table-name').textContent = table;
 
-            fetch('/metasystem/std-dashboard/details?schema=' + schema + '&table=' + table)
+            fetch('/std-dashboard/details?schema=' + schema + '&table=' + table)
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('detail-row-count').textContent = data.rowCount;

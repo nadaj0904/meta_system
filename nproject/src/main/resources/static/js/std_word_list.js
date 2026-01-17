@@ -134,7 +134,9 @@ function openUpdateModal(wordId) {
     var modal = document.getElementById('updateModal');
     var frame = document.getElementById('updateFrame');
 
-    frame.src = '/metasystem/std-word/update?wordId=' + wordId;
+    alert('gg');
+
+    frame.src = '/std-word/update?wordId=' + wordId;
     modal.style.display = 'flex';
 }
 

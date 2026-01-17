@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Controller
-@RequestMapping("/metasystem/std-word")
+@RequestMapping("/std-word")
 public class MetaStdWordController {
 
     @Autowired
@@ -52,11 +52,11 @@ public class MetaStdWordController {
 
         if ("DUPLICATE".equals(result)) {
             model.addAttribute("message", "중복된 단어가 있습니다.");
-            model.addAttribute("searchUrl", "/metasystem/std-word/insert");
+            model.addAttribute("searchUrl", "/std-word/insert");
             return "common/message"; // Assuming a common message view exists, or use script injection
         } else {
             model.addAttribute("message", "등록이 완료되었습니다.");
-            model.addAttribute("searchUrl", "/metasystem/std-word/list");
+            model.addAttribute("searchUrl", "/std-word/list");
             return "common/message";
         }
     }

@@ -11,24 +11,14 @@
 <body>
 
     <!-- Header -->
-    <header>
-        <div class="logo-area">
-            <div class="logo-icon">DB</div>
-            <span>표준단어 관리 시스템</span>
-        </div>
-        <div class="user-area">
-            <button class="icon-btn">🔔</button>
-            <button class="icon-btn">🌙</button>
-            <div class="avatar"></div>
-        </div>
-    </header>
+    <header th:replace="fragments/header :: header"></header>
 
     <div class="container">
         <!-- Sidebar -->
         <aside>
-            <a th:href="@{/metasystem/std-dashboard}" class="menu-item">대시보드</a>
-            <a th:href="@{/metasystem/std-word/list}" class="menu-item">표준단어 검색</a>
-            <a th:href="@{/metasystem/std-word/insert}" class="menu-item active">표준 단어 등록</a>
+            <a th:href="@{/std-dashboard}" class="menu-item">대시보드</a>
+            <a th:href="@{/std-word/list}" class="menu-item">표준단어 검색</a>
+            <a th:href="@{/std-word/insert}" class="menu-item active">표준 단어 등록</a>
             <a href="#" class="menu-item">관리자 설정</a>
         </aside>
 
@@ -40,7 +30,7 @@
 
             <!-- Registration Form -->
             <div class="form-container">
-                <form th:action="@{/metasystem/std-word/insert}" th:object="${stdWordDto}" method="post" id="insertForm"
+                <form th:action="@{/std-word/insert}" th:object="${stdWordDto}" method="post" id="insertForm"
                     onsubmit="handleInsertFormSubmit(event)">
 
                     <div class="form-group">
@@ -128,7 +118,7 @@
                     </div>
 
                     <div class="btn-area">
-                        <a th:href="@{/metasystem/std-word/list}" class="btn btn-secondary" onclick="return handleCancel(event)">취소
+                        <a th:href="@{/std-word/list}" class="btn btn-secondary" onclick="return handleCancel(event)">취소
                             / 목록</a>
                         <button type="submit" class="btn btn-primary">저장</button>
                     </div>

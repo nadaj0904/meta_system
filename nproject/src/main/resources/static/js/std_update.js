@@ -31,7 +31,7 @@ function handleUpdate() {
             useYn: useYn
         };
 
-        fetch('/metasystem/std-word/update', {
+        fetch('/std-word/update', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
