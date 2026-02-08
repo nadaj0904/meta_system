@@ -1,0 +1,415 @@
+2026-02-01 08:22:09.909 INFO  [restartedMain] c.e.nproject.NprojectApplication - Starting NprojectApplication using Java 17.0.12 with PID 18112 (C:\Dev_antigravity_git\meta_system\nproject\target\classes started by jkljkl in C:\Dev_antigravity_git\meta_system\nproject)
+2026-02-01 08:22:09.913 DEBUG [restartedMain] c.e.nproject.NprojectApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-02-01 08:22:09.914 INFO  [restartedMain] c.e.nproject.NprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-01 08:22:09.959 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-01 08:22:09.959 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-01 08:22:10.708 DEBUG [restartedMain] o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2026-02-01 08:22:11.067 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-02-01 08:22:11.075 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-02-01 08:22:11.077 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-01 08:22:11.077 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-02-01 08:22:11.120 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-01 08:22:11.120 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1160 ms
+2026-02-01 08:22:11.433 INFO  [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2026-02-01 08:22:11.500 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 19 mappings in 'requestMappingHandlerMapping'
+2026-02-01 08:22:11.566 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-02-01 08:22:11.591 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-02-01 08:22:11.620 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-02-01 08:22:11.733 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-01 08:22:11.753 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-02-01 08:22:11.773 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-02-01 08:22:11.782 INFO  [restartedMain] c.e.nproject.NprojectApplication - Started NprojectApplication in 2.26 seconds (process running for 2.741)
+2026-02-01 08:23:16.241 INFO  [http-nio-0.0.0.0-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-01 08:23:16.242 INFO  [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-01 08:23:16.243 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2026-02-01 08:23:16.243 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2026-02-01 08:23:16.243 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2026-02-01 08:23:16.244 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@690cb319
+2026-02-01 08:23:16.245 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3ba7ca31
+2026-02-01 08:23:16.245 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-01 08:23:16.245 INFO  [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-02-01 08:23:16.254 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2026-02-01 08:23:16.267 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.LoginController#loginPage()
+2026-02-01 08:23:16.288 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:23:16.523 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:23:16.547 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/login.css", parameters={}
+2026-02-01 08:23:16.549 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/js/login.js", parameters={}
+2026-02-01 08:23:16.549 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/images/login_logo.png", parameters={}
+2026-02-01 08:23:16.553 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:23:16.553 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:23:16.553 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:23:16.567 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:23:16.572 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:23:16.582 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:23:16.877 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+2026-02-01 08:23:16.878 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:23:16.881 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-02-01 08:23:16.884 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-02-01 08:23:16.885 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2026-02-01 08:23:16.889 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2026-02-01 08:23:16.891 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-02-01 08:23:16.908 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2026-02-01 08:23:16.912 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Feb 01 08:23:16 KST 2026, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2026-02-01 08:23:16.944 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2026-02-01 08:23:21.638 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+2026-02-01 08:23:21.638 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MainController#index()
+2026-02-01 08:23:21.639 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:23:21.647 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:23:21.668 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/landing.css", parameters={}
+2026-02-01 08:23:21.669 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:23:21.685 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:06.018 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2026-02-01 08:24:06.018 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.LoginController#loginPage()
+2026-02-01 08:24:06.019 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:06.024 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:06.043 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/images/login_logo.png", parameters={}
+2026-02-01 08:24:06.043 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/js/login.js", parameters={}
+2026-02-01 08:24:06.043 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/css/login.css", parameters={}
+2026-02-01 08:24:06.044 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:06.044 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:06.044 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:06.046 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:06.046 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:06.051 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:19.853 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - POST "/login", parameters={}
+2026-02-01 08:24:19.854 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.LoginController#login(LoginDto, HttpSession)
+2026-02-01 08:24:19.889 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.nproject.dto.LoginDto@341550a1]
+2026-02-01 08:24:19.939 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:19.940 INFO  [http-nio-0.0.0.0-8081-exec-3] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-01 08:24:20.342 INFO  [http-nio-0.0.0.0-8081-exec-3] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f450c22
+2026-02-01 08:24:20.343 INFO  [http-nio-0.0.0.0-8081-exec-3] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-01 08:24:20.352 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.mapper.LoginMapper.login - ==>  Preparing: SELECT user_id as id, user_name as name, '' as email FROM meta_user WHERE user_id = ? AND password = ?
+2026-02-01 08:24:20.371 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.mapper.LoginMapper.login - ==> Parameters: cat(String), 1234!!(String)
+2026-02-01 08:24:20.523 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.mapper.LoginMapper.login - <==      Total: 1
+2026-02-01 08:24:20.531 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2026-02-01 08:24:20.531 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["SUCCESS"]
+2026-02-01 08:24:20.532 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:21.997 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/std-dashboard", parameters={}
+2026-02-01 08:24:21.998 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.DashboardController#dashboard(Model)
+2026-02-01 08:24:21.998 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:22.006 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectDashboardSummary - ==>  Preparing: SELECT (SELECT COUNT(*) FROM information_schema.schemata WHERE schema_name = 'public') as totalSchemas, (SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public') as totalTables, (SELECT COUNT(*) FROM information_schema.columns WHERE table_schema = 'public') as totalColumns, (SELECT COUNT(*) FROM pg_stat_user_tables WHERE schemaname = 'public' AND n_live_tup = 0) as unusedObjects
+2026-02-01 08:24:22.007 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectDashboardSummary - ==> Parameters: 
+2026-02-01 08:24:22.257 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectDashboardSummary - <==      Total: 1
+2026-02-01 08:24:22.259 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:22.259 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectSchemaTableList - ==>  Preparing: SELECT table_schema as "schemaName", table_name as "tableName" FROM information_schema.tables WHERE table_schema = 'public' ORDER BY table_name
+2026-02-01 08:24:22.260 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectSchemaTableList - ==> Parameters: 
+2026-02-01 08:24:22.272 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectSchemaTableList - <==      Total: 3
+2026-02-01 08:24:22.275 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:22.315 WARN  [http-nio-0.0.0.0-8081-exec-2] o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-0.0.0.0-8081-exec-2][std_dashboard] Deprecated unwrapped fragment expression "fragments/header :: header" found in template std_dashboard, line 18, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-02-01 08:24:22.390 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:22.406 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-02-01 08:24:22.407 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:22.410 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/std_dashboard.css", parameters={}
+2026-02-01 08:24:22.410 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:22.411 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/header.js", parameters={}
+2026-02-01 08:24:22.412 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:22.424 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:22.424 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:22.442 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:24.153 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/std-word/insert", parameters={}
+2026-02-01 08:24:24.153 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#insertForm(Model)
+2026-02-01 08:24:24.154 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:24.177 WARN  [http-nio-0.0.0.0-8081-exec-7] o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-0.0.0.0-8081-exec-7][std_word_insert] Deprecated unwrapped fragment expression "fragments/header :: header" found in template std_word_insert, line 14, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-02-01 08:24:24.193 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:24.210 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-02-01 08:24:24.210 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2026-02-01 08:24:24.210 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:24.210 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:24.211 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/js/header.js", parameters={}
+2026-02-01 08:24:24.211 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_insert.js", parameters={}
+2026-02-01 08:24:24.211 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:24.211 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:24.212 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:24.213 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:24.225 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:24.237 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:24.689 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2026-02-01 08:24:24.690 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2026-02-01 08:24:24.711 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:24.720 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2026-02-01 08:24:24.722 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2026-02-01 08:24:24.751 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2026-02-01 08:24:24.751 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:24.751 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2026-02-01 08:24:24.751 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2026-02-01 08:24:24.780 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.countStdWordList - <==      Total: 1
+2026-02-01 08:24:24.782 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:24.806 WARN  [http-nio-0.0.0.0-8081-exec-3] o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-0.0.0.0-8081-exec-3][std_word_list] Deprecated unwrapped fragment expression "fragments/header :: header" found in template std_word_list, line 14, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-02-01 08:24:24.828 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:24.844 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-02-01 08:24:24.845 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/js/header.js", parameters={}
+2026-02-01 08:24:24.845 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2026-02-01 08:24:24.845 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:24.845 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2026-02-01 08:24:24.845 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:24.846 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:24.846 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:24.847 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:24.849 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:24.864 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:24.880 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.012 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/std-word/insert", parameters={}
+2026-02-01 08:24:27.012 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#insertForm(Model)
+2026-02-01 08:24:27.013 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:27.015 WARN  [http-nio-0.0.0.0-8081-exec-7] o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-0.0.0.0-8081-exec-7][std_word_insert] Deprecated unwrapped fragment expression "fragments/header :: header" found in template std_word_insert, line 14, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-02-01 08:24:27.022 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.039 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-02-01 08:24:27.040 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:27.042 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2026-02-01 08:24:27.042 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/header.js", parameters={}
+2026-02-01 08:24:27.042 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_insert.js", parameters={}
+2026-02-01 08:24:27.043 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:27.043 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:27.044 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:27.045 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.045 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.047 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.047 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.496 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2026-02-01 08:24:27.497 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2026-02-01 08:24:27.497 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:27.507 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2026-02-01 08:24:27.508 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2026-02-01 08:24:27.519 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2026-02-01 08:24:27.520 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:27.520 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2026-02-01 08:24:27.520 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2026-02-01 08:24:27.528 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.m.M.countStdWordList - <==      Total: 1
+2026-02-01 08:24:27.529 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:27.531 WARN  [http-nio-0.0.0.0-8081-exec-3] o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-0.0.0.0-8081-exec-3][std_word_list] Deprecated unwrapped fragment expression "fragments/header :: header" found in template std_word_list, line 14, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-02-01 08:24:27.542 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.557 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-02-01 08:24:27.557 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:27.559 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2026-02-01 08:24:27.559 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2026-02-01 08:24:27.559 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/js/header.js", parameters={}
+2026-02-01 08:24:27.560 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:27.560 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:27.560 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:27.561 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.562 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.562 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.563 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.918 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/std-dashboard", parameters={}
+2026-02-01 08:24:27.919 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.DashboardController#dashboard(Model)
+2026-02-01 08:24:27.919 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:27.919 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.selectDashboardSummary - ==>  Preparing: SELECT (SELECT COUNT(*) FROM information_schema.schemata WHERE schema_name = 'public') as totalSchemas, (SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public') as totalTables, (SELECT COUNT(*) FROM information_schema.columns WHERE table_schema = 'public') as totalColumns, (SELECT COUNT(*) FROM pg_stat_user_tables WHERE schemaname = 'public' AND n_live_tup = 0) as unusedObjects
+2026-02-01 08:24:27.919 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.selectDashboardSummary - ==> Parameters: 
+2026-02-01 08:24:27.947 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.selectDashboardSummary - <==      Total: 1
+2026-02-01 08:24:27.947 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:27.948 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.selectSchemaTableList - ==>  Preparing: SELECT table_schema as "schemaName", table_name as "tableName" FROM information_schema.tables WHERE table_schema = 'public' ORDER BY table_name
+2026-02-01 08:24:27.948 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.selectSchemaTableList - ==> Parameters: 
+2026-02-01 08:24:27.959 DEBUG [http-nio-0.0.0.0-8081-exec-7] c.e.n.m.M.selectSchemaTableList - <==      Total: 3
+2026-02-01 08:24:27.961 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:27.963 WARN  [http-nio-0.0.0.0-8081-exec-7] o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-0.0.0.0-8081-exec-7][std_dashboard] Deprecated unwrapped fragment expression "fragments/header :: header" found in template std_dashboard, line 18, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-02-01 08:24:27.969 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.984 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-02-01 08:24:27.985 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:27.987 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.989 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/std_dashboard.css", parameters={}
+2026-02-01 08:24:27.989 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/header.js", parameters={}
+2026-02-01 08:24:27.990 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:27.990 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:27.992 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:27.992 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:28.886 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2026-02-01 08:24:28.886 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2026-02-01 08:24:28.886 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:28.895 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2026-02-01 08:24:28.895 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2026-02-01 08:24:28.906 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2026-02-01 08:24:28.906 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:28.906 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2026-02-01 08:24:28.906 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2026-02-01 08:24:28.916 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - <==      Total: 1
+2026-02-01 08:24:28.917 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:28.918 WARN  [http-nio-0.0.0.0-8081-exec-1] o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-0.0.0.0-8081-exec-1][std_word_list] Deprecated unwrapped fragment expression "fragments/header :: header" found in template std_word_list, line 14, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-02-01 08:24:28.930 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:28.944 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-02-01 08:24:28.945 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:28.947 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2026-02-01 08:24:28.948 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/header.js", parameters={}
+2026-02-01 08:24:28.948 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2026-02-01 08:24:28.948 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:28.948 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:28.948 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:28.948 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:28.950 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:28.950 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:28.950 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:31.988 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/std-word/list?size=50&page=1", parameters={masked}
+2026-02-01 08:24:31.989 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2026-02-01 08:24:31.990 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:31.998 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2026-02-01 08:24:31.999 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectStdWordList - ==> Parameters: 50(Integer), 0(Integer)
+2026-02-01 08:24:32.011 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectStdWordList - <==      Total: 50
+2026-02-01 08:24:32.012 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:32.012 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2026-02-01 08:24:32.012 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2026-02-01 08:24:32.025 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.countStdWordList - <==      Total: 1
+2026-02-01 08:24:32.026 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:32.028 WARN  [http-nio-0.0.0.0-8081-exec-2] o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-0.0.0.0-8081-exec-2][std_word_list] Deprecated unwrapped fragment expression "fragments/header :: header" found in template std_word_list, line 14, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-02-01 08:24:32.037 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:32.053 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-02-01 08:24:32.054 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:32.056 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:32.058 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2026-02-01 08:24:32.059 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/header.js", parameters={}
+2026-02-01 08:24:32.059 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:32.060 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:32.060 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2026-02-01 08:24:32.061 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:32.062 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:32.063 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:32.063 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:33.876 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/std-word/insert", parameters={}
+2026-02-01 08:24:33.876 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#insertForm(Model)
+2026-02-01 08:24:33.877 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:33.878 WARN  [http-nio-0.0.0.0-8081-exec-1] o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-0.0.0.0-8081-exec-1][std_word_insert] Deprecated unwrapped fragment expression "fragments/header :: header" found in template std_word_insert, line 14, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-02-01 08:24:33.884 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:33.903 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-02-01 08:24:33.903 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:33.906 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:33.909 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/js/header.js", parameters={}
+2026-02-01 08:24:33.909 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2026-02-01 08:24:33.910 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:33.910 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:33.910 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_insert.js", parameters={}
+2026-02-01 08:24:33.911 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:33.912 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:33.912 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:33.912 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.035 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/std-word/insert", parameters={}
+2026-02-01 08:24:35.036 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#insertForm(Model)
+2026-02-01 08:24:35.036 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:35.037 WARN  [http-nio-0.0.0.0-8081-exec-2] o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-0.0.0.0-8081-exec-2][std_word_insert] Deprecated unwrapped fragment expression "fragments/header :: header" found in template std_word_insert, line 14, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-02-01 08:24:35.043 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.055 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-02-01 08:24:35.056 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:35.056 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/js/header.js", parameters={}
+2026-02-01 08:24:35.056 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_insert.js", parameters={}
+2026-02-01 08:24:35.056 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_insert.css", parameters={}
+2026-02-01 08:24:35.056 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:35.056 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:35.056 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:35.058 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.058 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.058 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.058 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.502 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2026-02-01 08:24:35.503 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2026-02-01 08:24:35.503 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:35.512 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - ==>  Preparing: SELECT word_id as wordId, std_word_name as stdWordName, eng_abbr_name as engAbbrName, eng_full_name as engFullName, definition, domain_type as domainType, use_yn as useYn FROM meta_std_word ORDER BY word_id LIMIT ? OFFSET ?
+2026-02-01 08:24:35.512 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - ==> Parameters: 10(Integer), 0(Integer)
+2026-02-01 08:24:35.522 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.selectStdWordList - <==      Total: 10
+2026-02-01 08:24:35.523 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:35.523 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - ==>  Preparing: SELECT COUNT(*) FROM meta_std_word
+2026-02-01 08:24:35.523 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - ==> Parameters: 
+2026-02-01 08:24:35.532 DEBUG [http-nio-0.0.0.0-8081-exec-1] c.e.n.m.M.countStdWordList - <==      Total: 1
+2026-02-01 08:24:35.533 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:35.534 WARN  [http-nio-0.0.0.0-8081-exec-1] o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-0.0.0.0-8081-exec-1][std_word_list] Deprecated unwrapped fragment expression "fragments/header :: header" found in template std_word_list, line 14, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-02-01 08:24:35.539 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.554 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-02-01 08:24:35.554 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:35.557 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.561 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/std_word_list.js", parameters={}
+2026-02-01 08:24:35.561 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/js/header.js", parameters={}
+2026-02-01 08:24:35.561 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/std_word_list.css", parameters={}
+2026-02-01 08:24:35.561 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:35.561 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:35.561 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:35.563 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.563 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.563 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.914 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/std-dashboard", parameters={}
+2026-02-01 08:24:35.914 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.DashboardController#dashboard(Model)
+2026-02-01 08:24:35.914 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:35.915 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectDashboardSummary - ==>  Preparing: SELECT (SELECT COUNT(*) FROM information_schema.schemata WHERE schema_name = 'public') as totalSchemas, (SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = 'public') as totalTables, (SELECT COUNT(*) FROM information_schema.columns WHERE table_schema = 'public') as totalColumns, (SELECT COUNT(*) FROM pg_stat_user_tables WHERE schemaname = 'public' AND n_live_tup = 0) as unusedObjects
+2026-02-01 08:24:35.915 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectDashboardSummary - ==> Parameters: 
+2026-02-01 08:24:35.945 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectDashboardSummary - <==      Total: 1
+2026-02-01 08:24:35.946 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-02-01 08:24:35.946 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectSchemaTableList - ==>  Preparing: SELECT table_schema as "schemaName", table_name as "tableName" FROM information_schema.tables WHERE table_schema = 'public' ORDER BY table_name
+2026-02-01 08:24:35.946 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectSchemaTableList - ==> Parameters: 
+2026-02-01 08:24:35.956 DEBUG [http-nio-0.0.0.0-8081-exec-2] c.e.n.m.M.selectSchemaTableList - <==      Total: 3
+2026-02-01 08:24:35.957 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:35.958 WARN  [http-nio-0.0.0.0-8081-exec-2] o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-0.0.0.0-8081-exec-2][std_dashboard] Deprecated unwrapped fragment expression "fragments/header :: header" found in template std_dashboard, line 18, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2026-02-01 08:24:35.962 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.977 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-02-01 08:24:35.978 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:35.980 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/js/header.js", parameters={}
+2026-02-01 08:24:35.980 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/css/std_dashboard.css", parameters={}
+2026-02-01 08:24:35.980 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:35.980 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:35.980 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.982 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:35.982 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:42.959 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/logout", parameters={}
+2026-02-01 08:24:42.959 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.LoginController#logout(HttpSession)
+2026-02-01 08:24:42.963 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.view.RedirectView - View name 'redirect:', model {}
+2026-02-01 08:24:42.964 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+2026-02-01 08:24:42.967 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2026-02-01 08:24:42.967 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.LoginController#loginPage()
+2026-02-01 08:24:42.968 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:24:42.971 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:42.988 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/login.css", parameters={}
+2026-02-01 08:24:42.989 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:42.991 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:42.996 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/images/login_logo.png", parameters={}
+2026-02-01 08:24:42.996 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/js/login.js", parameters={}
+2026-02-01 08:24:42.997 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:42.997 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:24:42.999 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:24:43.001 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:25:17.690 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/std-word/list", parameters={}
+2026-02-01 08:25:17.691 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MetaStdWordController#list(MetaStdWordDto, Model)
+2026-02-01 08:25:17.691 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+2026-02-01 08:25:17.698 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2026-02-01 08:25:17.698 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.LoginController#loginPage()
+2026-02-01 08:25:17.699 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:25:17.701 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:25:17.718 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/login.css", parameters={}
+2026-02-01 08:25:17.719 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:25:17.721 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:25:17.723 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/js/login.js", parameters={}
+2026-02-01 08:25:17.723 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/images/login_logo.png", parameters={}
+2026-02-01 08:25:17.724 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:25:17.724 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:25:17.726 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:25:17.732 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:25:47.140 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2026-02-01 08:25:47.140 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.LoginController#loginPage()
+2026-02-01 08:25:47.141 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:25:47.144 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:25:47.181 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/login.css", parameters={}
+2026-02-01 08:25:47.182 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:25:47.183 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/images/login_logo.png", parameters={}
+2026-02-01 08:25:47.186 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:25:47.186 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/js/login.js", parameters={}
+2026-02-01 08:25:47.186 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:25:47.187 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:25:47.190 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:25:47.196 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:25:54.428 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+2026-02-01 08:25:54.429 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MainController#index()
+2026-02-01 08:25:54.429 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:25:54.431 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:25:54.454 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/landing.css", parameters={}
+2026-02-01 08:25:54.454 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:25:54.456 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:33:06.027 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2026-02-01 08:33:06.028 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.LoginController#loginPage()
+2026-02-01 08:33:06.028 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-02-01 08:33:06.031 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:33:06.055 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/login.css", parameters={}
+2026-02-01 08:33:06.055 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:33:06.059 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/js/login.js", parameters={}
+2026-02-01 08:33:06.059 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/images/login_logo.png", parameters={}
+2026-02-01 08:33:06.060 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:33:06.060 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-02-01 08:33:06.062 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:33:06.063 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 08:33:06.064 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-02-01 09:20:44.957 INFO  [RMI TCP Connection(68)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-02-01 09:20:44.970 INFO  [RMI TCP Connection(68)-127.0.0.1] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-02-01 09:20:44.987 INFO  [RMI TCP Connection(68)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-01 09:20:44.995 INFO  [RMI TCP Connection(68)-127.0.0.1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

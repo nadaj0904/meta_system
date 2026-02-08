@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NADA.J Service</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header (Based on index2.html) -->
+    <header>
+        <div class="logo">
+           <!--- <img src="img/symbol.png" alt=""> -->
+			<img th:src="@{/img/symbol.png}">
+            <!--<span>NADA.J</span> -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">company</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </nav>
+        <a href="/login" class="login-button">
+            <div class="login-btn">로그인</div>
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>보험설명,<br>매번 같은 말로 반복하고 계시진 않나요?</h1>
+            <p>보험을 잘 모르는 고객도 한 번에 이해할 수 있게<br>정리된 설계사용 마케팅 콘텐츠 서비스</p>
+        </div>
+        <div class="hero-image">
+            <!--<img src="img/main_image.png" alt="Main Hero Image">-->
+			<img th:src="@{/img/main_image.png}">
+        </div>
+    </section>
+
+    <!-- Problem & Solution Section -->
+    <section class="problem-solution">
+        <h2>Problem & Solution</h2>
+        <div class="content">
+            <img src="/img/sub1_image.png" alt="Problem Solution Image">
+            <div class="text-box">
+                <p><strong>보험을 잘 모르는 고객도 한 번에 이해할 수 있게 정리된 설계사용 마케팅 콘텐츠 서비스</strong></p>
+                <p>복잡한 보험 약관과 설명을 직관적인 이미지와 쉬운 언어로 풀어내어, 고객의 이해를 돕고 설계사의 상담 효율을 극대화합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="key-features">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="/img/sub1_image.png" alt="Feature 1">
+                <h3>설명은 줄이고, 이해는 높이세요</h3>
+                <p>직관적인 시각 자료로 긴 설명 없이도 고객이 핵심을 파악할 수 있습니다.</p>
+            </div>
+            <div class="feature-card">
+                <img src="/img/sub2_image.png" alt="Feature 2">
+                <h3>상담 전에 준비하는 단 하나의 자료</h3>
+                <p>상담에 필요한 모든 핵심 정보를 하나의 콘텐츠에 담아 준비 시간을 단축합니다.</p>
+            </div>
+            <div class="feature-card">
+                <img src="/img/sub3_image.png" alt="Feature 3">
+                <h3>심의 기준을 고려한 안전한 표현 중심</h3>
+                <p>엄격한 심의 기준을 준수하여 안전하게 사용할 수 있는 마케팅 표현만을 담았습니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            Copyright © NADA.J All rights reserved. Provided By NC
+        </div>
+    </footer>
+
+</body>
+
+</html>
