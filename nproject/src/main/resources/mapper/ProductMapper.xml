@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.nproject.mapper.ProductMapper">
+
+    <!-- 보험사 조회 -->
+    <select id="selectCompanyList" resultType="com.example.nproject.dto.ProductCompanyDto">
+        SELECT
+            company_id AS companyId,
+            company_code AS companyCode,
+            company_name AS companyName,
+            company_type_code AS companyTypeCode
+        FROM tb_product_company
+        WHERE is_active = true
+        <if test="insuranceTypeCode != null and insuranceTypeCode != '' and insuranceTypeCode != 'ALL'">
+            AND company_type_code = #{insuranceTypeCode}
+        </if>
+        ORDER BY company_name
+    </select>
+
+    <!-- 상품 조회 -->
+    <select id="selectProductList" resultType="com.example.nproject.dto.ProductMasterDto">
+        SELECT
+            p.product_id AS productId,
+            p.company_id AS companyId,
+            p.product_name AS productName,
+            p.product_status_code AS productStatusCode,
+            p.sales_channel AS salesChannel,
+            p.sale_start_date AS saleStartDate
+        FROM tb_product_master p
+        JOIN tb_product_company c ON p.company_id = c.company_id
+        WHERE p.is_active = true
+        <if test="companyCode != null and companyCode != '' and companyCode != 'ALL'">
+            AND c.company_code = #{companyCode}
+        </if>
+        ORDER BY p.product_name
+    </select>
+
+    <!-- 자료 유형 조회 -->
+    <select id="selectMaterialTypeList" resultType="java.util.Map">
+        SELECT
+            type_code AS code,
+            type_name AS name
+        FROM tb_product_material_type
+        WHERE is_active = true
+        ORDER BY sort_order
+    </select>
+
+    <!-- 조건에 맞는 마케팅 자료 조회 -->
+    <select id="selectMaterialList" resultType="com.example.nproject.dto.ProductMaterialDto">
+        SELECT
+            m.material_id AS materialId,
+            p.product_id AS productId,
+            p.product_name AS productName,
+            c.company_name AS companyName,
+            m.material_title AS materialTitle,
+            t.type_name AS materialTypeName,
+            v.file_path AS fileUrl,
+            v.file_extension AS fileExtension,
+            CASE
+                WHEN t.type_code = 'SUMMARY' THEN 'fa-file-lines'
+                WHEN t.type_code = 'TERMS' THEN 'fa-book'
+                WHEN t.type_code = 'METHODS' THEN 'fa-briefcase'
+                WHEN t.type_code = 'BROCHURE' THEN 'fa-image'
+                WHEN t.type_code = 'NEEDS' THEN 'fa-lightbulb'
+                ELSE 'fa-file'
+            END AS iconClass
+        FROM tb_product_material_version v
+        JOIN tb_product_material m ON v.material_id = m.material_id
+        JOIN tb_product_master p ON m.product_id = p.product_id
+        JOIN tb_product_company c ON p.company_id = c.company_id
+        JOIN tb_product_material_type t ON m.material_type_id = t.material_type_id
+        WHERE v.is_current = true
+          AND m.is_active = true
+          AND p.is_active = true
+        <if test="companyCode != null and companyCode != '' and companyCode != 'ALL'">
+            AND c.company_code = #{companyCode}
+        </if>
+        <if test="insuranceTypeCode != null and insuranceTypeCode != '' and insuranceTypeCode != 'ALL'">
+            AND c.company_type_code = #{insuranceTypeCode}
+        </if>
+        <if test="productId != null and productId != '' and productId != '0'">
+            AND p.product_id = #{productId}
+        </if>
+        <if test="materialTypeCode != null and materialTypeCode != '' and materialTypeCode != 'ALL'">
+            AND t.type_code = #{materialTypeCode}
+        </if>
+        ORDER BY m.created_at DESC
+    </select>
+
+</mapper>

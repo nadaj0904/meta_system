@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+/* 
+   vibe_login_v1 - Senior Vibe Coder's Signature Design
+   Glassmorphism + Mobile-First + Premium Motion
+*/
+
+:root {
+    /* Premium Color Palette */
+    --vibe-primary: #3BA0A8;
+    --vibe-primary-light: #5ABCB9;
+    --vibe-secondary: #2550AA;
+    --vibe-bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    --vibe-glass: rgba(255, 255, 255, 0.85);
+    --vibe-text-main: #2D3436;
+    --vibe-text-sub: #636E72;
+    --vibe-border: rgba(255, 255, 255, 0.3);
+
+    /* Layout Tokens */
+    --vibe-radius: 24px;
+    --vibe-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    --vibe-transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---- Reset & Base ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Inter', 'Noto Sans KR', sans-serif;
+    background: var(--vibe-bg-gradient);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: var(--vibe-text-main);
+    overflow-x: hidden;
+}
+
+/* ---- Container (Mobile-First) ---- */
+#vibe-login-root {
+    width: 100%;
+    max-width: 420px;
+    background: var(--vibe-glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: var(--vibe-radius);
+    box-shadow: var(--vibe-shadow);
+    border: 1px solid var(--vibe-border);
+    overflow: hidden;
+    animation: slideUp 0.6s var(--vibe-transition) forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---- Image Section (Hidden on Mobile, Optional) ---- */
+.login-image-section {
+    display: none;
+    /* Mobile optimization: minimize height */
+}
+
+/* ---- Form Section ---- */
+.vibe-form-body {
+    padding: 40px 24px;
+}
+
+.form-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.form-subtitle {
+    font-size: 0.9rem;
+    color: var(--vibe-text-sub);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* ---- Input Styles ---- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--vibe-text-main);
+    opacity: 0.8;
+}
+
+.input-container {
+    position: relative;
+}
+
+.form-control {
+    width: 100%;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: var(--vibe-text-main);
+    transition: all 0.3s var(--vibe-transition);
+}
+
+.form-control:focus {
+    outline: none;
+    background: #fff;
+    border-color: var(--vibe-primary);
+    box-shadow: 0 4px 12px rgba(59, 160, 168, 0.1);
+}
+
+/* ---- Password Toggle ---- */
+.password-wrapper {
+    position: relative;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--vibe-text-sub);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---- Options & Checkbox ---- */
+.options-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    user-select: none;
+}
+
+.checkbox-group input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--vibe-primary);
+    cursor: pointer;
+}
+
+.forgot-password {
+    font-size: 0.85rem;
+    color: var(--vibe-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ---- Action Button ---- */
+.login-btn {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, var(--vibe-primary-light) 0%, var(--vibe-primary) 100%);
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s var(--vibe-transition);
+    box-shadow: 0 8px 20px rgba(59, 160, 168, 0.3);
+}
+
+.login-btn:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+}
+
+/* ---- Secondary Actions ---- */
+.signup-link {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--vibe-text-sub);
+}
+
+.signup-link a {
+    color: var(--vibe-primary);
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 4px;
+}
+
+/* ---- Desktop Refinement ---- */
+@media (min-width: 769px) {
+    #vibe-login-root {
+        max-width: 900px;
+        flex-direction: row;
+        min-height: 560px;
+    }
+
+    .login-image-section {
+        display: flex;
+        width: 45%;
+        background: var(--vibe-secondary);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .login-image-section::before {
+        content: '';
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+        top: -50%;
+        left: -50%;
+        animation: rotate 10s linear infinite;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .branding-text {
+        font-size: 1.8rem;
+        font-weight: 800;
+        text-align: center;
+        z-index: 1;
+        line-height: 1.4;
+    }
+
+    .art-image-wrapper {
+        margin-top: 40px;
+        z-index: 1;
+    }
+
+    .art-image {
+        width: 280px;
+        filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.2));
+    }
+
+    .vibe-form-body {
+        width: 55%;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-title {
+        text-align: left;
+    }
+
+    .form-subtitle {
+        text-align: left;
+    }
+}

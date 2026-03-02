@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 .then(result => {
                     if (result === 'SUCCESS') {
                         alert('로그인이 되었습니다');
-                        window.location.href = '/std-dashboard';
+                        window.location.href = '/product/list';
                     } else {
                         alert('로그인 정보가 올바르지 않습니다.');
                     }

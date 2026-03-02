@@ -1,0 +1,330 @@
+/* ================== CSS Reset 및 변수 설정 ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+:root {
+    /* 컬러 팔레트 (Antigravity 규칙 기반) */
+    --bg-body: #EFF4FF;
+    /* 화면 배경 */
+    --bg-menu: #B1CDFF;
+    /* 메뉴바 배경 */
+    --color-menu: #005EA3;
+    /* 메뉴바 텍스트 컬러 */
+    --bg-btn: #B1CDFF;
+    /* 버튼 배경 */
+    --color-btn: #46BE83;
+    /* 버튼 텍스트 컬러 */
+    --color-primary: #217AFF;
+    /* 포인트 블루 컬러 */
+
+    /* UI 가이드 변수 */
+    --radius-btn: 8px;
+    --radius-card: 12px;
+    --spacing: 8px;
+    --font-size-base: 14px;
+}
+
+/* ================== Layout Grid 구조 ================== */
+body {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 60px 1fr auto;
+    grid-template-areas:
+        "aside header"
+        "aside main"
+        "aside footer";
+    background-color: var(--bg-body);
+    font-size: var(--font-size-base);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* 반응형 모바일/패드 레이아웃 */
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+
+    .sidebar {
+        display: none !important;
+        /* 모바일에서 aside 숨김 처리 */
+    }
+}
+
+/* ================== Header ================== */
+.header {
+    grid-area: header;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 calc(var(--spacing) * 3);
+}
+
+.header__logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--color-menu);
+}
+
+.header__controls {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing) * 2);
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing) * 0.5);
+    font-weight: 500;
+}
+
+/* 공통 버튼 스타일 */
+.btn {
+    background-color: var(--bg-btn);
+    color: var(--color-btn);
+    border: none;
+    border-radius: var(--radius-btn);
+    padding: calc(var(--spacing)) calc(var(--spacing) * 2);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s, filter 0.2s;
+    font-size: var(--font-size-base);
+}
+
+.btn:hover {
+    filter: brightness(0.95);
+}
+
+/* 검색 등에 쓰이는 Primary 버튼 */
+.btn--primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background-color: var(--color-menu);
+    filter: none;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing);
+}
+
+.logout-btn {
+    cursor: pointer;
+    color: #666;
+    font-size: 1.25rem;
+    transition: color 0.2s;
+}
+
+.logout-btn:hover {
+    color: var(--color-primary);
+}
+
+/* ================== Aside (Sidebar) ================== */
+.sidebar {
+    grid-area: aside;
+    background-color: var(--bg-menu);
+    color: var(--color-menu);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.sidebar__header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 calc(var(--spacing) * 3);
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar__menu {
+    flex-grow: 1;
+    padding: calc(var(--spacing) * 2) 0;
+    list-style: none;
+}
+
+.sidebar__item {
+    padding: calc(var(--spacing) * 1.5) calc(var(--spacing) * 3);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing) * 1.5);
+}
+
+.sidebar__item:hover,
+.sidebar__item--active {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: var(--color-primary);
+}
+
+.sidebar__footer {
+    padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sidebar__footer:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ================== Main Content ================== */
+.main-content {
+    grid-area: main;
+    padding: calc(var(--spacing) * 3);
+}
+
+/* 검색 영역 Section */
+.search-section {
+    background: #fff;
+    padding: calc(var(--spacing) * 2);
+    border-radius: var(--radius-card);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: calc(var(--spacing) * 3);
+    display: flex;
+    gap: calc(var(--spacing) * 1.5);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-section__select {
+    padding: calc(var(--spacing)) calc(var(--spacing) * 1.5);
+    border: 1px solid #ddd;
+    border-radius: var(--radius-btn);
+    font-size: var(--font-size-base);
+    outline: none;
+    flex: 1;
+    min-width: 150px;
+}
+
+.search-section__select:focus {
+    border-color: var(--color-primary);
+}
+
+/* 상품 카드 리스트 Section */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--spacing) * 3);
+}
+
+@media (max-width: 1024px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+        /* 1024px 이하 2열 */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-list {
+        grid-template-columns: 1fr;
+        /* 768px 이하 1열 */
+    }
+
+    .search-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-section__select {
+        width: 100%;
+    }
+}
+
+.product-card {
+    background: #fff;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 카드 hover 상태 구현 */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.product-card__img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+}
+
+.product-card__body {
+    padding: calc(var(--spacing) * 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing);
+}
+
+.product-card__btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing);
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: calc(var(--spacing)) calc(var(--spacing) * 2);
+    border-radius: var(--radius-btn);
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #333;
+    width: 100%;
+    justify-content: center;
+    font-size: var(--font-size-base);
+}
+
+.product-card__btn:hover {
+    background: var(--bg-body);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.product-card__icon {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+
+/* ================== Footer ================== */
+.footer {
+    grid-area: footer;
+    text-align: center;
+    padding: calc(var(--spacing) * 3);
+    color: #888;
+    font-size: 0.85rem;
+}
