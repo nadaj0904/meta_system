@@ -41,7 +41,8 @@
     <main class="main-content">
 
         <!-- A. 상품 검색 영역 (section) -->
-        <section class="search-section">
+        <section class="search-section"
+            style="position: sticky; top: 60px; z-index: 40; background-color: #0b1120; padding: 12px 24px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 24px; margin-top: 8px;">
             <select id="sel-insurance-type" class="search-section__select">
                 <option value="ALL">전체</option>
                 <option value="LIFE">생명보험</option>
@@ -60,9 +61,15 @@
         </section>
 
         <!-- B. 카드 리스트 영역 (section > article) -->
-        <section class="product-list" id="card-container">
+        <section class="product-list" id="card-container"
+            style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; padding: 1.5rem 0;">
             <!-- 자바스크립트를 이용해 동적으로 article 태그가 삽입됩니다 -->
         </section>
+
+        <!-- C. 페이지네이션 영역 -->
+        <div id="pagination-container" class="pagination"
+            style="display: flex; justify-content: center; gap: 0.5rem; padding: 1rem 0 2rem 0; align-items: center;">
+        </div>
 
     </main>
 
