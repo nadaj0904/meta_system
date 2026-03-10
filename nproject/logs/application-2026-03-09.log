@@ -1,0 +1,301 @@
+2026-03-09 04:37:50.485 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h25m40s2ms648µs500ns).
+2026-03-09 05:53:13.603 WARN  [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=42m52s581ms559µs100ns).
+2026-03-09 06:02:42.855 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 35 class path changes (0 additions, 32 deletions, 3 modifications)
+2026-03-09 06:02:42.978 INFO  [Thread-5] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-03-09 06:02:43.074 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-09 06:02:43.103 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-09 06:02:44.222 INFO  [restartedMain] c.e.nproject.NprojectApplication - Starting NprojectApplication using Java 17.0.12 with PID 11552 (C:\Dev_antigravity_git\meta_system\nproject\target\classes started by jkljkl in C:\Dev_antigravity_git\meta_system\nproject)
+2026-03-09 06:02:44.222 DEBUG [restartedMain] c.e.nproject.NprojectApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-09 06:02:44.222 INFO  [restartedMain] c.e.nproject.NprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-09 06:02:45.274 WARN  [restartedMain] o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.nproject]' package. Please check your configuration.
+2026-03-09 06:02:45.426 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-03-09 06:02:45.426 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-03-09 06:02:45.427 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-09 06:02:45.430 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-09 06:02:45.478 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-09 06:02:45.478 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1237 ms
+2026-03-09 06:02:45.893 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+2026-03-09 06:02:45.956 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-03-09 06:02:45.969 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-03-09 06:02:45.975 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-03-09 06:02:46.216 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-03-09 06:02:46.228 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-03-09 06:02:46.234 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-03-09 06:02:46.275 INFO  [restartedMain] c.e.nproject.NprojectApplication - Started NprojectApplication in 2.89 seconds (process running for 48203.94)
+2026-03-09 06:02:46.278 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-03-09 06:02:47.853 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 32 class path changes (32 additions, 0 deletions, 0 modifications)
+2026-03-09 06:02:47.857 INFO  [Thread-7] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-03-09 06:02:48.208 INFO  [restartedMain] c.e.nproject.NprojectApplication - Starting NprojectApplication using Java 17.0.12 with PID 11552 (C:\Dev_antigravity_git\meta_system\nproject\target\classes started by jkljkl in C:\Dev_antigravity_git\meta_system\nproject)
+2026-03-09 06:02:48.209 DEBUG [restartedMain] c.e.nproject.NprojectApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-09 06:02:48.209 INFO  [restartedMain] c.e.nproject.NprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-09 06:02:49.109 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-03-09 06:02:49.113 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-03-09 06:02:49.114 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-09 06:02:49.114 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-09 06:02:49.155 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-09 06:02:49.155 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 939 ms
+2026-03-09 06:02:49.473 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 24 mappings in 'requestMappingHandlerMapping'
+2026-03-09 06:02:49.542 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-03-09 06:02:49.556 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-03-09 06:02:49.602 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-03-09 06:02:49.745 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-03-09 06:02:49.782 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-03-09 06:02:49.795 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-03-09 06:02:49.815 INFO  [restartedMain] c.e.nproject.NprojectApplication - Started NprojectApplication in 1.75 seconds (process running for 48207.482)
+2026-03-09 06:02:49.823 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-03-09 06:02:52.070 INFO  [main] c.e.n.controller.MainControllerTest - Starting MainControllerTest using Java 17.0.12 with PID 7632 (started by jkljkl in C:\Dev_antigravity_git\meta_system\nproject)
+2026-03-09 06:02:52.075 DEBUG [main] c.e.n.controller.MainControllerTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-09 06:02:52.077 INFO  [main] c.e.n.controller.MainControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-09 06:02:52.098 DEBUG [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5328a9c1
+2026-03-09 06:02:53.806 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2026-03-09 06:02:54.042 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-03-09 06:02:54.112 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-03-09 06:02:54.211 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-03-09 06:02:54.412 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-03-09 06:02:54.414 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-03-09 06:02:54.428 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 9 ms
+2026-03-09 06:02:54.484 INFO  [main] c.e.n.controller.MainControllerTest - Started MainControllerTest in 2.923 seconds (process running for 4.338)
+2026-03-09 06:02:58.627 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MainController#index()
+2026-03-09 06:02:58.674 DEBUG [main] o.s.w.s.v.ContentNegotiatingViewResolver - Selected '*/*' given [*/*]
+2026-03-09 06:02:59.596 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.nproject.NprojectApplicationTests]: NprojectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-09 06:02:59.636 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.nproject.NprojectApplication for test class com.example.nproject.NprojectApplicationTests
+2026-03-09 06:02:59.665 INFO  [main] o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2026-03-09 06:02:59.767 INFO  [main] c.e.n.NprojectApplicationTests - Starting NprojectApplicationTests using Java 17.0.12 with PID 7632 (started by jkljkl in C:\Dev_antigravity_git\meta_system\nproject)
+2026-03-09 06:02:59.770 DEBUG [main] c.e.n.NprojectApplicationTests - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-09 06:02:59.770 INFO  [main] c.e.n.NprojectApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-03-09 06:02:59.774 DEBUG [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@74bbc273
+2026-03-09 06:03:00.699 DEBUG [main] o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2026-03-09 06:03:02.775 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 24 mappings in 'requestMappingHandlerMapping'
+2026-03-09 06:03:03.001 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-03-09 06:03:03.067 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-03-09 06:03:03.114 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-03-09 06:03:03.735 INFO  [main] c.e.n.NprojectApplicationTests - Started NprojectApplicationTests in 4.064 seconds (process running for 13.588)
+2026-03-09 06:03:03.841 DEBUG [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@5328a9c1, started on Mon Mar 09 06:02:52 KST 2026
+2026-03-09 06:03:03.868 DEBUG [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@74bbc273, started on Mon Mar 09 06:02:59 KST 2026
+2026-03-09 06:03:47.724 INFO  [http-nio-0.0.0.0-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-09 06:03:47.724 INFO  [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-09 06:03:47.724 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2026-03-09 06:03:47.724 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2026-03-09 06:03:47.724 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2026-03-09 06:03:47.726 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@75c5d0a3
+2026-03-09 06:03:47.726 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7b02206b
+2026-03-09 06:03:47.726 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-03-09 06:03:47.726 INFO  [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-03-09 06:03:47.727 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+2026-03-09 06:03:47.727 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MainController#index()
+2026-03-09 06:03:47.735 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-09 06:03:47.770 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:47.834 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2026-03-09 06:03:47.835 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:47.836 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/img/sub5_image.png", parameters={}
+2026-03-09 06:03:47.836 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/img/main%20image2.png", parameters={}
+2026-03-09 06:03:47.836 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/img/symbol.png", parameters={}
+2026-03-09 06:03:47.838 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:47.838 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:47.838 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:47.839 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/img/sub1_image.png", parameters={}
+2026-03-09 06:03:47.839 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/img/sub2_image.png", parameters={}
+2026-03-09 06:03:47.840 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:47.840 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:47.845 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:47.846 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:47.847 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/img/sub3_image.png", parameters={}
+2026-03-09 06:03:47.847 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:47.847 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:47.849 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:47.851 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:47.852 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:47.855 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:49.699 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2026-03-09 06:03:49.699 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.LoginController#loginPage()
+2026-03-09 06:03:49.702 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-09 06:03:49.715 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:49.736 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/login2.css", parameters={}
+2026-03-09 06:03:49.737 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:49.740 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/images/login_logo.png", parameters={}
+2026-03-09 06:03:49.740 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/js/login2.js", parameters={}
+2026-03-09 06:03:49.740 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:49.740 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:49.742 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:49.744 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:49.747 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:57.886 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - POST "/login", parameters={}
+2026-03-09 06:03:57.887 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.LoginController#login(LoginDto, HttpSession)
+2026-03-09 06:03:57.892 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.nproject.dto.LoginDto@6a00b5d1]
+2026-03-09 06:03:57.895 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-03-09 06:03:57.895 INFO  [http-nio-0.0.0.0-8081-exec-3] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-03-09 06:03:58.071 INFO  [http-nio-0.0.0.0-8081-exec-3] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@2b3dbfea
+2026-03-09 06:03:58.071 INFO  [http-nio-0.0.0.0-8081-exec-3] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-03-09 06:03:58.071 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.mapper.LoginMapper.login - ==>  Preparing: SELECT user_id as id, user_name as name, '' as email FROM meta_user WHERE user_id = ? AND password = ?
+2026-03-09 06:03:58.073 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.mapper.LoginMapper.login - ==> Parameters: cat(String), 1234!!(String)
+2026-03-09 06:03:58.107 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.mapper.LoginMapper.login - <==      Total: 1
+2026-03-09 06:03:58.108 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2026-03-09 06:03:58.110 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["SUCCESS"]
+2026-03-09 06:03:58.110 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.330 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/product/list", parameters={}
+2026-03-09 06:03:59.331 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#productList()
+2026-03-09 06:03:59.333 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-09 06:03:59.345 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.369 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-09 06:03:59.369 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.372 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_product_list.js", parameters={}
+2026-03-09 06:03:59.373 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.387 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.419 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.430 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/api/products/companies?insuranceTypeCode=ALL", parameters={masked}
+2026-03-09 06:03:59.432 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductApiController#getCompanies(String)
+2026-03-09 06:03:59.432 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/api/products/material-types", parameters={}
+2026-03-09 06:03:59.432 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductApiController#getMaterialTypes()
+2026-03-09 06:03:59.433 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-03-09 06:03:59.434 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/01.PNG", parameters={}
+2026-03-09 06:03:59.434 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/02.PNG", parameters={}
+2026-03-09 06:03:59.434 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/03.PNG", parameters={}
+2026-03-09 06:03:59.434 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-03-09 06:03:59.435 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.435 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.435 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.436 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/04.PNG", parameters={}
+2026-03-09 06:03:59.436 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.443 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.444 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.P.selectMaterialTypeList - ==>  Preparing: SELECT type_code AS code, type_name AS name FROM tb_product_material_type WHERE is_active = true ORDER BY sort_order
+2026-03-09 06:03:59.445 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.P.selectMaterialTypeList - ==> Parameters: 
+2026-03-09 06:03:59.446 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.P.selectCompanyList - ==>  Preparing: SELECT company_id AS companyId, company_code AS companyCode, company_name AS companyName, company_type_code AS companyTypeCode FROM tb_product_company WHERE is_active = true ORDER BY company_name
+2026-03-09 06:03:59.446 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.P.selectCompanyList - ==> Parameters: 
+2026-03-09 06:03:59.447 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/05.PNG", parameters={}
+2026-03-09 06:03:59.447 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.447 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.449 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/06.PNG", parameters={}
+2026-03-09 06:03:59.449 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.451 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.454 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/07.PNG", parameters={}
+2026-03-09 06:03:59.456 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.459 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.462 DEBUG [http-nio-0.0.0.0-8081-exec-4] c.e.n.m.P.selectMaterialTypeList - <==      Total: 5
+2026-03-09 06:03:59.460 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/08.PNG", parameters={}
+2026-03-09 06:03:59.466 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.471 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.473 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/09.PNG", parameters={}
+2026-03-09 06:03:59.478 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.479 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-03-09 06:03:59.479 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.479 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/10.PNG", parameters={}
+2026-03-09 06:03:59.479 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[{code=SUMMARY, name=상품요약서}, {code=METHODS, name=사업방법서}, {code=TERMS, name=약관}, {code=BROCHURE, name (truncated)...]
+2026-03-09 06:03:59.484 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.485 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.487 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/11.PNG", parameters={}
+2026-03-09 06:03:59.487 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.493 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.496 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.497 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/14.PNG", parameters={}
+2026-03-09 06:03:59.498 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/12.PNG", parameters={}
+2026-03-09 06:03:59.498 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.498 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.500 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.501 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.501 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/16.PNG", parameters={}
+2026-03-09 06:03:59.501 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum/15.PNG", parameters={}
+2026-03-09 06:03:59.503 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.504 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-09 06:03:59.509 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.509 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.513 DEBUG [http-nio-0.0.0.0-8081-exec-5] c.e.n.m.P.selectCompanyList - <==      Total: 38
+2026-03-09 06:03:59.514 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.515 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-03-09 06:03:59.515 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.nproject.dto.ProductCompanyDto@3a7e554b, com.example.nproject.dto.ProductCompanyDto@1be (truncated)...]
+2026-03-09 06:03:59.515 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.520 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.521 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:03:59.526 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/api/products/list?companyCode=ALL", parameters={masked}
+2026-03-09 06:03:59.527 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductApiController#getProducts(String)
+2026-03-09 06:03:59.527 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-03-09 06:03:59.528 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.P.selectProductList - ==>  Preparing: SELECT p.product_id AS productId, p.company_id AS companyId, p.product_name AS productName, p.product_status_code AS productStatusCode, p.sales_channel AS salesChannel, p.sale_start_date AS saleStartDate FROM tb_product_master p JOIN tb_product_company c ON p.company_id = c.company_id WHERE p.is_active = true ORDER BY p.product_name
+2026-03-09 06:03:59.528 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.P.selectProductList - ==> Parameters: 
+2026-03-09 06:03:59.586 DEBUG [http-nio-0.0.0.0-8081-exec-10] c.e.n.m.P.selectProductList - <==      Total: 123
+2026-03-09 06:03:59.588 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-03-09 06:03:59.588 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[com.example.nproject.dto.ProductMasterDto@4971177, com.example.nproject.dto.ProductMasterDto@624479 (truncated)...]
+2026-03-09 06:03:59.596 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-09 06:10:11.525 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 33 class path changes (0 additions, 32 deletions, 1 modification)
+2026-03-09 06:10:11.529 INFO  [Thread-11] o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-03-09 06:10:11.562 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-03-09 06:10:11.573 INFO  [Thread-11] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-03-09 06:10:11.838 INFO  [restartedMain] c.e.nproject.NprojectApplication - Starting NprojectApplication using Java 17.0.12 with PID 11552 (C:\Dev_antigravity_git\meta_system\nproject\target\classes started by jkljkl in C:\Dev_antigravity_git\meta_system\nproject)
+2026-03-09 06:10:11.838 DEBUG [restartedMain] c.e.nproject.NprojectApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-09 06:10:11.838 INFO  [restartedMain] c.e.nproject.NprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-09 06:10:12.597 WARN  [restartedMain] o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.nproject]' package. Please check your configuration.
+2026-03-09 06:10:12.616 WARN  [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: java.lang.NullPointerException: Cannot read field "generatedClass" because "data" is null
+2026-03-09 06:10:12.629 INFO  [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-09 06:10:12.687 ERROR [restartedMain] o.s.boot.SpringApplication - Application run failed
+java.lang.NullPointerException: Cannot read field "generatedClass" because "data" is null
+	at org.springframework.cglib.proxy.Enhancer.nextInstance(Enhancer.java:783)
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:321)
+	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:562)
+	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:407)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.createClass(ConfigurationClassEnhancer.java:138)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer.enhance(ConfigurationClassEnhancer.java:109)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses(ConfigurationClassPostProcessor.java:533)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanFactory(ConfigurationClassPostProcessor.java:310)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:363)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:153)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.example.nproject.NprojectApplication.main(NprojectApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2026-03-09 06:10:16.390 INFO  [restartedMain] c.e.nproject.NprojectApplication - Starting NprojectApplication using Java 17.0.12 with PID 11552 (C:\Dev_antigravity_git\meta_system\nproject\target\classes started by jkljkl in C:\Dev_antigravity_git\meta_system\nproject)
+2026-03-09 06:10:16.390 DEBUG [restartedMain] c.e.nproject.NprojectApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-09 06:10:16.390 INFO  [restartedMain] c.e.nproject.NprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-09 06:10:17.685 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-03-09 06:10:17.686 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-03-09 06:10:17.688 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-09 06:10:17.688 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-09 06:10:17.815 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-09 06:10:17.815 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1420 ms
+2026-03-09 06:10:18.351 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 24 mappings in 'requestMappingHandlerMapping'
+2026-03-09 06:10:18.437 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-03-09 06:10:18.455 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-03-09 06:10:18.467 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-03-09 06:10:18.601 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-03-09 06:10:18.641 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-03-09 06:10:18.657 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-03-09 06:10:18.668 INFO  [restartedMain] c.e.nproject.NprojectApplication - Started NprojectApplication in 2.396 seconds (process running for 48656.334)
+2026-03-09 06:10:18.673 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-03-09 06:10:22.061 INFO  [main] c.e.n.controller.MainControllerTest - Starting MainControllerTest using Java 17.0.12 with PID 20188 (started by jkljkl in C:\Dev_antigravity_git\meta_system\nproject)
+2026-03-09 06:10:22.063 DEBUG [main] c.e.n.controller.MainControllerTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-09 06:10:22.064 INFO  [main] c.e.n.controller.MainControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-09 06:10:22.097 DEBUG [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5328a9c1
+2026-03-09 06:10:23.866 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+2026-03-09 06:10:24.089 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-03-09 06:10:24.189 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-03-09 06:10:24.334 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-03-09 06:10:24.624 INFO  [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-03-09 06:10:24.625 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-03-09 06:10:24.633 INFO  [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+2026-03-09 06:10:24.711 INFO  [main] c.e.n.controller.MainControllerTest - Started MainControllerTest in 3.409 seconds (process running for 4.914)
+2026-03-09 06:10:27.667 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MainController#index()
+2026-03-09 06:10:27.719 DEBUG [main] o.s.w.s.v.ContentNegotiatingViewResolver - Selected '*/*' given [*/*]
+2026-03-09 06:10:28.587 INFO  [main] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.nproject.NprojectApplicationTests]: NprojectApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-09 06:10:28.613 INFO  [main] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.nproject.NprojectApplication for test class com.example.nproject.NprojectApplicationTests
+2026-03-09 06:10:28.628 INFO  [main] o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+2026-03-09 06:10:28.728 INFO  [main] c.e.n.NprojectApplicationTests - Starting NprojectApplicationTests using Java 17.0.12 with PID 20188 (started by jkljkl in C:\Dev_antigravity_git\meta_system\nproject)
+2026-03-09 06:10:28.729 DEBUG [main] c.e.n.NprojectApplicationTests - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-09 06:10:28.729 INFO  [main] c.e.n.NprojectApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-03-09 06:10:28.733 DEBUG [main] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@778113f2
+2026-03-09 06:10:29.696 DEBUG [main] o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2026-03-09 06:10:31.041 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 24 mappings in 'requestMappingHandlerMapping'
+2026-03-09 06:10:31.138 DEBUG [main] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-03-09 06:10:31.155 DEBUG [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-03-09 06:10:31.167 DEBUG [main] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-03-09 06:10:31.347 INFO  [main] c.e.n.NprojectApplicationTests - Started NprojectApplicationTests in 2.719 seconds (process running for 11.553)
+2026-03-09 06:10:31.415 DEBUG [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@5328a9c1, started on Mon Mar 09 06:10:22 KST 2026
+2026-03-09 06:10:31.426 DEBUG [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@778113f2, started on Mon Mar 09 06:10:28 KST 2026

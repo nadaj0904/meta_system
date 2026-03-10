@@ -14,11 +14,11 @@ def create_thumbnails():
     
     folders_to_process = ["methods", "summary", "terms"]
     
-    target_size = (368, 350)
+    target_size = (480, 270)
     
     for folder in folders_to_process:
         source_dir = os.path.join(base_dir, folder)
-        target_dir = os.path.join(base_dir, folder + "_thum")
+        target_dir = os.path.join(base_dir, folder + "_thum_270")
         
         if not os.path.exists(source_dir):
             print(f"Source folder not found: {source_dir}")
@@ -35,12 +35,12 @@ def create_thumbnails():
                 
                 try:
                     with Image.open(source_path) as img:
-                        # Resize the image ignoring the aspect ratio
-                        thumb = img.resize(target_size, resample=Image.Resampling.LANCZOS)
+                        # Resize the image using center crop while maintaining aspect ratio
+                        thumb = ImageOps.fit(img, target_size, method=Image.Resampling.LANCZOS, centering=(0.5, 0.5))
 
                         # Save maintaining format
                         thumb.save(target_path)
-                        print(f"Created thumbnail for: {filename} in {folder}_thum")
+                        print(f"Created thumbnail for: {filename} in {folder}_thum_270")
                 except Exception as e:
                     print(f"Error processing {filename}: {e}")
 

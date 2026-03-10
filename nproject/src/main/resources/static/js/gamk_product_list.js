@@ -111,25 +111,25 @@ companySelect.addEventListener('change', (e) => {
 
 // 로컬 템플릿 데이터 정의
 const localTemplates = [
-    { id: 1, typeName: "약관", title: "교보생명 약관 템플릿 01", url: "/img/product/kyobo/methods_thum/01.PNG" },
-    { id: 2, typeName: "약관", title: "교보생명 약관 템플릿 02", url: "/img/product/kyobo/methods_thum/02.PNG" },
-    { id: 3, typeName: "약관", title: "교보생명 약관 템플릿 03", url: "/img/product/kyobo/methods_thum/03.PNG" },
-    { id: 4, typeName: "약관", title: "교보생명 약관 템플릿 04", url: "/img/product/kyobo/methods_thum/04.PNG" },
-    { id: 5, typeName: "약관", title: "교보생명 약관 템플릿 05", url: "/img/product/kyobo/methods_thum/05.PNG" },
-    { id: 6, typeName: "약관", title: "교보생명 약관 템플릿 06", url: "/img/product/kyobo/methods_thum/06.PNG" },
-    { id: 7, typeName: "약관", title: "교보생명 약관 템플릿 07", url: "/img/product/kyobo/methods_thum/07.PNG" },
-    { id: 8, typeName: "약관", title: "교보생명 약관 템플릿 08", url: "/img/product/kyobo/methods_thum/08.PNG" },
-    { id: 9, typeName: "약관", title: "교보생명 약관 템플릿 09", url: "/img/product/kyobo/methods_thum/09.PNG" },
-    { id: 10, typeName: "약관", title: "교보생명 약관 템플릿 10", url: "/img/product/kyobo/methods_thum/10.PNG" },
-    { id: 11, typeName: "약관", title: "교보생명 약관 템플릿 11", url: "/img/product/kyobo/methods_thum/11.PNG" },
-    { id: 12, typeName: "약관", title: "교보생명 약관 템플릿 12", url: "/img/product/kyobo/methods_thum/12.PNG" },
-    { id: 13, typeName: "약관", title: "교보생명 약관 템플릿 14", url: "/img/product/kyobo/methods_thum/14.PNG" },
-    { id: 14, typeName: "약관", title: "교보생명 약관 템플릿 15", url: "/img/product/kyobo/methods_thum/15.PNG" },
-    { id: 15, typeName: "약관", title: "교보생명 약관 템플릿 16", url: "/img/product/kyobo/methods_thum/16.PNG" },
-    { id: 16, typeName: "약관", title: "교보생명 약관 템플릿 17", url: "/img/product/kyobo/methods_thum/17.PNG" },
-    { id: 17, typeName: "상품요약서", title: "교보생명 요약서 01", url: "/img/product/kyobo/summary_thum/01.png" },
-    { id: 18, typeName: "상품요약서", title: "교보생명 요약서 02", url: "/img/product/kyobo/summary_thum/02.png" },
-    { id: 19, typeName: "사업방법서", title: "교보생명 방법서 01", url: "/img/product/kyobo/terms_thum/01.png" }
+    { id: 1, typeName: "약관", title: "교보생명 약관 템플릿 01", url: "/img/product/kyobo/methods_thum_270/01.PNG" },
+    { id: 2, typeName: "약관", title: "교보생명 약관 템플릿 02", url: "/img/product/kyobo/methods_thum_270/02.PNG" },
+    { id: 3, typeName: "약관", title: "교보생명 약관 템플릿 03", url: "/img/product/kyobo/methods_thum_270/03.PNG" },
+    { id: 4, typeName: "약관", title: "교보생명 약관 템플릿 04", url: "/img/product/kyobo/methods_thum_270/04.PNG" },
+    { id: 5, typeName: "약관", title: "교보생명 약관 템플릿 05", url: "/img/product/kyobo/methods_thum_270/05.PNG" },
+    { id: 6, typeName: "약관", title: "교보생명 약관 템플릿 06", url: "/img/product/kyobo/methods_thum_270/06.PNG" },
+    { id: 7, typeName: "약관", title: "교보생명 약관 템플릿 07", url: "/img/product/kyobo/methods_thum_270/07.PNG" },
+    { id: 8, typeName: "약관", title: "교보생명 약관 템플릿 08", url: "/img/product/kyobo/methods_thum_270/08.PNG" },
+    { id: 9, typeName: "약관", title: "교보생명 약관 템플릿 09", url: "/img/product/kyobo/methods_thum_270/09.PNG" },
+    { id: 10, typeName: "약관", title: "교보생명 약관 템플릿 10", url: "/img/product/kyobo/methods_thum_270/10.PNG" },
+    { id: 11, typeName: "약관", title: "교보생명 약관 템플릿 11", url: "/img/product/kyobo/methods_thum_270/11.PNG" },
+    { id: 12, typeName: "약관", title: "교보생명 약관 템플릿 12", url: "/img/product/kyobo/methods_thum_270/12.PNG" },
+    { id: 13, typeName: "약관", title: "교보생명 약관 템플릿 14", url: "/img/product/kyobo/methods_thum_270/14.PNG" },
+    { id: 14, typeName: "약관", title: "교보생명 약관 템플릿 15", url: "/img/product/kyobo/methods_thum_270/15.PNG" },
+    { id: 15, typeName: "약관", title: "교보생명 약관 템플릿 16", url: "/img/product/kyobo/methods_thum_270/16.PNG" },
+    { id: 16, typeName: "약관", title: "교보생명 약관 템플릿 17", url: "/img/product/kyobo/methods_thum_270/17.PNG" },
+    { id: 17, typeName: "상품요약서", title: "교보생명 요약서 01", url: "/img/product/kyobo/summary_thum_270/01.png" },
+    { id: 18, typeName: "상품요약서", title: "교보생명 요약서 02", url: "/img/product/kyobo/summary_thum_270/02.png" },
+    { id: 19, typeName: "사업방법서", title: "교보생명 방법서 01", url: "/img/product/kyobo/terms_thum_270/01.png" }
 ];
 
 let currentPage = 1;
@@ -153,7 +153,7 @@ function renderCardList(materials) {
         article.onmouseout = () => { article.style.transform = 'translateY(0)'; article.style.boxShadow = 'none'; };
 
         article.innerHTML = `
-            <div style="width: 100%; height: 350px; overflow: hidden; background-color: #fff; display: flex; align-items: flex-start; justify-content: center;">
+            <div style="width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background-color: #fff; display: flex; align-items: flex-start; justify-content: center;">
                 <img src="${card.url}" alt="${card.title}" style="width: 100%; height: auto; object-fit: cover; object-position: top; min-height: 100%;">
             </div>
             <div class="product-card__body" style="padding: 1.5rem; text-align: center;">
