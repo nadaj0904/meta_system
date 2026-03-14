@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>보험사 상품 신규 등록</title>
+    <!-- 공통 리소스 -->
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <link rel="stylesheet" th:href="@{/css/gamk_product_list.css}">
+    <link rel="stylesheet" th:href="@{/css/gamk_prdt.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/js/gamk_prdt.js"></script>
+</head>
+
+<body>
+    <!-- 1. Header -->
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo">NADA.J 보험회사</div>
+            <div class="header__controls">
+                <div class="timer">
+                    <i class="fa-regular fa-clock"></i>
+                    <span id="time-display">60:00</span>
+                </div>
+                <button class="btn" id="extend-btn">연장</button>
+                <div class="user-info">
+                    <i class="fa-regular fa-circle-user" style="font-size: 1.25rem;"></i>
+                    <span>홍길동 TFA</span>
+                </div>
+                <i class="fa-solid fa-arrow-right-from-bracket logout-btn" title="로그아웃"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 2. Main Content -->
+    <main class="main-content">
+        <div class="antigravity-container">
+        <!-- 네비게이션 경로 / 타이틀 -->
+        <h1 class="page-title"><i class="fa-solid fa-folder-plus"></i> 신규 상품 등록</h1>
+
+        <div class="glass-panel" id="regFormContainer">
+            <h3
+                style="border-bottom: 2px solid var(--color-deep-base); padding-bottom: 10px; margin-bottom: 20px; color: var(--color-deep-base);">
+                <i class="fa-solid fa-cube"></i> 상품 정보 입력
+            </h3>
+
+            <form id="regForm" onsubmit="event.preventDefault(); submitRegForm();">
+                <div class="form-row">
+                    <div class="form-col">
+                        <label class="form-label required">원수사(보험사) 선택</label>
+                        <select class="form-control" name="coalCoCd" required>
+                            <option value="">항목을 선택하세요</option>
+                            <!-- tb_code 동적 조회 처리 부분 -->
+                            <option value="L01">한화생명</option>
+                            <option value="L02">ABL생명</option>
+                            <option value="N01">메리츠화재</option>
+                        </select>
+                    </div>
+                    <div class="form-col">
+                        <label class="form-label required">상품코드</label>
+                        <input type="text" class="form-control" name="prdtCd" placeholder="ex) P001" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-col">
+                        <label class="form-label required">상품명</label>
+                        <input type="text" class="form-control" name="prdtNm" placeholder="정식 상품명을 입력하세요" required>
+                    </div>
+                </div>
+
+                <div class="form-row" style="align-items: flex-end;">
+                    <div class="form-col" style="flex: 2;">
+                        <label class="form-label required">매핑할 대표상품 (rep_prdt_cd)</label>
+                        <div style="display: flex; gap: 10px;">
+                            <input type="text" class="form-control" id="repPrdtCd" name="repPrdtCd" placeholder="대표상품코드"
+                                required readonly style="width: 120px;">
+                            <input type="text" class="form-control" id="repPrdtNm" name="repPrdtNm"
+                                placeholder="대표상품 이름" readonly>
+                            <button type="button" class="btn btn--secondary" onclick="openRepSearchModal();">
+                                <i class="fa-solid fa-magnifying-glass"></i> 검색
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-col">
+                        <label class="form-label required">상품 설명</label>
+                        <textarea class="form-control" name="prdtDesc" rows="4" placeholder="상품에 대한 상세 설명을 입력하세요"
+                            required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-row" style="align-items: center;">
+                    <div class="form-col">
+                        <label class="form-label">판매 기간</label>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <input type="date" class="form-control" id="regStartDate" name="saleStartDate">
+                            <span>~</span>
+                            <input type="date" class="form-control" id="regEndDate" name="saleEndDate">
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <label class="form-label">사용 여부</label>
+                        <div style="display: flex; gap: 20px; padding-top: 5px;">
+                            <label style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="useYn" value="Y" checked> 사용 (Y)
+                            </label>
+                            <label style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                                <input type="radio" name="useYn" value="N"> 미사용 (N)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <a href="/product/gamk_prdt_list" class="btn btn--secondary">목록으로 취소</a>
+                    <button type="submit" class="btn btn--primary"><i class="fa-solid fa-check"></i> 새 상품 등록</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </main>
+
+    <!-- 3. Aside (좌측 사이드바) -->
+    <aside class="sidebar"
+        style="background-color: #E8EDF5; border-right: 1px solid #dce3ec; display: flex; flex-direction: column;">
+        <div class="sidebar__header"
+            style="color: #83858A; font-size: 1.4rem; font-weight: 700; justify-content: center; border-bottom: none; padding-top: 30px; letter-spacing: -0.5px;">
+            NADA.J 보험회사
+        </div>
+
+        <div style="flex-grow: 1;">
+            <div style="color: #86A7CF; font-size: 1.1rem; padding: 15px 15px 5px 15px;">menu</div>
+            <ul class="sidebar__menu" style="padding: 0 15px; border-bottom: 1px dashed #cfd7e5; padding-bottom: 20px;">
+                <li class="sidebar__item" onclick="location.href='/product/list'"
+                    style="background: #fff; color: #000; border-radius: 4px; padding: 8px 12px; margin-bottom: 8px; justify-content: flex-start; box-shadow: 0 1px 2px rgba(0,0,0,0.05); cursor: pointer;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 24px; height: 24px; border: 1px solid #ccc; position: relative; background: #fff; opacity: 0.7;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" style="stroke:#ccc; stroke-width:1;"><line x1="0" y1="0" x2="24" y2="24" /><line x1="24" y1="0" x2="0" y2="24" /></svg>
+                        </div>
+                        <span style="font-weight: 500; font-size: 0.95rem;">상품자료</span>
+                    </div>
+                </li>
+                <li class="sidebar__item" id="menu-needs"
+                    style="background: #fff; color: #000; border-radius: 4px; padding: 8px 12px; justify-content: space-between; box-shadow: 0 1px 2px rgba(0,0,0,0.05); cursor: pointer;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 24px; height: 24px; border: 1px solid #ccc; position: relative; background: #fff; opacity: 0.7;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" style="stroke:#ccc; stroke-width:1;"><line x1="0" y1="0" x2="24" y2="24" /><line x1="24" y1="0" x2="0" y2="24" /></svg>
+                        </div>
+                        <span style="font-weight: 500; font-size: 0.95rem;">니즈자료</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-down toggle-icon" style="color: #888; font-size: 0.8rem; transition: transform 0.3s;"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div style="padding-bottom: 20px;">
+            <div style="color: #86A7CF; font-size: 1.1rem; padding: 15px 15px 5px 15px;">Setting</div>
+            <ul class="sidebar__menu" style="padding: 0 15px;">
+                <li class="sidebar__item" id="admin-setting-btn"
+                    style="background: #fff; color: #000; border-radius: 4px; padding: 8px 12px; margin-bottom: 0; justify-content: space-between; box-shadow: 0 1px 2px rgba(0,0,0,0.05); cursor: pointer;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 24px; height: 24px; border: 1px solid #ccc; position: relative; background: #fff; opacity: 0.7;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" style="stroke:#ccc; stroke-width:1;"><line x1="0" y1="0" x2="24" y2="24" /><line x1="24" y1="0" x2="0" y2="24" /></svg>
+                        </div>
+                        <span style="font-weight: 500; font-size: 0.95rem;">관리자 설정</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-down toggle-icon" style="color: #888; font-size: 0.8rem; transform: rotate(180deg); transition: transform 0.3s;"></i>
+                </li>
+                <div id="admin-submenu"
+                    style="background: #204C7B; border-radius: 0 0 4px 4px; padding: 5px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: block; margin-top: -4px;">
+                    <div style="color: #fff; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.15); font-size: 0.9rem; font-weight: 400; letter-spacing: -0.3px; cursor: pointer;"
+                        onclick="location.href='/product/gamk_prdt_list'">
+                        보험사 상품 등록</div>
+                    <div style="color: #fff; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.15); font-size: 0.9rem; font-weight: 400; letter-spacing: -0.3px; cursor: pointer;">
+                        상품 마케팅 자료 등록</div>
+                    <div style="color: #fff; padding: 12px 0; font-size: 0.9rem; font-weight: 400; letter-spacing: -0.3px; cursor: pointer;">
+                        팝업관리</div>
+                </div>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- 4. Footer -->
+    <footer class="footer">
+        &copy; 2026 NADA.J Insurance. All rights reserved.
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const adminSettingBtn = document.getElementById('admin-setting-btn');
+            const adminSubmenu = document.getElementById('admin-submenu');
+            const toggleIcon = adminSettingBtn.querySelector('.toggle-icon');
+
+            adminSettingBtn.addEventListener('click', () => {
+                const isHidden = adminSubmenu.style.display === 'none';
+                adminSubmenu.style.display = isHidden ? 'block' : 'none';
+                toggleIcon.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
+            });
+        });
+    </script>
+
+    <!-- 스크립트 정의 -->
+    <script th:inline="javascript">
+        // 1. 대표 상품 연결 모달 콜백 핸들러
+        function openRepSearchModal() {
+            GamkPrdt.openRepPrdtSearchModal(function (selectedData) {
+                document.getElementById('repPrdtCd').value = selectedData.rep_prdt_cd;
+                document.getElementById('repPrdtNm').value = selectedData.rep_prdt_nm;
+            });
+        }
+
+        // 2. 폼 제출 로직 (유효성 검증 체인)
+        function submitRegForm() {
+            // 필수값 누락 검사
+            if (!GamkPrdt.validateRequired('regFormContainer')) return;
+
+            // 날짜 구간 논리 검사
+            if (!GamkPrdt.validateDateRange('regStartDate', 'regEndDate')) return;
+
+            // TODO: Form Fetch 로직 구성 (서버 API 전송)
+
+            GamkPrdt.showToast('상품이 성공적으로 등록되었습니다.');
+
+            // (예제) 성공 응답을 받으면 2초 후 목록 페이지 이동
+            setTimeout(() => {
+                location.href = '/product/gamk_prdt_list';
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>

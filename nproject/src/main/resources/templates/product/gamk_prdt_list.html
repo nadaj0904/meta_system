@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>보험사 상품등록 현황</title>
+    <!-- 공통 리소스 -->
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <link rel="stylesheet" th:href="@{/css/gamk_product_list.css}">
+    <link rel="stylesheet" th:href="@{/css/gamk_prdt.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/js/gamk_prdt.js"></script>
+</head>
+
+<body>
+    <!-- 1. Header -->
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo">NADA.J 보험회사</div>
+            <div class="header__controls">
+                <div class="timer">
+                    <i class="fa-regular fa-clock"></i>
+                    <span id="time-display">60:00</span>
+                </div>
+                <button class="btn" id="extend-btn">연장</button>
+                <div class="user-info">
+                    <i class="fa-regular fa-circle-user" style="font-size: 1.25rem;"></i>
+                    <span>홍길동 TFA</span>
+                </div>
+                <i class="fa-solid fa-arrow-right-from-bracket logout-btn" title="로그아웃"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 2. Main Content -->
+    <main class="main-content">
+        <div class="antigravity-container">
+        <h1 class="page-title"><i class="fa-solid fa-list"></i> 보험사 상품 현황</h1>
+
+        <!-- 검색 영역: 떠오르는 Glassmorphism 카드 컨셉 -->
+        <div class="glass-panel glass-panel--floating">
+            <form id="searchForm" onsubmit="event.preventDefault(); GamkPrdtList.search();">
+                <div class="filter-bar">
+                    <div class="filter-item">
+                        <span class="form-label">보험사 유형</span>
+                        <select class="form-control" name="insType">
+                            <option value="">전체</option>
+                            <option value="L00">생명보험</option>
+                            <option value="N00">손해보험</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <span class="form-label">보험사 선택</span>
+                        <select class="form-control" name="companyCd">
+                            <option value="">전체</option>
+                            <option value="L01">한화생명</option>
+                            <!-- tb_code 동적 조회 처리 부분 -->
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <span class="form-label">상품명</span>
+                        <input type="text" class="form-control" name="prdtNm" placeholder="상품명 입력"
+                            onkeyup="GamkPrdtList.debounceSearch(event)">
+                    </div>
+                    <div class="filter-item" style="flex: 2;">
+                        <span class="form-label">판매 기간</span>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <input type="date" class="form-control" name="startDate" id="searchStartDate">
+                            <span>~</span>
+                            <input type="date" class="form-control" name="endDate" id="searchEndDate">
+                        </div>
+                    </div>
+                    <div class="filter-item" style="flex: none;">
+                        <button type="submit" class="btn btn--primary" style="height: 48px;"><i
+                                class="fa-solid fa-magnifying-glass"></i> 검색</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- 액션 버튼 영역 -->
+        <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
+            <a href="/product/gamk_prdt_reg" class="btn btn--primary"><i class="fa-solid fa-plus"></i> 신규 상품 등록</a>
+        </div>
+
+        <!-- 결과 목록 영역 (데이터 테이블) -->
+        <div class="glass-panel">
+            <div class="data-table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>상품코드</th>
+                            <th>보험사</th>
+                            <th>대표상품명</th>
+                            <th>상품명 <i class="fa-solid fa-sort"></i></th>
+                            <th>판매시작일 <i class="fa-solid fa-sort"></i></th>
+                            <th>판매종료일</th>
+                            <th>사용여부</th>
+                        </tr>
+                    </thead>
+                    <tbody id="prdtListTbody">
+                        <!-- 타임리프/퍼블리싱용 샘플 데이터 제공 -->
+                        <tr onclick="location.href='/product/gamk_prdt_detail?id=P001'">
+                            <td>P001</td>
+                            <td>한화생명</td>
+                            <td>라이프 암보험</td>
+                            <td style="font-weight: 600;">(무)라이프 실버 암보험</td>
+                            <td>2024-01-01</td>
+                            <td>2099-12-31</td>
+                            <td><span style="color:var(--color-primary-point); font-weight:bold;">Y</span></td>
+                        </tr>
+                        <tr onclick="location.href='/product/gamk_prdt_detail?id=P002'">
+                            <td>P002</td>
+                            <td>삼성화재</td>
+                            <td>운전자보험</td>
+                            <td style="font-weight: 600;">(무)무사고 운전자 안심보험</td>
+                            <td>2023-05-15</td>
+                            <td>2025-12-31</td>
+                            <td><span style="color:var(--color-primary-point); font-weight:bold;">Y</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 하단 페이지네이션 표출 공간 -->
+            <div id="pagination-container" style="display: flex; justify-content: center; gap: 8px; margin-top: 30px;">
+                <button class="btn btn--secondary" style="padding: 8px 12px;"><i
+                        class="fa-solid fa-chevron-left"></i></button>
+                <button class="btn btn--primary" style="padding: 8px 16px;">1</button>
+                <button class="btn btn--secondary" style="padding: 8px 16px;">2</button>
+                <button class="btn btn--secondary" style="padding: 8px 16px;">3</button>
+                <button class="btn btn--secondary" style="padding: 8px 12px;"><i
+                        class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        </div>
+    </main>
+
+    <!-- 3. Aside (좌측 사이드바) -->
+    <aside class="sidebar"
+        style="background-color: #E8EDF5; border-right: 1px solid #dce3ec; display: flex; flex-direction: column;">
+        <div class="sidebar__header"
+            style="color: #83858A; font-size: 1.4rem; font-weight: 700; justify-content: center; border-bottom: none; padding-top: 30px; letter-spacing: -0.5px;">
+            NADA.J 보험회사
+        </div>
+
+        <div style="flex-grow: 1;">
+            <div style="color: #86A7CF; font-size: 1.1rem; padding: 15px 15px 5px 15px;">menu</div>
+            <ul class="sidebar__menu" style="padding: 0 15px; border-bottom: 1px dashed #cfd7e5; padding-bottom: 20px;">
+                <li class="sidebar__item" onclick="location.href='/product/list'"
+                    style="background: #fff; color: #000; border-radius: 4px; padding: 8px 12px; margin-bottom: 8px; justify-content: flex-start; box-shadow: 0 1px 2px rgba(0,0,0,0.05); cursor: pointer;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 24px; height: 24px; border: 1px solid #ccc; position: relative; background: #fff; opacity: 0.7;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" style="stroke:#ccc; stroke-width:1;"><line x1="0" y1="0" x2="24" y2="24" /><line x1="24" y1="0" x2="0" y2="24" /></svg>
+                        </div>
+                        <span style="font-weight: 500; font-size: 0.95rem;">상품자료</span>
+                    </div>
+                </li>
+                <li class="sidebar__item" id="menu-needs"
+                    style="background: #fff; color: #000; border-radius: 4px; padding: 8px 12px; justify-content: space-between; box-shadow: 0 1px 2px rgba(0,0,0,0.05); cursor: pointer;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 24px; height: 24px; border: 1px solid #ccc; position: relative; background: #fff; opacity: 0.7;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" style="stroke:#ccc; stroke-width:1;"><line x1="0" y1="0" x2="24" y2="24" /><line x1="24" y1="0" x2="0" y2="24" /></svg>
+                        </div>
+                        <span style="font-weight: 500; font-size: 0.95rem;">니즈자료</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-down toggle-icon" style="color: #888; font-size: 0.8rem; transition: transform 0.3s;"></i>
+                </li>
+            </ul>
+        </div>
+
+        <div style="padding-bottom: 20px;">
+            <div style="color: #86A7CF; font-size: 1.1rem; padding: 15px 15px 5px 15px;">Setting</div>
+            <ul class="sidebar__menu" style="padding: 0 15px;">
+                <li class="sidebar__item" id="admin-setting-btn"
+                    style="background: #fff; color: #000; border-radius: 4px; padding: 8px 12px; margin-bottom: 0; justify-content: space-between; box-shadow: 0 1px 2px rgba(0,0,0,0.05); cursor: pointer;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 24px; height: 24px; border: 1px solid #ccc; position: relative; background: #fff; opacity: 0.7;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" style="stroke:#ccc; stroke-width:1;"><line x1="0" y1="0" x2="24" y2="24" /><line x1="24" y1="0" x2="0" y2="24" /></svg>
+                        </div>
+                        <span style="font-weight: 500; font-size: 0.95rem;">관리자 설정</span>
+                    </div>
+                    <i class="fa-solid fa-chevron-down toggle-icon" style="color: #888; font-size: 0.8rem; transform: rotate(180deg); transition: transform 0.3s;"></i>
+                </li>
+                <div id="admin-submenu"
+                    style="background: #204C7B; border-radius: 0 0 4px 4px; padding: 5px 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: block; margin-top: -4px;">
+                    <div style="color: #fff; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.15); font-size: 0.9rem; font-weight: 400; letter-spacing: -0.3px; cursor: pointer;"
+                        onclick="location.href='/product/gamk_prdt_list'">
+                        보험사 상품 등록</div>
+                    <div style="color: #fff; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.15); font-size: 0.9rem; font-weight: 400; letter-spacing: -0.3px; cursor: pointer;">
+                        상품 마케팅 자료 등록</div>
+                    <div style="color: #fff; padding: 12px 0; font-size: 0.9rem; font-weight: 400; letter-spacing: -0.3px; cursor: pointer;">
+                        팝업관리</div>
+                </div>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- 4. Footer -->
+    <footer class="footer">
+        &copy; 2026 NADA.J Insurance. All rights reserved.
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const adminSettingBtn = document.getElementById('admin-setting-btn');
+            const adminSubmenu = document.getElementById('admin-submenu');
+            const toggleIcon = adminSettingBtn.querySelector('.toggle-icon');
+
+            adminSettingBtn.addEventListener('click', () => {
+                const isHidden = adminSubmenu.style.display === 'none';
+                adminSubmenu.style.display = isHidden ? 'block' : 'none';
+                toggleIcon.style.transform = isHidden ? 'rotate(0deg)' : 'rotate(180deg)';
+            });
+        });
+    </script>
+
+    <script th:inline="javascript">
+        // 검색용 자바스크립트 객체
+        const GamkPrdtList = {
+            timeoutId: null,
+
+            search: function () {
+                // 기간 정합성 검사 유틸 호출
+                if (!GamkPrdt.validateDateRange('searchStartDate', 'searchEndDate')) return;
+
+                // TODO: 실제 서버 비동기/동기 요청
+                GamkPrdt.showToast('상품 목록을 검색했습니다.');
+            },
+
+            // 실시간 Input Debounce 로직
+            debounceSearch: function (e) {
+                clearTimeout(this.timeoutId);
+                this.timeoutId = setTimeout(() => {
+                    if (e.target.value.length >= 2) {
+                        this.search();
+                    }
+                }, 300); // 300ms 대기 후 검색
+            }
+        };
+    </script>
+</body>
+
+</html>

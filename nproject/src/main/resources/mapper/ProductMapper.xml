@@ -1,90 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.nproject.mapper.ProductMapper">
 
-    <!-- 보험사 조회 -->
-    <select id="selectCompanyList" resultType="com.example.nproject.dto.ProductCompanyDto">
-        SELECT
-            company_id AS companyId,
-            company_code AS companyCode,
-            company_name AS companyName,
-            company_type_code AS companyTypeCode
-        FROM tb_product_company
-        WHERE is_active = true
-        <if test="insuranceTypeCode != null and insuranceTypeCode != '' and insuranceTypeCode != 'ALL'">
-            AND company_type_code = #{insuranceTypeCode}
-        </if>
-        ORDER BY company_name
+<mapper namespace="com.example.nproject.repository.ProductRepository">
+
+    <!-- Result Map for snake_case to camelCase and Joins -->
+    <resultMap id="productResultMap" type="com.example.nproject.dto.ProductDto">
+        <id property="prdtCd" column="prdt_cd" />
+        <result property="coalCoCd" column="coal_co_cd" />
+        <result property="repPrdtCd" column="rep_prdt_cd" />
+        <result property="prdtNm" column="prdt_nm" />
+        <result property="prdtDesc" column="prdt_desc" />
+        <result property="saleStartDate" column="sale_start_date" />
+        <result property="saleEndDate" column="sale_end_date" />
+        <result property="useYn" column="use_yn" />
+        <result property="createdId" column="created_id" />
+        <result property="createdAt" column="created_at" />
+        <result property="updatedId" column="updated_id" />
+        <result property="updatedAt" column="updated_at" />
+        
+        <!-- Join Results -->
+        <result property="repPrdtNm" column="rep_prdt_nm" />
+        <result property="coalCoNm" column="coal_co_nm" />
+    </resultMap>
+
+    <!-- 상품 목록 조회 -->
+    <select id="selectProductList" parameterType="com.example.nproject.dto.ProductSearchDto" resultMap="productResultMap">
+        SELECT 
+            P.prdt_cd,
+            P.coal_co_cd,
+            C.code_nm AS coal_co_nm,
+            P.rep_prdt_cd,
+            R.rep_prdt_nm,
+            P.prdt_nm,
+            P.prdt_desc,
+            P.sale_start_date,
+            P.sale_end_date,
+            P.use_yn,
+            P.created_id,
+            P.created_at,
+            P.updated_id,
+            P.updated_at
+        FROM 
+            tb_product P
+        LEFT OUTER JOIN 
+            tb_rep_prdt R ON P.rep_prdt_cd = R.rep_prdt_cd
+        LEFT OUTER JOIN 
+            tb_code C ON P.coal_co_cd = C.code_cd AND C.code_group_cd = 'INS_COMPANY'
+        <where>
+            <if test="insType != null and insType != ''">
+                AND C.code_group_cd = 'INS_COMPANY_TYPE' AND C.code_cd = #{insType}
+            </if>
+            <if test="companyCd != null and companyCd != ''">
+                AND P.coal_co_cd = #{companyCd}
+            </if>
+            <if test="prdtNm != null and prdtNm != ''">
+                AND P.prdt_nm LIKE CONCAT('%', #{prdtNm}, '%')
+            </if>
+            <if test="startDate != null">
+                AND P.sale_end_date &gt;= #{startDate}
+            </if>
+            <if test="endDate != null">
+                AND P.sale_start_date &lt;= #{endDate}
+            </if>
+        </where>
+        ORDER BY P.created_at DESC
     </select>
 
-    <!-- 상품 조회 -->
-    <select id="selectProductList" resultType="com.example.nproject.dto.ProductMasterDto">
-        SELECT
-            p.product_id AS productId,
-            p.company_id AS companyId,
-            p.product_name AS productName,
-            p.product_status_code AS productStatusCode,
-            p.sales_channel AS salesChannel,
-            p.sale_start_date AS saleStartDate
-        FROM tb_product_master p
-        JOIN tb_product_company c ON p.company_id = c.company_id
-        WHERE p.is_active = true
-        <if test="companyCode != null and companyCode != '' and companyCode != 'ALL'">
-            AND c.company_code = #{companyCode}
-        </if>
-        ORDER BY p.product_name
+    <!-- 상품 상세 조회 -->
+    <select id="selectProductById" parameterType="java.lang.String" resultMap="productResultMap">
+        SELECT 
+            P.prdt_cd,
+            P.coal_co_cd,
+            C.code_nm AS coal_co_nm,
+            P.rep_prdt_cd,
+            R.rep_prdt_nm,
+            P.prdt_nm,
+            P.prdt_desc,
+            P.sale_start_date,
+            P.sale_end_date,
+            P.use_yn,
+            P.created_id,
+            P.created_at,
+            P.updated_id,
+            P.updated_at
+        FROM 
+            tb_product P
+        LEFT OUTER JOIN 
+            tb_rep_prdt R ON P.rep_prdt_cd = R.rep_prdt_cd
+        LEFT OUTER JOIN 
+            tb_code C ON P.coal_co_cd = C.code_cd AND C.code_group_cd = 'INS_COMPANY'
+        WHERE 
+            P.prdt_cd = #{prdtCd}
     </select>
 
-    <!-- 자료 유형 조회 -->
-    <select id="selectMaterialTypeList" resultType="java.util.Map">
-        SELECT
-            type_code AS code,
-            type_name AS name
-        FROM tb_product_material_type
-        WHERE is_active = true
-        ORDER BY sort_order
-    </select>
+    <!-- 신규 상품 데이터 삽입 -->
+    <insert id="insertProduct" parameterType="com.example.nproject.dto.ProductDto">
+        INSERT INTO tb_product (
+            prdt_cd,
+            coal_co_cd,
+            rep_prdt_cd,
+            prdt_nm,
+            prdt_desc,
+            sale_start_date,
+            sale_end_date,
+            use_yn,
+            created_id,
+            created_at
+        ) VALUES (
+            #{prdtCd},
+            #{coalCoCd},
+            #{repPrdtCd},
+            #{prdtNm},
+            #{prdtDesc},
+            #{saleStartDate},
+            #{saleEndDate},
+            COALESCE(#{useYn}, 'Y'),
+            'admin_sys', <!-- 실제 로그인 세션 ID 대체 필요 -->
+            NOW()
+        )
+    </insert>
 
-    <!-- 조건에 맞는 마케팅 자료 조회 -->
-    <select id="selectMaterialList" resultType="com.example.nproject.dto.ProductMaterialDto">
-        SELECT
-            m.material_id AS materialId,
-            p.product_id AS productId,
-            p.product_name AS productName,
-            c.company_name AS companyName,
-            m.material_title AS materialTitle,
-            t.type_name AS materialTypeName,
-            v.file_path AS fileUrl,
-            v.file_extension AS fileExtension,
-            CASE
-                WHEN t.type_code = 'SUMMARY' THEN 'fa-file-lines'
-                WHEN t.type_code = 'TERMS' THEN 'fa-book'
-                WHEN t.type_code = 'METHODS' THEN 'fa-briefcase'
-                WHEN t.type_code = 'BROCHURE' THEN 'fa-image'
-                WHEN t.type_code = 'NEEDS' THEN 'fa-lightbulb'
-                ELSE 'fa-file'
-            END AS iconClass
-        FROM tb_product_material_version v
-        JOIN tb_product_material m ON v.material_id = m.material_id
-        JOIN tb_product_master p ON m.product_id = p.product_id
-        JOIN tb_product_company c ON p.company_id = c.company_id
-        JOIN tb_product_material_type t ON m.material_type_id = t.material_type_id
-        WHERE v.is_current = true
-          AND m.is_active = true
-          AND p.is_active = true
-        <if test="companyCode != null and companyCode != '' and companyCode != 'ALL'">
-            AND c.company_code = #{companyCode}
-        </if>
-        <if test="insuranceTypeCode != null and insuranceTypeCode != '' and insuranceTypeCode != 'ALL'">
-            AND c.company_type_code = #{insuranceTypeCode}
-        </if>
-        <if test="productId != null and productId != '' and productId != '0'">
-            AND p.product_id = #{productId}
-        </if>
-        <if test="materialTypeCode != null and materialTypeCode != '' and materialTypeCode != 'ALL'">
-            AND t.type_code = #{materialTypeCode}
-        </if>
-        ORDER BY m.created_at DESC
-    </select>
+    <!-- 상품 정보 수정 -->
+    <update id="updateProduct" parameterType="com.example.nproject.dto.ProductDto">
+        UPDATE tb_product
+        <set>
+            <if test="coalCoCd != null and coalCoCd != ''">coal_co_cd = #{coalCoCd},</if>
+            <if test="repPrdtCd != null and repPrdtCd != ''">rep_prdt_cd = #{repPrdtCd},</if>
+            <if test="prdtNm != null and prdtNm != ''">prdt_nm = #{prdtNm},</if>
+            <if test="prdtDesc != null and prdtDesc != ''">prdt_desc = #{prdtDesc},</if>
+            <if test="saleStartDate != null">sale_start_date = #{saleStartDate},</if>
+            <if test="saleEndDate != null">sale_end_date = #{saleEndDate},</if>
+            <if test="useYn != null and useYn != ''">use_yn = #{useYn},</if>
+            updated_id = 'admin_sys', <!-- 세션 ID로 치환 필요 -->
+            updated_at = NOW()
+        </set>
+        WHERE prdt_cd = #{prdtCd}
+    </update>
 
 </mapper>

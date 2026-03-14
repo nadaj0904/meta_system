@@ -15,4 +15,24 @@ public class ProductWebController {
     public String productList() {
         return "product/gamk_product_list";
     }
+
+    @GetMapping("/gamk_prdt_list")
+    public String gamkPrdtList() {
+        return "product/gamk_prdt_list";
+    }
+
+    @GetMapping("/gamk_prdt_reg")
+    public String gamkPrdtReg() {
+        return "product/gamk_prdt_reg";
+    }
+
+    @GetMapping("/gamk_prdt_detail")
+    public String gamkPrdtDetail() {
+        return "product/gamk_prdt_detail";
+    }
+
+    @GetMapping("/gamk_prdt_mod")
+    public String gamkPrdtMod() {
+        return "product/gamk_prdt_mod";
+    }
 }
