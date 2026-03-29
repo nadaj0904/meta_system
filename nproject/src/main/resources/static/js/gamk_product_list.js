@@ -1,39 +1,4 @@
 // ==========================================
-// 1. 타이머 로직 (setInterval)
-// ==========================================
-let totalTimeInSeconds = 3600; // 60분
-const timeDisplayEl = document.getElementById('time-display');
-const extendBtnEl = document.getElementById('extend-btn');
-let timerInterval;
-
-function updateTimer() {
-    const minutes = Math.floor(totalTimeInSeconds / 60);
-    const seconds = totalTimeInSeconds % 60;
-    timeDisplayEl.textContent =
-        String(minutes).padStart(2, '0') + ':' + String(seconds).padStart(2, '0');
-}
-
-function startTimer() {
-    timerInterval = setInterval(() => {
-        if (totalTimeInSeconds > 0) {
-            totalTimeInSeconds--;
-            updateTimer();
-        } else {
-            clearInterval(timerInterval);
-            alert("세션 시간이 만료되었습니다.");
-        }
-    }, 1000);
-}
-
-extendBtnEl.addEventListener('click', () => {
-    totalTimeInSeconds = 3600; // 60분 리셋
-    updateTimer();
-    console.log("타이머가 60분으로 연장되었습니다.");
-});
-
-startTimer();
-
-// ==========================================
 // 2. Select 상자 연동 로직
 // ==========================================
 const insuranceTypeSelect = document.getElementById('sel-insurance-type');

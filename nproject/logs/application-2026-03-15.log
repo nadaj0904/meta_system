@@ -1,0 +1,432 @@
+2026-03-15 08:22:04.583 INFO  [restartedMain] c.e.nproject.NprojectApplication - Starting NprojectApplication using Java 17.0.12 with PID 18756 (C:\Dev_antigravity_git\meta_system\nproject\target\classes started by jkljkl in C:\Dev_antigravity_git\meta_system\nproject)
+2026-03-15 08:22:04.588 DEBUG [restartedMain] c.e.nproject.NprojectApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-15 08:22:04.589 INFO  [restartedMain] c.e.nproject.NprojectApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-15 08:22:04.633 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-15 08:22:04.641 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-15 08:22:05.227 DEBUG [restartedMain] o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2026-03-15 08:22:05.558 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-03-15 08:22:05.565 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-03-15 08:22:05.567 INFO  [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-15 08:22:05.568 INFO  [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-15 08:22:05.613 INFO  [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-15 08:22:05.613 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 972 ms
+2026-03-15 08:22:06.028 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 28 mappings in 'requestMappingHandlerMapping'
+2026-03-15 08:22:06.081 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-03-15 08:22:06.104 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-03-15 08:22:06.131 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-03-15 08:22:06.252 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-03-15 08:22:06.277 INFO  [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8081"]
+2026-03-15 08:22:06.297 INFO  [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-03-15 08:22:06.308 INFO  [restartedMain] c.e.nproject.NprojectApplication - Started NprojectApplication in 2.123 seconds (process running for 2.788)
+2026-03-15 08:22:23.249 INFO  [http-nio-0.0.0.0-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-15 08:22:23.250 INFO  [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-15 08:22:23.251 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2026-03-15 08:22:23.251 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2026-03-15 08:22:23.251 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2026-03-15 08:22:23.252 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4ff8c4f8
+2026-03-15 08:22:23.254 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@2c7a8ff0
+2026-03-15 08:22:23.254 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-03-15 08:22:23.254 INFO  [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-03-15 08:22:23.268 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+2026-03-15 08:22:23.296 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.MainController#index()
+2026-03-15 08:22:23.327 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:22:23.924 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:23.951 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2026-03-15 08:22:23.951 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/img/main%20image2.png", parameters={}
+2026-03-15 08:22:23.951 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/img/symbol.png", parameters={}
+2026-03-15 08:22:23.956 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/img/sub5_image.png", parameters={}
+2026-03-15 08:22:23.956 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:23.956 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/img/sub1_image.png", parameters={}
+2026-03-15 08:22:23.958 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:23.958 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:23.958 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:23.959 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/img/sub2_image.png", parameters={}
+2026-03-15 08:22:23.959 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:23.961 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:23.977 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:23.979 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:23.979 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:23.979 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:23.979 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:23.980 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:23.980 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/img/sub3_image.png", parameters={}
+2026-03-15 08:22:23.981 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:23.988 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:24.049 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/favicon.ico", parameters={}
+2026-03-15 08:22:24.050 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:24.053 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-03-15 08:22:24.060 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-15 08:22:24.060 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2026-03-15 08:22:24.066 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2026-03-15 08:22:24.068 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-03-15 08:22:24.104 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2026-03-15 08:22:24.108 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Mar 15 08:22:24 KST 2026, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2026-03-15 08:22:24.191 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2026-03-15 08:22:26.206 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/login", parameters={}
+2026-03-15 08:22:26.206 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.LoginController#loginPage()
+2026-03-15 08:22:26.211 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:22:26.263 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:26.284 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/css/login2.css", parameters={}
+2026-03-15 08:22:26.285 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:26.287 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/images/login_logo.png", parameters={}
+2026-03-15 08:22:26.289 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/login2.js", parameters={}
+2026-03-15 08:22:26.288 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:26.289 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:26.295 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:26.298 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:26.303 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:35.672 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - POST "/login", parameters={}
+2026-03-15 08:22:35.673 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.LoginController#login(LoginDto, HttpSession)
+2026-03-15 08:22:35.764 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.nproject.dto.LoginDto@6360b09]
+2026-03-15 08:22:35.933 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2026-03-15 08:22:35.935 INFO  [http-nio-0.0.0.0-8081-exec-3] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-15 08:22:37.031 INFO  [http-nio-0.0.0.0-8081-exec-3] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@469fef48
+2026-03-15 08:22:37.036 INFO  [http-nio-0.0.0.0-8081-exec-3] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-15 08:22:37.071 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.mapper.LoginMapper.login - ==>  Preparing: SELECT user_id as id, user_name as name, '' as email FROM meta_user WHERE user_id = ? AND password = ?
+2026-03-15 08:22:37.113 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.mapper.LoginMapper.login - ==> Parameters: cat(String), 1234!!(String)
+2026-03-15 08:22:37.248 DEBUG [http-nio-0.0.0.0-8081-exec-3] c.e.n.mapper.LoginMapper.login - <==      Total: 1
+2026-03-15 08:22:37.266 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2026-03-15 08:22:37.267 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["SUCCESS"]
+2026-03-15 08:22:37.269 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:41.833 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/product/list", parameters={}
+2026-03-15 08:22:41.833 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#productList()
+2026-03-15 08:22:41.835 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:22:41.898 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:41.922 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_product_list.js", parameters={}
+2026-03-15 08:22:41.922 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:22:41.922 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:41.922 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:41.949 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:41.971 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:41.991 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/api/products/material-types", parameters={}
+2026-03-15 08:22:41.991 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/api/products/companies?insuranceTypeCode=ALL", parameters={masked}
+2026-03-15 08:22:41.992 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:41.992 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:41.993 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/01.PNG", parameters={}
+2026-03-15 08:22:41.994 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:41.994 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/02.PNG", parameters={}
+2026-03-15 08:22:41.994 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/03.PNG", parameters={}
+2026-03-15 08:22:41.995 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:41.995 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:41.995 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/04.PNG", parameters={}
+2026-03-15 08:22:41.997 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:41.997 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-03-15 08:22:42.000 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-03-15 08:22:42.000 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/products/companies.]
+2026-03-15 08:22:42.000 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2026-03-15 08:22:42.000 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/products/material-types.]
+2026-03-15 08:22:42.001 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2026-03-15 08:22:42.001 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2026-03-15 08:22:42.001 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error?insuranceTypeCode=ALL", parameters={masked}
+2026-03-15 08:22:42.001 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-03-15 08:22:42.002 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-03-15 08:22:42.004 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-03-15 08:22:42.005 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Mar 15 08:22:42 KST 2026, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2026-03-15 08:22:42.005 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-03-15 08:22:42.006 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Mar 15 08:22:42 KST 2026, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2026-03-15 08:22:42.009 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2026-03-15 08:22:42.009 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.010 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.010 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.014 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/05.PNG", parameters={}
+2026-03-15 08:22:42.014 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/06.PNG", parameters={}
+2026-03-15 08:22:42.014 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.015 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:42.015 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:42.016 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/07.PNG", parameters={}
+2026-03-15 08:22:42.017 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:42.017 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/08.PNG", parameters={}
+2026-03-15 08:22:42.018 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:42.018 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/09.PNG", parameters={}
+2026-03-15 08:22:42.020 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:42.027 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.029 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.030 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/10.PNG", parameters={}
+2026-03-15 08:22:42.030 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/11.PNG", parameters={}
+2026-03-15 08:22:42.031 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:42.031 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2026-03-15 08:22:42.034 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:42.034 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.033 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.039 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/15.PNG", parameters={}
+2026-03-15 08:22:42.039 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/14.PNG", parameters={}
+2026-03-15 08:22:42.039 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:42.040 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:42.041 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/12.PNG", parameters={}
+2026-03-15 08:22:42.045 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:42.050 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.052 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.055 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.055 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/16.PNG", parameters={}
+2026-03-15 08:22:42.061 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:22:42.062 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.062 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.063 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:22:42.068 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:23:16.610 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/product/gamk_prdt_list", parameters={}
+2026-03-15 08:23:16.610 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#gamkPrdtList()
+2026-03-15 08:23:16.613 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:23:16.741 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:23:16.742 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-03-15 08:23:16.743 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:23:16.743 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_prdt.css", parameters={}
+2026-03-15 08:23:16.744 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:23:16.744 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:23:16.744 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:23:16.749 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_prdt.js", parameters={}
+2026-03-15 08:23:16.751 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:23:16.751 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:23:16.753 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:23:16.756 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:23:16.761 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:23:36.661 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/product/gamk_prdt_reg", parameters={}
+2026-03-15 08:23:36.661 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#gamkPrdtReg()
+2026-03-15 08:23:36.665 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:23:36.771 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:23:36.789 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-03-15 08:23:36.790 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:23:36.792 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_prdt.css", parameters={}
+2026-03-15 08:23:36.792 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_prdt.js", parameters={}
+2026-03-15 08:23:36.793 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:23:36.793 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:23:36.793 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:23:36.795 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:23:36.796 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:23:36.796 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:23:36.799 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:23:36.802 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:35.425 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/product/gamk_prdt_list", parameters={}
+2026-03-15 08:24:35.425 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#gamkPrdtList()
+2026-03-15 08:24:35.427 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:24:35.438 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:35.478 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-03-15 08:24:35.479 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:35.481 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:24:35.482 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:35.482 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_prdt.css", parameters={}
+2026-03-15 08:24:35.482 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:35.483 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_prdt.js", parameters={}
+2026-03-15 08:24:35.484 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:35.484 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:35.486 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:35.486 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:35.488 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:43.533 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/product/gamk_prdt_list", parameters={}
+2026-03-15 08:24:43.533 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#gamkPrdtList()
+2026-03-15 08:24:43.536 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:24:43.544 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:43.587 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-03-15 08:24:43.588 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:43.589 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:24:43.589 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_prdt.css", parameters={}
+2026-03-15 08:24:43.590 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:43.590 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:43.591 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_prdt.js", parameters={}
+2026-03-15 08:24:43.591 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:43.592 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:43.592 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:43.593 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:43.597 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:47.780 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/product/gamk_prdt_reg", parameters={}
+2026-03-15 08:24:47.782 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#gamkPrdtReg()
+2026-03-15 08:24:47.783 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:24:47.793 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:47.828 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-03-15 08:24:47.829 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:47.831 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:24:47.832 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:47.832 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_prdt.css", parameters={}
+2026-03-15 08:24:47.832 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_prdt.js", parameters={}
+2026-03-15 08:24:47.832 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:47.832 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:47.833 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:47.835 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:47.835 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:47.835 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:52.069 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/product/gamk_prdt_list", parameters={}
+2026-03-15 08:24:52.070 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#gamkPrdtList()
+2026-03-15 08:24:52.071 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:24:52.078 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:52.105 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-03-15 08:24:52.106 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:52.110 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:24:52.110 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:52.110 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_prdt.js", parameters={}
+2026-03-15 08:24:52.110 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_prdt.css", parameters={}
+2026-03-15 08:24:52.112 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:52.112 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:52.113 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:52.113 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:52.114 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:52.114 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:54.062 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/product/gamk_prdt_detail?id=P001", parameters={masked}
+2026-03-15 08:24:54.062 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#gamkPrdtDetail()
+2026-03-15 08:24:54.064 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:24:54.143 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:54.161 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-03-15 08:24:54.161 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:54.164 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:54.167 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:24:54.167 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_prdt.css", parameters={}
+2026-03-15 08:24:54.167 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_prdt.js", parameters={}
+2026-03-15 08:24:54.167 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:54.167 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:54.167 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:24:54.170 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:54.172 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:24:54.172 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:08.236 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/product/gamk_prdt_list", parameters={}
+2026-03-15 08:25:08.236 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#gamkPrdtList()
+2026-03-15 08:25:08.238 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:25:08.244 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:08.268 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-03-15 08:25:08.269 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:08.274 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:25:08.275 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:08.275 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:08.275 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_prdt.css", parameters={}
+2026-03-15 08:25:08.275 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_prdt.js", parameters={}
+2026-03-15 08:25:08.277 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:08.277 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:08.280 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:08.280 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:08.280 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:28.860 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/product/gamk_prdt_list", parameters={}
+2026-03-15 08:25:28.861 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#gamkPrdtList()
+2026-03-15 08:25:28.861 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:25:28.868 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:28.902 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-03-15 08:25:28.903 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:28.905 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_prdt.js", parameters={}
+2026-03-15 08:25:28.905 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_prdt.css", parameters={}
+2026-03-15 08:25:28.905 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:25:28.905 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:28.905 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:28.905 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:28.907 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:28.908 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:28.908 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:28.908 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:30.593 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/product/gamk_prdt_list", parameters={}
+2026-03-15 08:25:30.594 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#gamkPrdtList()
+2026-03-15 08:25:30.595 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:25:30.603 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:30.634 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-03-15 08:25:30.634 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:30.636 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:25:30.636 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_prdt.css", parameters={}
+2026-03-15 08:25:30.637 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_prdt.js", parameters={}
+2026-03-15 08:25:30.637 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:30.637 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:30.637 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:30.639 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:30.639 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:30.640 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:30.641 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:31.479 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/product/gamk_prdt_list", parameters={}
+2026-03-15 08:25:31.480 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#gamkPrdtList()
+2026-03-15 08:25:31.482 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:25:31.489 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:31.515 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-03-15 08:25:31.516 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:31.517 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_prdt.js", parameters={}
+2026-03-15 08:25:31.517 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:25:31.517 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_prdt.css", parameters={}
+2026-03-15 08:25:31.518 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:31.518 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:31.518 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:31.519 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:31.520 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:31.520 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:31.520 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:32.109 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/product/gamk_prdt_list", parameters={}
+2026-03-15 08:25:32.109 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#gamkPrdtList()
+2026-03-15 08:25:32.111 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:25:32.119 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:32.145 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/css/common.css", parameters={}
+2026-03-15 08:25:32.145 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:32.145 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:25:32.145 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_prdt.css", parameters={}
+2026-03-15 08:25:32.145 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_prdt.js", parameters={}
+2026-03-15 08:25:32.145 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:32.145 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:32.145 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:32.148 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:32.149 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:32.150 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:32.150 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:35.936 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/product/list", parameters={}
+2026-03-15 08:25:35.937 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.nproject.controller.ProductWebController#productList()
+2026-03-15 08:25:35.938 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-03-15 08:25:35.948 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:35.981 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/css/gamk_product_list.css", parameters={}
+2026-03-15 08:25:35.982 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:35.985 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:35.992 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/js/gamk_product_list.js", parameters={}
+2026-03-15 08:25:35.993 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:35.996 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.007 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/api/products/companies?insuranceTypeCode=ALL", parameters={masked}
+2026-03-15 08:25:36.008 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.008 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/api/products/material-types", parameters={}
+2026-03-15 08:25:36.011 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.014 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/01.PNG", parameters={}
+2026-03-15 08:25:36.014 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/02.PNG", parameters={}
+2026-03-15 08:25:36.015 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.015 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.015 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/04.PNG", parameters={}
+2026-03-15 08:25:36.015 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/03.PNG", parameters={}
+2026-03-15 08:25:36.016 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.016 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.017 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-03-15 08:25:36.017 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/products/companies.]
+2026-03-15 08:25:36.018 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-03-15 08:25:36.018 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/products/material-types.]
+2026-03-15 08:25:36.018 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2026-03-15 08:25:36.019 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2026-03-15 08:25:36.019 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2026-03-15 08:25:36.020 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-03-15 08:25:36.020 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error?insuranceTypeCode=ALL", parameters={masked}
+2026-03-15 08:25:36.021 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-03-15 08:25:36.021 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Mar 15 08:25:36 KST 2026, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2026-03-15 08:25:36.022 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-03-15 08:25:36.023 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2026-03-15 08:25:36.025 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-03-15 08:25:36.026 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Sun Mar 15 08:25:36 KST 2026, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+2026-03-15 08:25:36.026 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/05.PNG", parameters={}
+2026-03-15 08:25:36.026 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.028 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2026-03-15 08:25:36.031 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/06.PNG", parameters={}
+2026-03-15 08:25:36.031 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.031 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.034 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.034 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/07.PNG", parameters={}
+2026-03-15 08:25:36.035 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.036 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.036 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.037 DEBUG [http-nio-0.0.0.0-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.037 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/09.PNG", parameters={}
+2026-03-15 08:25:36.038 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/08.PNG", parameters={}
+2026-03-15 08:25:36.038 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.040 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.041 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/10.PNG", parameters={}
+2026-03-15 08:25:36.041 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/11.PNG", parameters={}
+2026-03-15 08:25:36.041 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.041 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.046 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.047 DEBUG [http-nio-0.0.0.0-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.049 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/12.PNG", parameters={}
+2026-03-15 08:25:36.050 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.050 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/14.PNG", parameters={}
+2026-03-15 08:25:36.051 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.052 DEBUG [http-nio-0.0.0.0-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.053 DEBUG [http-nio-0.0.0.0-8081-exec-7] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.053 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/15.PNG", parameters={}
+2026-03-15 08:25:36.054 DEBUG [http-nio-0.0.0.0-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.054 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.056 DEBUG [http-nio-0.0.0.0-8081-exec-8] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.056 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - GET "/img/product/kyobo/methods_thum_270/16.PNG", parameters={}
+2026-03-15 08:25:36.057 DEBUG [http-nio-0.0.0.0-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.058 DEBUG [http-nio-0.0.0.0-8081-exec-9] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.059 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-03-15 08:25:36.064 DEBUG [http-nio-0.0.0.0-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2026-03-15 08:25:36.069 DEBUG [http-nio-0.0.0.0-8081-exec-10] o.s.web.servlet.DispatcherServlet - Completed 200 OK

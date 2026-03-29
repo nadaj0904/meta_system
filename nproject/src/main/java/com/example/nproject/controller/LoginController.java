@@ -39,4 +39,18 @@ public class LoginController {
         session.invalidate();
         return "redirect:/login";
     }
+
+    /**
+     * 세션 만료 시간 연장 API
+     * 클라이언트 측에서 호출하여 서버의 세션 유효 시간을 연장합니다.
+     * @param session 현재 연결된 HTTP 세션 객체
+     * @return 연장 성공 메시지 ("OK")
+     */
+    @PostMapping("/api/session/extend")
+    @ResponseBody
+    public String extendSession(jakarta.servlet.http.HttpSession session) {
+        // 서버 측에서 이 API가 호출되는 것만으로도 Servlet 컨테이너에 의해 세션 유효 시간이 연장됨
+        // 추가로 안전성 확보를 원하면 session.setMaxInactiveInterval(3600); 호출 가능
+        return "OK";
+    }
 }
