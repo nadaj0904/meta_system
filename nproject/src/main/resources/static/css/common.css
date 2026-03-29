@@ -258,3 +258,109 @@ main {
     background-color: #ff5252;
     border-radius: 2px;
 }
+
+/* =========================================================
+   design_guide2.md Component Specifications
+   ========================================================= */
+
+/* 2. Form Components */
+/* 2.1 CheckBox & Radio */
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 6px; /* 텍스트와의 기본 마진 지정 */
+    vertical-align: middle;
+}
+input[type="checkbox"]:hover, input[type="radio"]:hover {
+    cursor: pointer;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+input[type="checkbox"]:disabled, input[type="radio"]:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* 2.2 Tab */
+.tab-container {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.tab-item {
+    height: 50px;
+    line-height: 50px;
+}
+.tab-item.active {
+    font-weight: bold;
+    border-top: 2px solid var(--primary-color, #ff4500);
+}
+.tab-item.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* 3. Button Components */
+/* 3.1 Common Button */
+.btn {
+    height: 30px !important;
+    min-width: 50px !important;
+    padding: 0 13px !important;
+    box-sizing: border-box !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3.2 CRUD Button */
+.btn--primary, .btn-crud, .btn-crud-primary {
+    height: 36px !important;
+    min-width: 80px !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3.3 Grid Button */
+.btn-grid {
+    height: 30px !important;
+    padding: 0 13px !important;
+    box-sizing: border-box !important;
+}
+
+/* 3.4 Shuttle Button */
+.btn_WF_ShuttleL, .btn_WF_ShuttleR, .btn_WF_ShuttleT, .btn_WF_ShuttleB {
+    width: 29px !important;
+    height: 29px !important;
+    border-radius: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 4. Data Grid Guide */
+.data-table th, table th {
+    height: 30px !important;
+    box-sizing: border-box;
+}
+.data-table td, table td {
+    height: 36px !important;
+    box-sizing: border-box;
+}
+
+/* 5. Form Layout (Search & Detail) */
+.search-section, .filter-bar {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 52px;
+}
+.search-section .form-control, .filter-bar .form-control {
+    height: 36px;
+}
+.detail-table th, .detail-label {
+    min-width: 140px !important;
+    width: auto;
+    white-space: nowrap;
+    padding: 0 22px !important;
+    box-sizing: border-box;
+}

@@ -20,11 +20,15 @@
 
 <!-- 요청하신 이미지들의 썸네일 생성을 모두 완료했습니다.
 
-이미지 원본의 비율이 깨지지 않고 잘 표현될 수 있도록, 중앙을 기준으로 368 x 350 사이즈에 맞추어 자동으로 자르고 세밀하게 리사이징 처리했습니다. 생성된 썸네일 이미지들은 각 경로에 맞게 다음의 새로운 폴더에 저장되었습니다.
+다시 수정요청합니다
+이미지 원본의 비율이 깨지지 않고 잘 표현될 수 있도록, 중앙을 기준으로 480 x 270 사이즈에 맞추어 자동으로 자르고 세밀하게 리사이징 처리하고 생성된 썸네일 이미지들은 각 경로에 맞게 다음의 새로운 폴더에 저장되었습니다.
 
-/static/img/product/kyobo/methods_thum
-/static/img/product/kyobo/summary_thum
-/static/img/product/kyobo/terms_thum
+/static/img/product/kyobo/methods_thum_270
+/static/img/product/kyobo/summary_thum_270
+/static/img/product/kyobo/terms_thum_270
+
+화면도 지금 썸네일 해상도로 수정해주세요
+
 직접 해당 폴더들을 확인해 보시고, 썸네일 품질이나 추가적으로 변경이 필요한 부분이 있다면 편하게 말씀해 주세요! -->
 
 <!-- 재수정 요청 -->
