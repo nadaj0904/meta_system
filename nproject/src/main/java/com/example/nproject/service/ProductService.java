@@ -26,4 +26,9 @@ public interface ProductService {
      * 기존 상품 정보 업데이트 (사용여부 미사용 처리 등 포함)
      */
     void modifyProduct(ProductDto productDto);
+
+    /**
+     * 대표상품 목록 검색
+     */
+    List<ProductDto> getRepProductList(String searchKeyword);
 }

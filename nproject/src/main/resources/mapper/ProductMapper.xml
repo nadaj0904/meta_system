@@ -137,4 +137,21 @@
         WHERE prdt_cd = #{prdtCd}
     </update>
 
+    <!-- 대표상품 목록 조회 (검색어 조건) -->
+    <select id="selectRepPrdtList" parameterType="java.lang.String" resultMap="productResultMap">
+        SELECT 
+            rep_prdt_cd, 
+            coal_co_cd, 
+            rep_prdt_nm
+        FROM 
+            tb_rep_prdt
+        <where>
+            <if test="searchKeyword != null and searchKeyword != ''">
+                rep_prdt_cd LIKE CONCAT('%', #{searchKeyword}, '%') 
+                OR rep_prdt_nm LIKE CONCAT('%', #{searchKeyword}, '%')
+            </if>
+        </where>
+        ORDER BY rep_prdt_cd ASC
+    </select>
+
 </mapper>

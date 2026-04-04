@@ -332,3 +332,71 @@ main.main-content {
 .header__controls i {
     transform: none !important;
 }
+
+/* ================== Modal (대표상품 검색 등) ================== */
+.glass-modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass-modal__content {
+    background: white;
+    width: 600px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    animation: modalPop 0.3s ease-out;
+}
+
+@keyframes modalPop {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.glass-modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #dce3ec;
+    background: #f8f9fa;
+    border-radius: 8px 8px 0 0;
+}
+
+.glass-modal__header h4 {
+    margin: 0;
+    color: var(--color-deep-base);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.glass-modal__header .btn-close {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #888;
+    cursor: pointer;
+}
+
+.glass-modal__header .btn-close:hover {
+    color: #333;
+}
+
+.glass-modal__body {
+    padding: 20px;
+}
+
+.glass-modal__body .search-box {
+    display: flex;
+    gap: 10px;
+}

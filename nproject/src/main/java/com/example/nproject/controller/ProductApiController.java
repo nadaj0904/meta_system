@@ -37,6 +37,16 @@ public class ProductApiController {
     }
 
     /**
+     * 대표상품 목록 조회 (모달 검색용)
+     */
+    @GetMapping("/rep-list")
+    public ResponseEntity<List<ProductDto>> getRepProductList(@RequestParam(value = "keyword", required = false) String keyword) {
+        log.info("API request to fetch representative product list with keyword: {}", keyword);
+        List<ProductDto> list = productService.getRepProductList(keyword);
+        return ResponseEntity.ok(list);
+    }
+
+    /**
      * 상품 상세 단건 조회
      */
     @GetMapping("/{id}")

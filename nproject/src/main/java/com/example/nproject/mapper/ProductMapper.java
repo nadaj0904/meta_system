@@ -46,4 +46,12 @@ public interface ProductMapper {
      * @return 마케팅 자료 화면용 DTO 목록
      */
     List<ProductMaterialDto> selectMaterialList(ProductSearchDto searchDto);
+
+    /**
+     * 대표상품 목록 조회 (모달 검색용)
+     *
+     * @param searchKeyword 검색어 (null 가능)
+     * @return 대표상품 DTO 목록
+     */
+    List<com.example.nproject.dto.ProductDto> selectRepPrdtList(@Param("searchKeyword") String searchKeyword);
 }

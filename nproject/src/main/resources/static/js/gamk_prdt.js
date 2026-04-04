@@ -71,19 +71,93 @@ const GamkPrdt = {
         return true;
     },
 
-    // 4. 대표상품 검색 모달 띄우기 (Iframe 접근 방식 시뮬레이션)
+    // 4. 대표상품 검색 모달 띄우기
     openRepPrdtSearchModal: function (callbackFunc) {
-        // 실제 구현 시 iframe modal 로직 필요
-        // 현재는 예시 데이터로 프로토타이핑 동작 모의
-        const result = prompt("검색할 대표상품코드 또는 명칭을 입력하세요. (예시: REP001 입력 시 자동 선택)");
-        if (result === 'REP001' || result === '테스트대표상품') {
-            if (typeof callbackFunc === 'function') {
-                callbackFunc({ rep_prdt_cd: 'REP001', rep_prdt_nm: '슈퍼라이프 암보험(대표)' });
-                this.showToast('대표상품 선택 완료');
-            }
-        } else if (result) {
-            this.showToast('검색된 대표상품이 없습니다.', 'error');
+        let modal = document.getElementById('repPrdtSearchModal');
+        
+        // 모달 DOM이 없다면 동적으로 생성
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = 'repPrdtSearchModal';
+            modal.className = 'glass-modal';
+            modal.innerHTML = `
+                <div class="glass-modal__content">
+                    <div class="glass-modal__header">
+                        <h4><i class="fa-solid fa-magnifying-glass"></i> 대표상품 검색</h4>
+                        <button class="btn-close" onclick="document.getElementById('repPrdtSearchModal').style.display='none'"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="glass-modal__body">
+                        <div class="search-box">
+                            <input type="text" id="repPrdtSearchInput" class="form-control" placeholder="검색어 입력 후 Enter" onkeyup="if(event.key==='Enter') GamkPrdt.searchRepPrdt()">
+                            <button class="btn btn--primary" onclick="GamkPrdt.searchRepPrdt()"><i class="fa-solid fa-search"></i> 검색</button>
+                        </div>
+                        <div class="search-result-table-wrapper" style="margin-top: 15px; max-height: 250px; overflow-y: auto;">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>대표코드</th>
+                                        <th>대표상품명</th>
+                                        <th>선택</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="repPrdtSearchTbody">
+                                    <tr><td colspan="3" style="text-align:center;">검색어를 입력하세요.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+
+            // 스코프 내에서 사용할 콜백 함수 임시 저장 객체
+            window.__repPrdtSelectCallback = callbackFunc;
+        } else {
+            // 재생성하지 않더라도 콜백 업데이트
+            window.__repPrdtSelectCallback = callbackFunc;
+            document.getElementById('repPrdtSearchTbody').innerHTML = '<tr><td colspan="3" style="text-align:center;">검색어를 입력하세요.</td></tr>';
+            document.getElementById('repPrdtSearchInput').value = '';
         }
+
+        modal.style.display = 'flex';
+        setTimeout(() => document.getElementById('repPrdtSearchInput').focus(), 100);
+    },
+
+    // 4-1. 대표상품 검색 API 호출 로직
+    searchRepPrdt: async function () {
+        const keyword = document.getElementById('repPrdtSearchInput').value.trim();
+        const tbody = document.getElementById('repPrdtSearchTbody');
+        
+        try {
+            const data = await this.fetchData(`/api/prdt/rep-list?keyword=${encodeURIComponent(keyword)}`);
+            tbody.innerHTML = '';
+
+            if(!data || data.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="3" style="text-align:center; padding: 15px;">조회된 대표상품이 없습니다.</td></tr>';
+                return;
+            }
+
+            data.forEach(item => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${item.repPrdtCd}</td>
+                    <td style="text-align: left; font-weight: 500;">${item.repPrdtNm}</td>
+                    <td><button class="btn btn--secondary" style="padding: 4px 10px; font-size: 0.8rem;" onclick="GamkPrdt.selectRepPrdt('${item.repPrdtCd}', '${item.repPrdtNm.replace(/'/g, "\\'")}')">선택</button></td>
+                `;
+                tbody.appendChild(tr);
+            });
+        } catch(error) {
+            tbody.innerHTML = '<tr><td colspan="3" style="text-align:center; padding: 15px; color: red;">검색 중 오류가 발생했습니다.</td></tr>';
+        }
+    },
+
+    // 4-2. 모달 내 상품 선택 시
+    selectRepPrdt: function(cd, nm) {
+        if(typeof window.__repPrdtSelectCallback === 'function') {
+            window.__repPrdtSelectCallback({ rep_prdt_cd: cd, rep_prdt_nm: nm });
+        }
+        document.getElementById('repPrdtSearchModal').style.display = 'none';
+        this.showToast('대표상품 선택 완료');
     },
 
     // 5. 서버 통신 (Fetch) 공통 래퍼 (에러/로딩 처리 포함)

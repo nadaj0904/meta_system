@@ -28,4 +28,9 @@ public interface ProductRepository {
      * 상품 데이터 수정 (사용여부 등 상태 변경 포함)
      */
     int updateProduct(ProductDto productDto);
+
+    /**
+     * 대표상품 목록 조회 (모달 검색용)
+     */
+    List<ProductDto> selectRepPrdtList(String searchKeyword);
 }

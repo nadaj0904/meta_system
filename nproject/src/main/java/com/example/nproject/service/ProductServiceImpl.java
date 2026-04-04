@@ -55,4 +55,10 @@ public class ProductServiceImpl implements ProductService {
             throw new RuntimeException("상품 데이터 변경에 실패했습니다. (존재하지 않는 코드일 수 있습니다.)");
         }
     }
+
+    @Override
+    public List<ProductDto> getRepProductList(String searchKeyword) {
+        log.info("Fetching Representative Product List with keyword: {}", searchKeyword);
+        return productRepository.selectRepPrdtList(searchKeyword);
+    }
 }

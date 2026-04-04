@@ -1,4 +1,99 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>보험사 상품등록 현황</title>
+    <!-- 공통 리소스 -->
+    <link rel="stylesheet" th:href="@{/css/common.css}">
+    <link rel="stylesheet" th:href="@{/css/gamk_product_list.css}">
+    <link rel="stylesheet" th:href="@{/css/gamk_prdt.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="/js/gamk_prdt.js"></script>
+</head>
+
+<body>
+    <!-- 1. Header -->
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo">NADA.J 보험회사</div>
+            <div class="header__controls">
+                <div class="timer">
+                    <i class="fa-regular fa-clock"></i>
+                    <span id="time-display">60:00</span>
+                </div>
+                <button class="btn" id="extend-btn">연장</button>
+                <div class="user-info">
+                    <i class="fa-regular fa-circle-user" style="font-size: 1.25rem;"></i>
+                    <span>홍길동 TFA</span>
+                </div>
+                <i class="fa-solid fa-arrow-right-from-bracket logout-btn" title="로그아웃"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 2. Main Content -->
+    <main class="main-content">
+        <div class="antigravity-container">
+        <h1 class="page-title"><i class="fa-solid fa-list"></i> 보험사 상품 현황</h1>
+
+        <!-- 검색 영역: 떠오르는 Glassmorphism 카드 컨셉 -->
+        <div class="glass-panel glass-panel--floating">
+            <form id="searchForm" onsubmit="event.preventDefault(); GamkPrdtList.search();">
+                <div class="filter-bar">
+                    <div class="filter-item">
+                        <span class="form-label">보험사 유형</span>
+                        <select class="form-control" name="insType">
+                            <option value="">전체</option>
+                            <option value="L00">생명보험</option>
+                            <option value="N00">손해보험</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <span class="form-label">보험사 선택</span>
+                        <select class="form-control" name="companyCd">
+                            <option value="">전체</option>
+                            <option value="L01">한화생명</option>
+                            <!-- tb_code 동적 조회 처리 부분 -->
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <span class="form-label">상품명</span>
+                        <input type="text" class="form-control" name="prdtNm" placeholder="상품명 입력"
+                            onkeyup="GamkPrdtList.debounceSearch(event)">
+                    </div>
+                    <div class="filter-item" style="flex: 2;">
+                        <span class="form-label">판매 기간</span>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <input type="date" class="form-control" name="startDate" id="searchStartDate">
+                            <span>~</span>
+                            <input type="date" class="form-control" name="endDate" id="searchEndDate">
+                        </div>
+                    </div>
+                    <div class="filter-item" style="flex: none;">
+                        <button type="submit" class="btn btn--primary" style="height: 48px;"><i
+                                class="fa-solid fa-magnifying-glass"></i> 검색</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- 액션 버튼 영역 -->
+        <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
+            <a href="/product/gamk_prdt_reg" class="btn btn--primary"><i class="fa-solid fa-plus"></i> 신규 상품 등록</a>
+        </div>
+
+        <!-- 결과 목록 영역 (데이터 테이블) -->
+        <div class="glass-panel">
+            <div class="data-table-wrapper">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>상품코드</th>
+                            <th>보험사</th>
+                            <th>대표상품명</th>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
@@ -100,25 +195,7 @@
                         </tr>
                     </thead>
                     <tbody id="prdtListTbody">
-                        <!-- 타임리프/퍼블리싱용 샘플 데이터 제공 -->
-                        <tr onclick="location.href='/product/gamk_prdt_detail?id=P001'">
-                            <td>P001</td>
-                            <td>한화생명</td>
-                            <td>라이프 암보험</td>
-                            <td style="font-weight: 600;">(무)라이프 실버 암보험</td>
-                            <td>2024-01-01</td>
-                            <td>2099-12-31</td>
-                            <td><span style="color:var(--color-primary-point); font-weight:bold;">Y</span></td>
-                        </tr>
-                        <tr onclick="location.href='/product/gamk_prdt_detail?id=P002'">
-                            <td>P002</td>
-                            <td>삼성화재</td>
-                            <td>운전자보험</td>
-                            <td style="font-weight: 600;">(무)무사고 운전자 안심보험</td>
-                            <td>2023-05-15</td>
-                            <td>2025-12-31</td>
-                            <td><span style="color:var(--color-primary-point); font-weight:bold;">Y</span></td>
-                        </tr>
+                        <!-- AJAX 렌더링 영역 -->
                     </tbody>
                 </table>
             </div>
@@ -222,28 +299,71 @@
         const GamkPrdtList = {
             timeoutId: null,
 
-            search: function () {
+            search: async function () {
                 // 기간 정합성 검사 유틸 호출
                 if (!GamkPrdt.validateDateRange('searchStartDate', 'searchEndDate')) return;
 
-                // TODO: 실제 서버 비동기/동기 요청
-                GamkPrdt.showToast('상품 목록을 검색했습니다.');
+                const form = document.getElementById('searchForm');
+                const formData = new FormData(form);
+                const queryParams = new URLSearchParams(formData).toString();
+
+                try {
+                    const data = await GamkPrdt.fetchData(`/api/prdt/list?${queryParams}`);
+                    this.renderTable(data);
+                } catch (error) {
+                    console.error('검색 실패', error);
+                }
+            },
+
+            renderTable: function(dataList) {
+                const tbody = document.getElementById('prdtListTbody');
+                tbody.innerHTML = ''; // 초기화
+
+                if (!dataList || dataList.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding: 20px;">검색 결과가 없습니다.</td></tr>';
+                    return;
+                }
+
+                dataList.forEach(item => {
+                    const tr = document.createElement('tr');
+                    tr.style.cursor = 'pointer';
+                    tr.onclick = () => location.href = `/product/gamk_prdt_detail?id=${item.prdtCd}`;
+
+                    const useYnHtml = item.useYn === 'Y' 
+                        ? `<span style="color:var(--color-primary-point); font-weight:bold;">Y</span>` 
+                        : `<span style="color:#aaa;">N</span>`;
+
+                    tr.innerHTML = `
+                        <td>${item.prdtCd || ''}</td>
+                        <td>${item.coalCoNm || item.coalCoCd || ''}</td>
+                        <td>${item.repPrdtNm || item.repPrdtCd || ''}</td>
+                        <td style="font-weight: 600;">${item.prdtNm || ''}</td>
+                        <td>${item.saleStartDate || ''}</td>
+                        <td>${item.saleEndDate || ''}</td>
+                        <td>${useYnHtml}</td>
+                    `;
+                    tbody.appendChild(tr);
+                });
             },
 
             // 실시간 Input Debounce 로직
             debounceSearch: function (e) {
                 clearTimeout(this.timeoutId);
                 this.timeoutId = setTimeout(() => {
-                    if (e.target.value.length >= 2) {
+                    if (e.target.value.length >= 2 || e.target.value.length === 0) {
                         this.search();
                     }
                 }, 300); // 300ms 대기 후 검색
             }
         };
+
+        // 초기 목록 로드
+        document.addEventListener('DOMContentLoaded', () => {
+            GamkPrdtList.search();
+        });
     </script>
 
     <!-- 공통 헤더 스크립트 추가 -->
     <script src="/js/header.js"></script>
 </body>
-
 </html>

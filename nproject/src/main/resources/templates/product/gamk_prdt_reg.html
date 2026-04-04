@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
@@ -214,26 +214,38 @@
         }
 
         // 2. 폼 제출 로직 (유효성 검증 체인)
-        function submitRegForm() {
+        async function submitRegForm() {
             // 필수값 누락 검사
             if (!GamkPrdt.validateRequired('regFormContainer')) return;
 
             // 날짜 구간 논리 검사
             if (!GamkPrdt.validateDateRange('regStartDate', 'regEndDate')) return;
 
-            // TODO: Form Fetch 로직 구성 (서버 API 전송)
+            const form = document.getElementById('regForm');
+            const formData = new FormData(form);
+            const dataObj = Object.fromEntries(formData.entries());
 
-            GamkPrdt.showToast('상품이 성공적으로 등록되었습니다.');
-
-            // (예제) 성공 응답을 받으면 2초 후 목록 페이지 이동
-            setTimeout(() => {
-                location.href = '/product/gamk_prdt_list';
-            }, 2000);
+            try {
+                const response = await GamkPrdt.fetchData('/api/prdt', {
+                    method: 'POST',
+                    body: JSON.stringify(dataObj)
+                });
+                
+                if (response.success) {
+                    GamkPrdt.showToast('상품이 성공적으로 등록되었습니다.');
+                    setTimeout(() => {
+                        location.href = '/product/gamk_prdt_list';
+                    }, 1500);
+                } else {
+                    GamkPrdt.showToast(response.message || '등록 중 서버 오류가 발생했습니다.', 'error');
+                }
+            } catch (error) {
+                console.error("상품 등록 실패", error);
+            }
         }
     </script>
 
     <!-- 공통 헤더 스크립트 추가 -->
     <script src="/js/header.js"></script>
-</body>
 
 </html>
